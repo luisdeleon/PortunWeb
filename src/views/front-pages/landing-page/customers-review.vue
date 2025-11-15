@@ -3,13 +3,13 @@ import { register } from 'swiper/element/bundle'
 
 register()
 
-// Community logos (text-based)
-const communityLogos = [
-  { name: 'Palm Gardens', location: 'Miami, FL' },
-  { name: 'Residencial Las Palmas', location: 'Ciudad de México' },
-  { name: 'Sunset Hills HOA', location: 'Austin, TX' },
-  { name: 'Conjunto El Parque', location: 'Bogotá, Colombia' },
-  { name: 'Los Jardines', location: 'Buenos Aires, Argentina' },
+// Integration platforms - showing Portun works seamlessly with popular guest invitation platforms
+const integrationPlatforms = [
+  { name: 'Airbnb', icon: 'tabler-brand-airbnb', description: 'Vacation Rentals' },
+  { name: 'Vrbo', icon: 'tabler-home-share', description: 'Holiday Rentals' },
+  { name: 'Booking.com', icon: 'tabler-calendar-check', description: 'Travel Bookings' },
+  { name: 'WhatsApp', icon: 'tabler-brand-whatsapp', description: 'Instant Messaging' },
+  { name: 'Email', icon: 'tabler-mail', description: 'Email Sharing' },
 ]
 
 // Customer Review Data
@@ -280,7 +280,17 @@ const slide = (dir: string) => {
       <VDivider class="w-100 swiper-divider" />
 
       <VContainer>
-        <!-- 👉 Community Logos Swiper  -->
+        <!-- 👉 Integration Header  -->
+        <div class="text-center mb-8">
+          <h5 class="text-h5 font-weight-semibold mb-2">
+            Trusted by Communities
+          </h5>
+          <p class="text-body-1 text-medium-emphasis">
+            Seamlessly share QR codes with guests from Airbnb, Vrbo, and more
+          </p>
+        </div>
+
+        <!-- 👉 Integration Platforms Swiper  -->
         <div class="swiper-brands-carousel">
           <swiper-container
             slides-per-view="2"
@@ -300,21 +310,21 @@ const slide = (dir: string) => {
             }"
           >
             <swiper-slide
-              v-for="(community, index) in communityLogos"
+              v-for="(platform, index) in integrationPlatforms"
               :key="index"
             >
-              <div class="text-center py-2">
-                <div class="d-flex align-center justify-center mb-1">
+              <div class="text-center py-4">
+                <div class="d-flex flex-column align-center justify-center">
                   <VIcon
-                    icon="tabler-building-community"
-                    size="24"
+                    :icon="platform.icon"
+                    size="40"
                     color="primary"
-                    class="me-2"
+                    class="mb-3"
                   />
-                  <span class="text-h6 font-weight-semibold">{{ community.name }}</span>
-                </div>
-                <div class="text-body-2 text-disabled">
-                  {{ community.location }}
+                  <span class="text-h6 font-weight-semibold mb-1">{{ platform.name }}</span>
+                  <div class="text-caption text-disabled">
+                    {{ platform.description }}
+                  </div>
                 </div>
               </div>
             </swiper-slide>
