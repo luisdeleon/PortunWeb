@@ -1,60 +1,41 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
+import type { I18nLanguage } from '@layouts/types'
+import { themeConfig } from '@themeConfig'
 
 const { locale } = useI18n({ useScope: 'global' })
 
-const languages = [
-  {
-    name: 'English',
-    code: 'en',
-    icon: 'twemoji:flag-united-states',
-  },
-  {
-    name: 'Español',
-    code: 'es',
-    icon: 'twemoji:flag-spain',
-  },
-  {
-    name: 'Português',
-    code: 'pt',
-    icon: 'twemoji:flag-brazil',
-  },
-]
-
-const selectedLanguage = computed(() => languages.find(lang => lang.code === locale.value))
+const languages = computed(() => themeConfig.app.i18n.langConfig || [])
 </script>
 
 <template>
   <IconBtn color="rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity))">
-    <VIcon :icon="selectedLanguage?.icon || 'twemoji:flag-united-states'" />
+    <VIcon icon="tabler-language" />
 
     <VTooltip
       activator="parent"
       open-delay="1000"
       scroll-strategy="close"
     >
-      <span>{{ selectedLanguage?.name }}</span>
+      <span class="text-capitalize">{{ languages.find(lang => lang.i18nLang === locale)?.label }}</span>
     </VTooltip>
 
     <VMenu
       activator="parent"
       offset="12px"
-      :width="180"
+      :width="175"
     >
       <VList
-        v-model:selected="locale"
-        mandatory
+        :selected="[locale]"
+        color="primary"
       >
         <VListItem
           v-for="lang in languages"
-          :key="lang.code"
-          :value="lang.code"
-          :prepend-icon="lang.icon"
-          color="primary"
-          @click="() => { locale = lang.code }"
+          :key="lang.i18nLang"
+          :value="lang.i18nLang"
+          @click="locale = lang.i18nLang"
         >
           <VListItemTitle>
-            {{ lang.name }}
+            {{ lang.label }}
           </VListItemTitle>
         </VListItem>
       </VList>
