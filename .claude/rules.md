@@ -15,6 +15,19 @@
   - Skin: Default
   - Theme: System (light/dark mode support)
 
+### CRITICAL: LANDING PAGE & PAGE DESIGN INTEGRITY
+- **NEVER** deviate from the existing design and colors of landing pages
+- **NEVER** modify the color scheme, layout, or visual design of any page without explicit approval
+- **NEVER** change component styles, spacing, or visual hierarchy in existing pages
+- **ALWAYS** maintain the current design language across all pages
+- **ALWAYS** preserve the existing color palette, typography, and visual elements
+- When adding new features to existing pages:
+  - Match the existing design patterns exactly
+  - Use the same color scheme and styling
+  - Maintain consistent spacing and alignment
+  - Follow the established visual hierarchy
+- Only modify page designs when explicitly requested by the user
+
 ### Design Consistency
 - Follow Vuetify 3 component patterns and Material Design principles
 - Use existing Vuexy component library from `@core` when available
@@ -212,15 +225,17 @@
 
 ### Never Do These
 1. **NEVER** modify the core theme configuration without approval
-2. **NEVER** commit `.env` files or sensitive credentials
-3. **NEVER** use `any` type in TypeScript without justification
-4. **NEVER** bypass ESLint/TypeScript errors with disable comments without good reason
-5. **NEVER** modify `node_modules` directly
-6. **NEVER** commit large binary files or assets
-7. **NEVER** disable security features or authentication
-8. **NEVER** use deprecated Vue 2 patterns or Options API for new code
-9. **NEVER** hardcode API URLs or configuration (use environment variables)
-10. **NEVER** ignore build warnings or TypeScript errors
+2. **NEVER** deviate from existing page designs, colors, or layouts without explicit user request
+3. **NEVER** commit `.env` files or sensitive credentials
+4. **NEVER** use `any` type in TypeScript without justification
+5. **NEVER** bypass ESLint/TypeScript errors with disable comments without good reason
+6. **NEVER** modify `node_modules` directly
+7. **NEVER** commit large binary files or assets
+8. **NEVER** disable security features or authentication
+9. **NEVER** use deprecated Vue 2 patterns or Options API for new code
+10. **NEVER** hardcode API URLs or configuration (use environment variables)
+11. **NEVER** ignore build warnings or TypeScript errors
+12. **NEVER** change the visual design of landing pages or existing pages
 
 ## Questions & Support
 
