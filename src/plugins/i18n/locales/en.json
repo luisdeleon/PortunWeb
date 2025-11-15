@@ -287,6 +287,11 @@
         "subtitle": "Seamlessly share QR codes with guests from Airbnb, Vrbo, and more"
       }
     },
+    "banner": {
+      "title": "Start Your 30-Day Free Trial",
+      "subtitle": "No credit card required. Full access to all Starter Features.",
+      "cta": "Get Started"
+    },
     "faq": {
       "chip": "FAQ",
       "title": "Frequently Asked",
@@ -334,17 +339,42 @@
       "title2": "your community?",
       "subtitle": "Get a personalized demo or start your free trial today",
       "formTitle": "Get Started Today",
+      "formDescription": "Tell us about your community and we'll help you choose the perfect plan. Whether you need a demo, have questions about pricing, or want to discuss custom requirements, our team is here to help.",
+      "email": "Email",
+      "fullName": "Full Name",
+      "emailLabel": "Email address",
+      "planLabel": "Which plan interests you?",
+      "messageLabel": "Message",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "johndoe@gmail.com",
+      "messagePlaceholder": "Write a message",
+      "submitButton": "Send Inquiry",
+      "successTitle": "Message received! We're on it!",
+      "successMessage": "Your inquiry is safely in our inbox. We'll get back to you faster than a resident can scan their QR code - expect to hear from us within 24 hours at hello@portun.app",
+      "validation": {
+        "nameRequired": "Full name is required",
+        "nameMinLength": "Full name must be at least 3 characters",
+        "emailRequired": "Email address is required",
+        "emailInvalid": "Please enter a valid email address",
+        "planRequired": "Please select a community size",
+        "messageRequired": "Message cannot be blank"
+      },
       "firstName": "First Name",
       "lastName": "Last Name",
-      "email": "Email",
       "phone": "Phone Number",
-      "message": "Message",
       "cta": "Send Message",
       "address": "221 Main Street, San Francisco, CA 94105",
       "emailAddress": "hello{'@'}portun.app"
     },
     "footer": {
       "slogan": "Protect your community with intelligent QR access control. Grant instant entry to visitors, manage payments effortlessly, and experience total peace of mind knowing your property is secure and your residents are safe.",
+      "newsletter": "Subscribe to newsletter",
+      "newsletterPlaceholder": "john@email.com",
+      "subscribe": "Subscribe",
+      "downloadApp": "Download our app",
+      "downloadOn": "Download on",
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
       "navigation": "Navigation",
       "products": "Products",
       "qrAccess": "QR Access Control",

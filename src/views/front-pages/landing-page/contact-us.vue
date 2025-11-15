@@ -16,6 +16,16 @@ const errors = ref({
   message: '',
 })
 
+// Validation messages
+const validationMessages = {
+  nameRequired: () => $t('landing.contact.validation.nameRequired'),
+  nameMinLength: () => $t('landing.contact.validation.nameMinLength'),
+  emailRequired: () => $t('landing.contact.validation.emailRequired'),
+  emailInvalid: () => $t('landing.contact.validation.emailInvalid'),
+  planRequired: () => $t('landing.contact.validation.planRequired'),
+  messageRequired: () => $t('landing.contact.validation.messageRequired'),
+}
+
 const pricingPlans = [
   { title: 'Starter', value: 'Starter' },
   { title: 'Professional', value: 'Professional' },
@@ -34,11 +44,11 @@ onMounted(() => {
 // Validation functions
 const validateName = () => {
   if (!name.value.trim()) {
-    errors.value.name = 'Full name is required'
+    errors.value.name = validationMessages.nameRequired()
     return false
   }
   if (name.value.trim().length < 3) {
-    errors.value.name = 'Full name must be at least 3 characters'
+    errors.value.name = validationMessages.nameMinLength()
     return false
   }
   errors.value.name = ''
@@ -47,12 +57,12 @@ const validateName = () => {
 
 const validateEmail = () => {
   if (!email.value.trim()) {
-    errors.value.email = 'Email address is required'
+    errors.value.email = validationMessages.emailRequired()
     return false
   }
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(email.value)) {
-    errors.value.email = 'Please enter a valid email address'
+    errors.value.email = validationMessages.emailInvalid()
     return false
   }
   errors.value.email = ''
@@ -61,7 +71,7 @@ const validateEmail = () => {
 
 const validatePricingPlan = () => {
   if (!pricingPlan.value) {
-    errors.value.pricingPlan = 'Please select a community size'
+    errors.value.pricingPlan = validationMessages.planRequired()
     return false
   }
   errors.value.pricingPlan = ''
@@ -70,7 +80,7 @@ const validatePricingPlan = () => {
 
 const validateMessage = () => {
   if (!message.value.trim()) {
-    errors.value.message = 'Message cannot be blank'
+    errors.value.message = validationMessages.messageRequired()
     return false
   }
   errors.value.message = ''
@@ -145,18 +155,18 @@ const submitForm = async () => {
           class="mb-4"
           size="small"
         >
-          Contact Us
+          {{ $t('landing.contact.chip') }}
         </VChip>
         <h4 class="d-flex align-center text-h4 mb-1 flex-wrap justify-center">
           <div class="position-relative me-2">
             <div class="section-title">
-              Ready to secure
+              {{ $t('landing.contact.title1') }}
             </div>
           </div>
-          your community?
+          {{ $t('landing.contact.title2') }}
         </h4>
         <p class="text-body-1 mb-0">
-          Get a personalized demo or start your free trial today
+          {{ $t('landing.contact.subtitle') }}
         </p>
       </div>
 
@@ -196,7 +206,7 @@ const submitForm = async () => {
 
                       <div>
                         <div class="text-body-1">
-                          Email
+                          {{ $t('landing.contact.email') }}
                         </div>
                         <h6 class="text-h6">
                           hello@portun.app
@@ -216,13 +226,13 @@ const submitForm = async () => {
             <VCard>
               <VCardItem class="pb-0">
                 <h4 class="text-h4 mb-1">
-                  Get Started Today
+                  {{ $t('landing.contact.formTitle') }}
                 </h4>
               </VCardItem>
 
               <VCardText>
                 <p class="mb-6">
-                  Tell us about your community and we'll help you choose the perfect plan. Whether you need a demo, have questions about pricing, or want to discuss custom requirements, our team is here to help.
+                  {{ $t('landing.contact.formDescription') }}
                 </p>
 
                 <VAlert
@@ -236,10 +246,10 @@ const submitForm = async () => {
                     <VIcon icon="tabler-circle-check" size="24" />
                     <div>
                       <div class="text-h6 mb-1">
-                        Message received! We're on it!
+                        {{ $t('landing.contact.successTitle') }}
                       </div>
                       <div class="text-body-2">
-                        Your inquiry is safely in our inbox. We'll get back to you faster than a resident can scan their QR code - expect to hear from us within 24 hours at hello@portun.app
+                        {{ $t('landing.contact.successMessage') }}
                       </div>
                     </div>
                   </div>
@@ -253,8 +263,8 @@ const submitForm = async () => {
                     >
                       <AppTextField
                         v-model="name"
-                        placeholder="John Doe"
-                        label="Full Name"
+                        :placeholder="$t('landing.contact.namePlaceholder')"
+                        :label="$t('landing.contact.fullName')"
                         :error-messages="errors.name"
                         @blur="validateName"
                         @input="errors.name = ''"
@@ -267,8 +277,8 @@ const submitForm = async () => {
                     >
                       <AppTextField
                         v-model="email"
-                        placeholder="johndoe@gmail.com"
-                        label="Email address"
+                        :placeholder="$t('landing.contact.emailPlaceholder')"
+                        :label="$t('landing.contact.emailLabel')"
                         type="email"
                         :error-messages="errors.email"
                         @blur="validateEmail"
@@ -282,7 +292,7 @@ const submitForm = async () => {
                     >
                       <AppSelect
                         v-model="pricingPlan"
-                        label="Which plan interests you?"
+                        :label="$t('landing.contact.planLabel')"
                         :items="pricingPlans"
                         item-title="title"
                         item-value="value"
@@ -295,9 +305,9 @@ const submitForm = async () => {
                     <VCol cols="12">
                       <AppTextarea
                         v-model="message"
-                        placeholder="Write a message"
+                        :placeholder="$t('landing.contact.messagePlaceholder')"
                         rows="3"
-                        label="Message"
+                        :label="$t('landing.contact.messageLabel')"
                         :error-messages="errors.message"
                         @blur="validateMessage"
                         @input="errors.message = ''"
@@ -310,7 +320,7 @@ const submitForm = async () => {
                         :loading="isLoading"
                         :disabled="isLoading"
                       >
-                        Send Inquiry
+                        {{ $t('landing.contact.submitButton') }}
                       </VBtn>
                     </VCol>
                   </VRow>

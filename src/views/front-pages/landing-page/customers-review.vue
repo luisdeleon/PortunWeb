@@ -283,10 +283,10 @@ const slide = (dir: string) => {
         <!-- 👉 Integration Header  -->
         <div class="text-center mb-8">
           <h5 class="text-h5 font-weight-semibold mb-2">
-            Trusted by Communities
+            {{ $t('landing.reviews.integration.title') }}
           </h5>
           <p class="text-body-1 text-medium-emphasis">
-            Seamlessly share QR codes with guests from Airbnb, Vrbo, and more
+            {{ $t('landing.reviews.integration.subtitle') }}
           </p>
         </div>
 

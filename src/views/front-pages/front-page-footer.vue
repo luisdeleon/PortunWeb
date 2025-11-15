@@ -61,11 +61,11 @@ const navigationList: Menu[] = [
               </div>
               <VForm class="subscribe-form d-flex align-center">
                 <AppTextField
-                  label="Subscribe to newsletter"
-                  placeholder="john@email.com"
+                  :label="$t('landing.footer.newsletter')"
+                  :placeholder="$t('landing.footer.newsletterPlaceholder')"
                 />
                 <VBtn class="align-self-end rounded-s-0">
-                  Subscribe
+                  {{ $t('landing.footer.subscribe') }}
                 </VBtn>
               </VForm>
             </div>
@@ -106,14 +106,14 @@ const navigationList: Menu[] = [
           >
             <div>
               <h6 class="footer-title text-h6 mb-6">
-                Download our app
+                {{ $t('landing.footer.downloadApp') }}
               </h6>
 
               <div>
                 <VBtn
                   v-for="(item, index) in [
-                    { image: appleImg, store: 'App Store' },
-                    { image: googlePlayImg, store: 'Google Play' },
+                    { image: appleImg, storeKey: 'appStore' },
+                    { image: googlePlayImg, storeKey: 'googlePlay' },
                   ]"
                   :key="index"
                   color="#282c3e"
@@ -129,13 +129,13 @@ const navigationList: Menu[] = [
                       />
                       <div class="d-flex flex-column justify-content-start">
                         <div :class="$vuetify.theme.current.dark ? 'text-body-2' : 'text-white-variant text-body-2'">
-                          Download on
+                          {{ $t('landing.footer.downloadOn') }}
                         </div>
                         <h6
                           class="text-h6 text-start"
                           :class="$vuetify.theme.current.dark ? 'text-body-1' : 'footer-title'"
                         >
-                          {{ item.store }}
+                          {{ $t(`landing.footer.${item.storeKey}`) }}
                         </h6>
                       </div>
                     </div>
