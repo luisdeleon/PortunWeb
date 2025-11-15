@@ -8,7 +8,7 @@ const annualMonthlyPlanPriceToggler = ref(true)
 
 const pricingPlans = [
   {
-    title: 'Small',
+    title: 'Starter',
     subtitle: '10-50 units',
     image: paperPlane,
     monthlyPrice: 3,
@@ -28,13 +28,13 @@ const pricingPlans = [
     current: false,
   },
   {
-    title: 'Medium',
+    title: 'Professional',
     subtitle: '51-200 units',
     image: plane,
     monthlyPrice: 2.50,
     yearlyPrice: 2.25,
     features: [
-      'Everything in Small',
+      'Everything in Starter',
       'Offline Mode',
       'WhatsApp Integration',
       'CSV Bulk Import',
@@ -48,13 +48,13 @@ const pricingPlans = [
     current: true,
   },
   {
-    title: 'Large',
+    title: 'Enterprise',
     subtitle: '201+ units',
     image: shuttleRocket,
     monthlyPrice: 2,
     yearlyPrice: 1.80,
     features: [
-      'Everything in Medium',
+      'Everything in Professional',
       'Custom Branding',
       'API Access',
       'Advanced Analytics',
@@ -82,12 +82,12 @@ const pricingPlans = [
             class="mb-4"
             size="small"
           >
-            Transparent Pricing
+            Choose Your Plan
           </VChip>
           <h4 class="d-flex align-center text-h4 mb-1 flex-wrap justify-center">
             <div class="position-relative me-2">
               <div class="section-title">
-                Simple pricing
+                Flexible plans
               </div>
             </div>
             for communities of all sizes
@@ -137,8 +137,10 @@ const pricingPlans = [
           <VCol
             v-for="(plan, index) in pricingPlans"
             :key="index"
+            cols="12"
+            md="4"
           >
-            <VCard :style="plan.current ? 'border:2px solid rgb(var(--v-theme-primary))' : ''">
+            <VCard :style="plan.current ? 'border:2px solid rgb(var(--v-theme-primary))' : ''" class="h-100">
               <VCardText class="pa-8 pt-12">
                 <VImg
                   :src="plan.image"
