@@ -132,7 +132,7 @@ const slide = (dir: string) => {
             md="3"
           >
             <div
-              class="headers d-flex justify-center flex-column align-start h-100"
+              class="headers d-flex justify-center flex-column align-center align-md-start h-100 text-center text-md-start mx-auto mx-md-0"
               style="max-inline-size: 275px;"
             >
               <VChip
@@ -151,7 +151,7 @@ const slide = (dir: string) => {
               <p class="text-body-1 mb-12">
                 {{ $t('landing.reviews.subtitle') }}
               </p>
-              <div class="position-relative">
+              <div class="position-relative d-flex justify-center justify-md-start">
                 <IconBtn
                   class="reviews-button-prev rounded me-4"
                   variant="tonal"
