@@ -57,16 +57,16 @@ onMounted(() => {
             <!-- Content -->
             <div class="flex-grow-1">
               <h6 class="text-h6 mb-2">
-                {{ $t('cookies.title') }}
+                {{ $t('landing.cookies.title') }}
               </h6>
               <p class="text-body-2 mb-0">
-                {{ $t('cookies.description') }}
+                {{ $t('landing.cookies.description') }}
                 <a
                   href="#"
                   class="text-primary text-decoration-none"
                   @click.prevent
                 >
-                  {{ $t('cookies.learnMore') }}
+                  {{ $t('landing.cookies.learnMore') }}
                 </a>
               </p>
             </div>
@@ -78,14 +78,14 @@ onMounted(() => {
                 variant="elevated"
                 @click="acceptCookies"
               >
-                {{ $t('cookies.accept') }}
+                {{ $t('landing.cookies.accept') }}
               </VBtn>
               <VBtn
                 color="secondary"
                 variant="outlined"
                 @click="declineCookies"
               >
-                {{ $t('cookies.decline') }}
+                {{ $t('landing.cookies.decline') }}
               </VBtn>
             </div>
           </div>
