@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { register } from 'swiper/element/bundle'
 
-import avatar1 from '@images/avatars/avatar-1.png'
-import avatar2 from '@images/avatars/avatar-2.png'
-import avatar3 from '@images/avatars/avatar-3.png'
-import avatar4 from '@images/avatars/avatar-4.png'
-import avatar5 from '@images/avatars/avatar-5.png'
-
 register()
 
 // Community logos (text-based)
@@ -25,80 +19,90 @@ const reviewData = [
     community: 'Palm Gardens',
     rating: 5,
     name: 'Jennifer Martinez',
+    initials: 'JM',
     position: 'HOA President, Miami Gardens FL',
-    avatar: avatar1,
+    color: 'primary',
   },
   {
     desc: 'Finally, a payment tracking system that actually works. Residents upload receipts, I verify with one click. Saved me 15 hours per month!',
     community: 'Residencial Las Palmas',
     rating: 5,
     name: 'Carlos Hernández',
+    initials: 'CH',
     position: 'Property Manager, Ciudad de México',
-    avatar: avatar2,
+    color: 'success',
   },
   {
     desc: 'The offline mode is a game-changer. Our internet goes down sometimes, but guards can still validate QR codes. Security never stops.',
     community: 'Conjunto El Parque',
     rating: 5,
     name: 'Sofia Rodríguez',
+    initials: 'SR',
     position: 'Security Supervisor, Bogotá Colombia',
-    avatar: avatar3,
+    color: 'warning',
   },
   {
     desc: 'We switched from Residentfy and cut our costs by 60%. Same features, better price. The transparent pricing sold me immediately.',
     community: 'Sunset Hills HOA',
     rating: 5,
     name: 'Michael Anderson',
+    initials: 'MA',
     position: 'Board Member, Austin TX',
-    avatar: avatar4,
+    color: 'info',
   },
   {
     desc: 'I love getting real-time notifications when my visitors arrive. The photos give me peace of mind. Portun just works beautifully.',
     community: 'Residencial Las Palmas',
     rating: 5,
     name: 'María González',
+    initials: 'MG',
     position: 'Resident, Guadalajara México',
-    avatar: avatar5,
+    color: 'error',
   },
   {
     desc: 'Setup was incredibly easy. We had 120 residents onboarded in one week. The WhatsApp sharing makes it simple for everyone.',
     community: 'Los Jardines',
     rating: 5,
     name: 'Juan Pablo Morales',
+    initials: 'JPM',
     position: 'Community Admin, Buenos Aires Argentina',
-    avatar: avatar1,
+    color: 'secondary',
   },
   {
     desc: 'As a guard, this app is so much better than paper logbooks. Scan the QR, take a photo, done. My shift is less stressful now.',
     community: 'Residencial Las Palmas',
     rating: 5,
     name: 'Diego Ramírez',
+    initials: 'DR',
     position: 'Security Guard, Monterrey México',
-    avatar: avatar2,
+    color: 'primary',
   },
   {
     desc: 'The admin dashboard shows me everything I need. Entry logs, pending payments, resident info - all in one place. Super efficient.',
     community: 'Conjunto El Parque',
     rating: 5,
     name: 'Ana Patricia Torres',
+    initials: 'APT',
     position: 'Property Manager, Lima Perú',
-    avatar: avatar3,
+    color: 'success',
   },
   {
     desc: 'Payment verification used to take days. Now it takes minutes. Residents are happier, and our records are always up to date.',
     community: 'Sunset Hills HOA',
     rating: 5,
     name: 'Robert Chen',
+    initials: 'RC',
     position: 'HOA Treasurer, Los Angeles CA',
-    avatar: avatar4,
+    color: 'info',
   },
   {
     desc: 'Portun\'s customer support is excellent. They helped us migrate from our old system in just two days. Highly recommend!',
     community: 'Palm Gardens',
     rating: 5,
     name: 'Camila Silva',
+    initials: 'CS',
     position: 'Resident, São Paulo Brasil',
-    avatar: avatar5,
+    color: 'warning',
   },
 ]
 
@@ -249,9 +253,11 @@ const slide = (dir: string) => {
                       />
                       <div class="d-flex align-center gap-x-3">
                         <VAvatar
-                          :image="data.avatar"
+                          :color="data.color"
                           size="32"
-                        />
+                        >
+                          <span class="text-sm font-weight-semibold">{{ data.initials }}</span>
+                        </VAvatar>
                         <div>
                           <h6 class="text-h6">
                             {{ data.name }}
