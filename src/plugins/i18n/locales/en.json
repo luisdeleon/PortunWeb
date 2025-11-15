@@ -401,10 +401,10 @@
       "keywords": "QR access control, residential security, gate automation, visitor management, HOA management, property management, community access, Latin America, Mexico, Brazil"
     },
     "cookies": {
-      "title": "We value your privacy",
-      "description": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking 'Accept', you consent to our use of cookies.",
-      "accept": "Accept All",
-      "decline": "Decline",
+      "title": "Quick heads up about cookies!",
+      "description": "We use cookies to make your experience better and keep track of how our site is doing. Nothing creepy - just the essentials to help us improve.",
+      "accept": "Sounds good",
+      "decline": "No thanks",
       "learnMore": "Learn more"
     }
   },

@@ -396,10 +396,10 @@
       "keywords": "control de acceso QR, seguridad residencial, automatización de portones, gestión de visitantes, administración de condominios, administración de propiedades, acceso comunitario, Latinoamérica, México, Brasil"
     },
     "cookies": {
-      "title": "Valoramos tu privacidad",
-      "description": "Utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico del sitio y personalizar el contenido. Al hacer clic en 'Aceptar', consientes nuestro uso de cookies.",
-      "accept": "Aceptar Todas",
-      "decline": "Rechazar",
+      "title": "¡Un aviso rápido sobre cookies!",
+      "description": "Usamos cookies para mejorar tu experiencia y ver cómo va nuestro sitio. Nada raro - solo lo esencial para mejorar.",
+      "accept": "Me parece bien",
+      "decline": "No, gracias",
       "learnMore": "Más información"
     }
   },
