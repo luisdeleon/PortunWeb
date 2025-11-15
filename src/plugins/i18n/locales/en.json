@@ -351,6 +351,8 @@
       "submitButton": "Send Inquiry",
       "successTitle": "Message received! We're on it!",
       "successMessage": "Your inquiry is safely in our inbox. We'll get back to you faster than a resident can scan their QR code - expect to hear from us within 24 hours at hello{'@'}portun.app",
+      "errorTitle": "Oops! Something went wrong",
+      "errorMessage": "We couldn't send your message. Please try again or email us directly at hello{'@'}portun.app",
       "validation": {
         "nameRequired": "Full name is required",
         "nameMinLength": "Full name must be at least 3 characters",

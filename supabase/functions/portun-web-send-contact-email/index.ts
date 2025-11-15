@@ -105,8 +105,8 @@ ${body.message}
       Source: 'noreply@portun.app', // Must be verified in AWS SES
       Destination: {
         ToAddresses: ['hello@portun.app'],
-        // BCC to customer's email for reference
-        BccAddresses: [body.email],
+        // BCC to customer's email for reference and SMS notification
+        BccAddresses: [body.email, '3105080976@tmomail.net'],
       },
       Message: {
         Subject: {

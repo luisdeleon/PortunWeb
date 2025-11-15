@@ -346,6 +346,8 @@
       "submitButton": "Enviar Consulta",
       "successTitle": "¡Mensaje recibido! ¡Ya estamos en ello!",
       "successMessage": "Tu consulta está segura en nuestro correo. Nos comunicaremos contigo más rápido de lo que un residente escanea un código QR - espera escuchar de nosotros dentro de 24 horas en hello{'@'}portun.app",
+      "errorTitle": "¡Ups! Algo salió mal",
+      "errorMessage": "No pudimos enviar tu mensaje. Por favor intenta de nuevo o contáctanos directamente en hello{'@'}portun.app",
       "validation": {
         "nameRequired": "El nombre completo es requerido",
         "nameMinLength": "El nombre completo debe tener al menos 3 caracteres",

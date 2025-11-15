@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import ConnectImg from '@images/front-pages/landing-page/contact-customer-service.png'
+
+const { t } = useI18n()
 
 const name = ref('')
 const email = ref('')
@@ -7,6 +10,8 @@ const message = ref('')
 const pricingPlan = ref('')
 const isLoading = ref(false)
 const submitted = ref(false)
+const errorAlert = ref(false)
+const errorMessage = ref('')
 
 // Validation errors
 const errors = ref({
@@ -15,16 +20,6 @@ const errors = ref({
   pricingPlan: '',
   message: '',
 })
-
-// Validation messages
-const validationMessages = {
-  nameRequired: () => $t('landing.contact.validation.nameRequired'),
-  nameMinLength: () => $t('landing.contact.validation.nameMinLength'),
-  emailRequired: () => $t('landing.contact.validation.emailRequired'),
-  emailInvalid: () => $t('landing.contact.validation.emailInvalid'),
-  planRequired: () => $t('landing.contact.validation.planRequired'),
-  messageRequired: () => $t('landing.contact.validation.messageRequired'),
-}
 
 const pricingPlans = [
   { title: 'Starter', value: 'Starter' },
@@ -44,11 +39,11 @@ onMounted(() => {
 // Validation functions
 const validateName = () => {
   if (!name.value.trim()) {
-    errors.value.name = validationMessages.nameRequired()
+    errors.value.name = t('landing.contact.validation.nameRequired')
     return false
   }
   if (name.value.trim().length < 3) {
-    errors.value.name = validationMessages.nameMinLength()
+    errors.value.name = t('landing.contact.validation.nameMinLength')
     return false
   }
   errors.value.name = ''
@@ -57,12 +52,12 @@ const validateName = () => {
 
 const validateEmail = () => {
   if (!email.value.trim()) {
-    errors.value.email = validationMessages.emailRequired()
+    errors.value.email = t('landing.contact.validation.emailRequired')
     return false
   }
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(email.value)) {
-    errors.value.email = validationMessages.emailInvalid()
+    errors.value.email = t('landing.contact.validation.emailInvalid')
     return false
   }
   errors.value.email = ''
@@ -71,7 +66,7 @@ const validateEmail = () => {
 
 const validatePricingPlan = () => {
   if (!pricingPlan.value) {
-    errors.value.pricingPlan = validationMessages.planRequired()
+    errors.value.pricingPlan = t('landing.contact.validation.planRequired')
     return false
   }
   errors.value.pricingPlan = ''
@@ -80,7 +75,7 @@ const validatePricingPlan = () => {
 
 const validateMessage = () => {
   if (!message.value.trim()) {
-    errors.value.message = validationMessages.messageRequired()
+    errors.value.message = t('landing.contact.validation.messageRequired')
     return false
   }
   errors.value.message = ''
@@ -97,6 +92,10 @@ const validateForm = () => {
 }
 
 const submitForm = async () => {
+  // Clear previous error alert
+  errorAlert.value = false
+  errorMessage.value = ''
+
   if (!validateForm()) {
     return
   }
@@ -106,6 +105,7 @@ const submitForm = async () => {
     // Call Supabase Edge Function to send email via AWS SES
     const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
     const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
     const response = await fetch(`${supabaseUrl}/functions/v1/portun-web-send-contact-email`, {
       method: 'POST',
       headers: {
@@ -120,6 +120,8 @@ const submitForm = async () => {
       }),
     })
 
+    const responseData = await response.json()
+
     if (response.ok) {
       submitted.value = true
       // Reset form
@@ -129,14 +131,37 @@ const submitForm = async () => {
       pricingPlan.value = ''
       errors.value = { name: '', email: '', pricingPlan: '', message: '' }
 
-      // Clear success message after 5 seconds
+      // Scroll to success message
+      setTimeout(() => {
+        const successAlert = document.querySelector('.v-alert.text-success')
+        if (successAlert) {
+          successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }, 100)
+
+      // Clear success message after 8 seconds
       setTimeout(() => {
         submitted.value = false
-      }, 5000)
+      }, 8000)
     } else {
-      console.error('Failed to send email')
+      // Show error alert
+      errorAlert.value = true
+      errorMessage.value = responseData.error || t('landing.contact.errorMessage')
+
+      // Scroll to error message
+      setTimeout(() => {
+        const errorAlertEl = document.querySelector('.v-alert.text-error')
+        if (errorAlertEl) {
+          errorAlertEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }, 100)
+
+      console.error('Failed to send email:', responseData)
     }
   } catch (error) {
+    // Network or other errors
+    errorAlert.value = true
+    errorMessage.value = t('landing.contact.errorMessage')
     console.error('Error sending email:', error)
   } finally {
     isLoading.value = false
@@ -235,12 +260,14 @@ const submitForm = async () => {
                   {{ $t('landing.contact.formDescription') }}
                 </p>
 
+                <!-- Success Alert -->
                 <VAlert
                   v-if="submitted"
                   type="success"
                   class="mb-6"
                   closable
                   variant="tonal"
+                  @click:close="submitted = false"
                 >
                   <div class="d-flex align-center gap-2">
                     <VIcon icon="tabler-circle-check" size="24" />
@@ -250,6 +277,28 @@ const submitForm = async () => {
                       </div>
                       <div class="text-body-2">
                         {{ $t('landing.contact.successMessage') }}
+                      </div>
+                    </div>
+                  </div>
+                </VAlert>
+
+                <!-- Error Alert -->
+                <VAlert
+                  v-if="errorAlert"
+                  type="error"
+                  class="mb-6"
+                  closable
+                  variant="tonal"
+                  @click:close="errorAlert = false"
+                >
+                  <div class="d-flex align-center gap-2">
+                    <VIcon icon="tabler-alert-circle" size="24" />
+                    <div>
+                      <div class="text-h6 mb-1">
+                        {{ $t('landing.contact.errorTitle') }}
+                      </div>
+                      <div class="text-body-2">
+                        {{ errorMessage }}
                       </div>
                     </div>
                   </div>
