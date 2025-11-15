@@ -1,11 +1,15 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const featuresData = [
-  { title: 'QR Access Control', desc: 'Create visitor QR codes in seconds. Guards validate instantly at the gate.', icon: 'tabler-qrcode' },
-  { title: 'Payment Tracking', desc: 'Upload payment receipts. Admins verify with one click. Full payment history.', icon: 'tabler-receipt' },
-  { title: 'Real-time Notifications', desc: 'Know the moment your guest arrives. Complete audit trail with photos.', icon: 'tabler-bell' },
-  { title: 'Offline Mode', desc: 'Guards can validate QR codes even without internet. Syncs when online.', icon: 'tabler-cloud-off' },
-  { title: 'Admin Dashboard', desc: 'Manage residents, verify payments, and review entry logs from one place.', icon: 'tabler-dashboard' },
-  { title: 'Secure & Compliant', desc: 'Enterprise-grade security with biometric auth and encrypted data.', icon: 'tabler-shield-check' },
+  { key: 'qrAccess', icon: 'tabler-qrcode' },
+  { key: 'paymentTracking', icon: 'tabler-receipt' },
+  { key: 'notifications', icon: 'tabler-bell' },
+  { key: 'offlineMode', icon: 'tabler-cloud-off' },
+  { key: 'adminDashboard', icon: 'tabler-dashboard' },
+  { key: 'security', icon: 'tabler-shield-check' },
 ]
 </script>
 
@@ -19,18 +23,18 @@ const featuresData = [
           class="mb-4"
           size="small"
         >
-          Key Features
+          {{ $t('landing.features.chip') }}
         </VChip>
         <div class="d-flex text-h4 mb-1 align-center flex-wrap justify-center">
           <div class="position-relative me-2">
             <div class="section-title">
-              Everything you need
+              {{ $t('landing.features.title1') }}
             </div>
           </div>
-          for smart community access
+          {{ $t('landing.features.title2') }}
         </div>
         <p class="text-body-1 mb-0">
-          Powerful visitor management and payment tracking designed for residential communities.
+          {{ $t('landing.features.description') }}
         </p>
       </div>
       <VRow>
@@ -49,13 +53,13 @@ const featuresData = [
             />
             <div class="text-center">
               <h5 class="text-h5 mb-2">
-                {{ data.title }}
+                {{ $t(`landing.features.${data.key}.title`) }}
               </h5>
               <p
                 class="text-body-1 mb-6"
                 style="max-inline-size: 310px;"
               >
-                {{ data.desc }}
+                {{ $t(`landing.features.${data.key}.desc`) }}
               </p>
             </div>
           </div>

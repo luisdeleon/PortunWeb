@@ -1,36 +1,10 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import boyWithLogo from '@images/front-pages/landing-page/faq-boy-with-logos.png'
 
-const faqData = [
-  {
-    question: 'How does the QR code access control system work?',
-    answer: 'Residents create QR codes through the mobile app for their visitors. When the visitor arrives at the gate, the security guard scans the QR code, which is validated in real-time against our secure database. The system verifies the code is active, not expired, and within entry limits. Entry is logged automatically with photos and timestamps, and residents receive instant notifications when their visitors arrive.',
-  },
-  {
-    question: 'What do visitors need to enter the community?',
-    answer: 'Visitors simply need to show the QR code they received via WhatsApp, SMS, or email to the security guard. No app installation is required on the visitor side - the QR code works as a simple image. Guards scan it in seconds, and visitors are on their way. This creates a fast, professional entry experience that takes less than 30 seconds from arrival to gate opening.',
-  },
-  {
-    question: 'How long does it take to get started?',
-    answer: 'You can be up and running in less than 24 hours. Start with our 30-day free trial - no credit card required. We provide dedicated onboarding support for Professional and Enterprise plans, including CSV bulk import of your existing resident data, guard training materials, and live setup assistance to ensure a smooth transition.',
-  },
-  {
-    question: 'Can residents track their HOA payments through the app?',
-    answer: 'Yes! Residents can upload payment receipts directly through the app with automatic photo compression. Admins receive notifications to verify payments, and residents can view their complete payment history with status indicators (verified, pending, or rejected). This eliminates manual tracking and reduces administrative overhead.',
-  },
-  {
-    question: 'Is my community data secure?',
-    answer: 'Absolutely. We use bank-level encryption for all data transmission and storage. QR codes are validated server-side to prevent tampering, all entry logs are encrypted, and payment receipts are hashed for integrity verification. Our infrastructure is hosted on enterprise-grade servers with automatic backups and 99.9% uptime guarantee.',
-  },
-  {
-    question: 'Can I manage multiple properties from one account?',
-    answer: 'Yes! Our Professional and Enterprise plans include multi-community management. You can switch between properties from a single dashboard, view consolidated reports across all communities, and manage residents, guards, and payments for each property independently while maintaining centralized oversight.',
-  },
-  {
-    question: 'Does this work with my existing gates and access control hardware?',
-    answer: 'Absolutely! Our system integrates seamlessly with your current infrastructure - no expensive gate replacements needed. We support most major gate manufacturers including LiftMaster, DoorKing, BFT, Nice, Came, FAAC, Linear, and Viking, plus any gate controller with network connectivity. When a QR code is validated, our system can automatically trigger your existing gates and doors to open. Our technical team will help configure the integration during onboarding at no extra cost.',
-  },
-]
+const { t } = useI18n()
+
+const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7']
 </script>
 
 <template>
@@ -45,18 +19,18 @@ const faqData = [
             size="small"
             class="mb-4"
           >
-            FAQ
+            {{ $t('landing.faq.chip') }}
           </VChip>
           <h4 class="d-flex align-center text-h4 mb-1 flex-wrap justify-center">
-            Frequently Asked
+            {{ $t('landing.faq.title') }}
             <div class="position-relative ms-2">
               <div class="section-title">
-                questions
+                {{ $t('landing.faq.subtitle') }}
               </div>
             </div>
           </h4>
           <p class="text-body-1 mb-0">
-            Browse through these FAQs to find answers to commonly asked questions.
+            {{ $t('landing.faq.description') }}
           </p>
         </div>
         <VRow>
@@ -78,14 +52,14 @@ const faqData = [
           >
             <VExpansionPanels class="pt-16">
               <VExpansionPanel
-                v-for="faq in faqData"
-                :key="faq.question"
+                v-for="faqKey in faqKeys"
+                :key="faqKey"
               >
                 <VExpansionPanelTitle>
-                  {{ faq.question }}
+                  {{ $t(`landing.faq.questions.${faqKey}.question`) }}
                 </VExpansionPanelTitle>
                 <VExpansionPanelText>
-                  {{ faq.answer }}
+                  {{ $t(`landing.faq.questions.${faqKey}.answer`) }}
                 </VExpansionPanelText>
               </VExpansionPanel>
             </VExpansionPanels>

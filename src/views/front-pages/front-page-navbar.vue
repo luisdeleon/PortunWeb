@@ -3,6 +3,7 @@ import { useWindowScroll } from '@vueuse/core'
 import type { RouteLocationRaw } from 'vue-router/auto'
 import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
 import { useDisplay } from 'vuetify'
+import { useI18n } from 'vue-i18n'
 import navImg from '@images/front-pages/misc/nav-item-col-img.png'
 
 import LanguageSwitcher from '@/layouts/components/LanguageSwitcher.vue'
@@ -15,6 +16,7 @@ const props = defineProps({
 })
 
 const display = useDisplay()
+const { locale } = useI18n()
 
 interface navItem {
   name: string
@@ -32,6 +34,9 @@ const route = useRoute()
 const router = useRouter()
 
 const sidebar = ref(false)
+
+// CMD Portal URL with language parameter
+const cmdPortalUrl = computed(() => `https://cmd.portun.app?lang=${locale.value}`)
 
 watch(() => display, () => {
   return display.mdAndUp ? sidebar.value = false : sidebar.value
@@ -190,11 +195,11 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
             prepend-icon="tabler-login-2"
             variant="elevated"
             color="primary"
-            href="https://cmd.portun.app"
+            :href="cmdPortalUrl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            CMD Portal
+            {{ $t('landing.nav.cmdPortal') }}
           </VBtn>
 
           <VBtn
@@ -203,7 +208,7 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
             icon
             variant="elevated"
             color="primary"
-            href="https://cmd.portun.app"
+            :href="cmdPortalUrl"
             target="_blank"
             rel="noopener noreferrer"
           >

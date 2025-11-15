@@ -141,15 +141,15 @@ const slide = (dir: string) => {
                 class="mb-4"
                 size="small"
               >
-                Trusted by Communities
+                {{ $t('landing.reviews.chip') }}
               </VChip>
               <div class="position-relative mb-1 me-2">
                 <div class="section-title">
-                  What people say
+                  {{ $t('landing.reviews.title') }}
                 </div>
               </div>
               <p class="text-body-1 mb-12">
-                Real reviews from residents, property managers, and security guards across US and Latin America.
+                {{ $t('landing.reviews.subtitle') }}
               </p>
               <div class="position-relative">
                 <IconBtn

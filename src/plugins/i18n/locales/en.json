@@ -194,6 +194,36 @@
       "qrCodesDaily": "QR Codes Generated Daily",
       "avgEntryTime": "Average Entry Time"
     },
+    "features": {
+      "chip": "Key Features",
+      "title1": "Everything you need",
+      "title2": "for smart community access",
+      "description": "Powerful visitor management and payment tracking designed for residential communities.",
+      "qrAccess": {
+        "title": "QR Access Control",
+        "desc": "Create visitor QR codes in seconds. Guards validate instantly at the gate."
+      },
+      "paymentTracking": {
+        "title": "Payment Tracking",
+        "desc": "Upload payment receipts. Admins verify with one click. Full payment history."
+      },
+      "notifications": {
+        "title": "Real-time Notifications",
+        "desc": "Know the moment your guest arrives. Complete audit trail with photos."
+      },
+      "offlineMode": {
+        "title": "Offline Mode",
+        "desc": "Guards can validate QR codes even without internet. Syncs when online."
+      },
+      "adminDashboard": {
+        "title": "Admin Dashboard",
+        "desc": "Manage residents, verify payments, and review entry logs from one place."
+      },
+      "security": {
+        "title": "Secure & Compliant",
+        "desc": "Enterprise-grade security with biometric auth and encrypted data."
+      }
+    },
     "pricing": {
       "chip": "Choose Your Plan",
       "title": "Flexible plans",
@@ -242,6 +272,12 @@
       },
       "cta": "Get Started"
     },
+    "stats": {
+      "propertiesSecured": "Properties Secured",
+      "activeResidents": "Active Residents",
+      "qrCodesDaily": "QR Codes Generated Daily",
+      "avgEntryTime": "Average Entry Time"
+    },
     "reviews": {
       "chip": "Trusted by Communities",
       "title": "What people say",
@@ -255,7 +291,37 @@
       "chip": "FAQ",
       "title": "Frequently Asked",
       "subtitle": "Questions",
-      "description": "Find answers to common questions about our QR access control system"
+      "description": "Browse through these FAQs to find answers to commonly asked questions.",
+      "questions": {
+        "q1": {
+          "question": "How does the QR code access control system work?",
+          "answer": "Residents create QR codes through the mobile app for their visitors. When the visitor arrives at the gate, the security guard scans the QR code, which is validated in real-time against our secure database. The system verifies the code is active, not expired, and within entry limits. Entry is logged automatically with photos and timestamps, and residents receive instant notifications when their visitors arrive."
+        },
+        "q2": {
+          "question": "What do visitors need to enter the community?",
+          "answer": "Visitors simply need to show the QR code they received via WhatsApp, SMS, or email to the security guard. No app installation is required on the visitor side - the QR code works as a simple image. Guards scan it in seconds, and visitors are on their way. This creates a fast, professional entry experience that takes less than 30 seconds from arrival to gate opening."
+        },
+        "q3": {
+          "question": "How long does it take to get started?",
+          "answer": "You can be up and running in less than 24 hours. Start with our 30-day free trial - no credit card required. We provide dedicated onboarding support for Professional and Enterprise plans, including CSV bulk import of your existing resident data, guard training materials, and live setup assistance to ensure a smooth transition."
+        },
+        "q4": {
+          "question": "Can residents track their HOA payments through the app?",
+          "answer": "Yes! Residents can upload payment receipts directly through the app with automatic photo compression. Admins receive notifications to verify payments, and residents can view their complete payment history with status indicators (verified, pending, or rejected). This eliminates manual tracking and reduces administrative overhead."
+        },
+        "q5": {
+          "question": "Is my community data secure?",
+          "answer": "Absolutely. We use bank-level encryption for all data transmission and storage. QR codes are validated server-side to prevent tampering, all entry logs are encrypted, and payment receipts are hashed for integrity verification. Our infrastructure is hosted on enterprise-grade servers with automatic backups and 99.9% uptime guarantee."
+        },
+        "q6": {
+          "question": "Can I manage multiple properties from one account?",
+          "answer": "Yes! Our Professional and Enterprise plans include multi-community management. You can switch between properties from a single dashboard, view consolidated reports across all communities, and manage residents, guards, and payments for each property independently while maintaining centralized oversight."
+        },
+        "q7": {
+          "question": "Does this work with my existing gates and access control hardware?",
+          "answer": "Absolutely! Our system integrates seamlessly with your current infrastructure - no expensive gate replacements needed. We support most major gate manufacturers including LiftMaster, DoorKing, BFT, Nice, Came, FAAC, Linear, and Viking, plus any gate controller with network connectivity. When a QR code is validated, our system can automatically trigger your existing gates and doors to open. Our technical team will help configure the integration during onboarding at no extra cost."
+        }
+      }
     },
     "banner": {
       "title": "Start Your 30-Day Free Trial",

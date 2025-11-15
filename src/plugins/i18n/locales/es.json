@@ -194,6 +194,36 @@
       "qrCodesDaily": "Códigos QR Generados Diariamente",
       "avgEntryTime": "Tiempo Promedio de Entrada"
     },
+    "features": {
+      "chip": "Características Clave",
+      "title1": "Todo lo que necesitas",
+      "title2": "para acceso inteligente a tu comunidad",
+      "description": "Gestión de visitantes y seguimiento de pagos diseñado para comunidades residenciales.",
+      "qrAccess": {
+        "title": "Control de Acceso QR",
+        "desc": "Crea códigos QR para visitantes en segundos. Los guardias validan al instante en el portón."
+      },
+      "paymentTracking": {
+        "title": "Seguimiento de Pagos",
+        "desc": "Sube recibos de pago. Los admins verifican con un clic. Historial completo de pagos."
+      },
+      "notifications": {
+        "title": "Notificaciones en Tiempo Real",
+        "desc": "Sabe el momento en que tu invitado llega. Registro completo con fotos."
+      },
+      "offlineMode": {
+        "title": "Modo Sin Conexión",
+        "desc": "Los guardias pueden validar códigos QR sin internet. Se sincroniza cuando está en línea."
+      },
+      "adminDashboard": {
+        "title": "Panel de Administración",
+        "desc": "Gestiona residentes, verifica pagos y revisa registros de entrada desde un solo lugar."
+      },
+      "security": {
+        "title": "Seguro y Conforme",
+        "desc": "Seguridad de nivel empresarial con autenticación biométrica y datos encriptados."
+      }
+    },
     "pricing": {
       "chip": "Elige tu Plan",
       "title": "Planes flexibles",
@@ -242,6 +272,12 @@
       },
       "cta": "Comenzar"
     },
+    "stats": {
+      "propertiesSecured": "Propiedades Aseguradas",
+      "activeResidents": "Residentes Activos",
+      "qrCodesDaily": "Códigos QR Generados Diariamente",
+      "avgEntryTime": "Tiempo Promedio de Entrada"
+    },
     "reviews": {
       "chip": "Comunidades Confían en Nosotros",
       "title": "Lo que dice la gente",
@@ -255,7 +291,37 @@
       "chip": "Preguntas Frecuentes",
       "title": "Preguntas",
       "subtitle": "Frecuentes",
-      "description": "Encuentra respuestas a preguntas comunes sobre nuestro sistema de control de acceso QR"
+      "description": "Explora estas preguntas frecuentes para encontrar respuestas a las preguntas más comunes.",
+      "questions": {
+        "q1": {
+          "question": "¿Cómo funciona el sistema de control de acceso por código QR?",
+          "answer": "Los residentes crean códigos QR a través de la aplicación móvil para sus visitantes. Cuando el visitante llega al portón, el guardia de seguridad escanea el código QR, que se valida en tiempo real contra nuestra base de datos segura. El sistema verifica que el código esté activo, no haya expirado y esté dentro de los límites de entrada. La entrada se registra automáticamente con fotos y marcas de tiempo, y los residentes reciben notificaciones instantáneas cuando llegan sus visitantes."
+        },
+        "q2": {
+          "question": "¿Qué necesitan los visitantes para entrar a la comunidad?",
+          "answer": "Los visitantes simplemente necesitan mostrar el código QR que recibieron por WhatsApp, SMS o correo electrónico al guardia de seguridad. No se requiere instalación de aplicación del lado del visitante - el código QR funciona como una imagen simple. Los guardias lo escanean en segundos, y los visitantes siguen su camino. Esto crea una experiencia de entrada rápida y profesional que toma menos de 30 segundos desde la llegada hasta la apertura del portón."
+        },
+        "q3": {
+          "question": "¿Cuánto tiempo lleva comenzar?",
+          "answer": "Puede estar en funcionamiento en menos de 24 horas. Comience con nuestra prueba gratuita de 30 días - no se requiere tarjeta de crédito. Brindamos soporte de incorporación dedicado para los planes Profesional y Empresarial, incluyendo importación masiva CSV de sus datos de residentes existentes, materiales de capacitación para guardias y asistencia de configuración en vivo para garantizar una transición fluida."
+        },
+        "q4": {
+          "question": "¿Pueden los residentes rastrear sus pagos de HOA a través de la aplicación?",
+          "answer": "¡Sí! Los residentes pueden subir recibos de pago directamente a través de la aplicación con compresión automática de fotos. Los administradores reciben notificaciones para verificar los pagos, y los residentes pueden ver su historial completo de pagos con indicadores de estado (verificado, pendiente o rechazado). Esto elimina el seguimiento manual y reduce la sobrecarga administrativa."
+        },
+        "q5": {
+          "question": "¿Son seguros los datos de mi comunidad?",
+          "answer": "Absolutamente. Usamos encriptación de nivel bancario para toda la transmisión y almacenamiento de datos. Los códigos QR se validan del lado del servidor para prevenir manipulación, todos los registros de entrada están encriptados, y los recibos de pago tienen hash para verificación de integridad. Nuestra infraestructura está alojada en servidores de nivel empresarial con respaldos automáticos y garantía de disponibilidad del 99.9%."
+        },
+        "q6": {
+          "question": "¿Puedo gestionar múltiples propiedades desde una cuenta?",
+          "answer": "¡Sí! Nuestros planes Profesional y Empresarial incluyen gestión multi-comunidad. Puede cambiar entre propiedades desde un solo panel, ver informes consolidados en todas las comunidades, y gestionar residentes, guardias y pagos para cada propiedad de forma independiente mientras mantiene supervisión centralizada."
+        },
+        "q7": {
+          "question": "¿Funciona esto con mis portones y hardware de control de acceso existentes?",
+          "answer": "¡Absolutamente! Nuestro sistema se integra perfectamente con su infraestructura actual - no se necesitan reemplazos costosos de portones. Soportamos la mayoría de los principales fabricantes de portones incluyendo LiftMaster, DoorKing, BFT, Nice, Came, FAAC, Linear y Viking, además de cualquier controlador de portón con conectividad de red. Cuando se valida un código QR, nuestro sistema puede activar automáticamente sus portones y puertas existentes para abrirse. Nuestro equipo técnico ayudará a configurar la integración durante la incorporación sin costo adicional."
+        }
+      }
     },
     "banner": {
       "title": "Inicia tu Prueba Gratis de 30 Días",

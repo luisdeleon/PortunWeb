@@ -1,61 +1,53 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const pricingPlans = [
   {
-    title: 'Starter',
-    subtitle: '10-100 units',
+    key: 'starter',
     icon: 'tabler-building',
     iconColor: 'primary',
-    features: [
-      'QR Access Control',
-      'Automated Gate Opening',
-      'Payment Tracking',
-      'Admin Dashboard',
-      'Entry Logs with Photos',
-      'Real-time Notifications',
-      '30-Day Free Trial',
-      'Email Support',
+    featureKeys: [
+      'qrAccess',
+      'automatedGate',
+      'paymentTracking',
+      'adminDashboard',
+      'entryLogs',
+      'notifications',
+      'freeTrial',
+      'emailSupport',
     ],
-    supportType: 'Email',
-    supportMedium: 'Email Support',
-    respondTime: 'Response: 24h',
     current: false,
   },
   {
-    title: 'Professional',
-    subtitle: '101-1000 units',
+    key: 'professional',
     icon: 'tabler-building-community',
     iconColor: 'success',
-    features: [
-      'Everything in Starter',
-      'Multi-Community Management',
-      'CSV Bulk Import',
-      'Payment Reports Export',
-      'Phone & Video Support',
-      'Dedicated Onboarding',
-      'Priority Email Support',
+    featureKeys: [
+      'everythingStarter',
+      'multiCommunity',
+      'csvImport',
+      'paymentReports',
+      'phoneVideo',
+      'onboarding',
+      'priorityEmail',
     ],
-    supportType: 'Priority',
-    supportMedium: 'Email & Chat',
-    respondTime: 'Response: 6h',
     current: true,
   },
   {
-    title: 'Enterprise',
-    subtitle: '1001+ units',
+    key: 'enterprise',
     icon: 'tabler-building-skyscraper',
     iconColor: 'warning',
-    features: [
-      'Everything in Professional',
-      'Offline Mode',
-      'WhatsApp Integration',
-      'Advanced Analytics',
-      'Custom Branding',
-      'API Access',
-      'Custom Integrations',
+    featureKeys: [
+      'everythingPro',
+      'offlineMode',
+      'whatsapp',
+      'analytics',
+      'customBranding',
+      'apiAccess',
+      'customIntegrations',
     ],
-    supportType: 'Premium',
-    supportMedium: 'Email, Chat & Phone',
-    respondTime: 'Live Support',
     current: false,
   },
 ]
@@ -73,22 +65,22 @@ const pricingPlans = [
             class="mb-4"
             size="small"
           >
-            Choose Your Plan
+            {{ $t('landing.pricing.chip') }}
           </VChip>
           <h4 class="d-flex align-center text-h4 mb-1 flex-wrap justify-center">
             <div class="position-relative me-2">
               <div class="section-title">
-                Flexible plans
+                {{ $t('landing.pricing.title') }}
               </div>
             </div>
-            for communities of all sizes
+            {{ $t('landing.pricing.subtitle') }}
           </h4>
           <div class="text-center text-body-1 mb-8">
             <p class="mb-0">
-              Pay only for what you need. All plans include QR access control and payment tracking.
+              {{ $t('landing.pricing.description1') }}
             </p>
             <p class="mb-0">
-              Start with a 30-day free trial. No credit card required.
+              {{ $t('landing.pricing.description2') }}
             </p>
           </div>
         </div>
@@ -114,14 +106,14 @@ const pricingPlans = [
                   </VAvatar>
                 </div>
                 <h4 class="text-h4 text-center mb-2">
-                  {{ plan.title }}
+                  {{ $t(`landing.pricing.${plan.key}.title`) }}
                 </h4>
                 <p class="text-center text-body-1 text-medium-emphasis mb-8">
-                  {{ plan.subtitle }}
+                  {{ $t(`landing.pricing.${plan.key}.subtitle`) }}
                 </p>
                 <VList class="card-list">
                   <VListItem
-                    v-for="(item, i) in plan.features"
+                    v-for="(featureKey, i) in plan.featureKeys"
                     :key="i"
                   >
                     <template #prepend>
@@ -138,7 +130,7 @@ const pricingPlans = [
                         />
                       </VAvatar>
                       <h6 class="text-h6">
-                        {{ item }}
+                        {{ $t(`landing.pricing.${plan.key}.features.${featureKey}`) }}
                       </h6>
                     </template>
                   </VListItem>
@@ -149,7 +141,7 @@ const pricingPlans = [
                   class="mt-8"
                   :to="{ name: 'front-pages-payment' }"
                 >
-                  Get Started
+                  {{ $t('landing.pricing.cta') }}
                 </VBtn>
               </VCardText>
             </VCard>

@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const statData = [
-  { title: 'Properties Secured', value: '500+', icon: 'tabler-building-community', color: 'primary' },
-  { title: 'Active Residents', value: '25k+', icon: 'tabler-users-group', color: 'success' },
-  { title: 'QR Codes Generated Daily', value: '10k+', icon: 'tabler-qrcode', color: 'info' },
-  { title: 'Average Entry Time', value: '<30s', icon: 'tabler-clock-hour-3', color: 'warning' },
+  { key: 'propertiesSecured', value: '500+', icon: 'tabler-building-community', color: 'primary' },
+  { key: 'activeResidents', value: '25k+', icon: 'tabler-users-group', color: 'success' },
+  { key: 'qrCodesDaily', value: '10k+', icon: 'tabler-qrcode', color: 'info' },
+  { key: 'avgEntryTime', value: '<30s', icon: 'tabler-clock-hour-3', color: 'warning' },
 ]
 </script>
 
@@ -34,7 +38,7 @@ const statData = [
                   {{ product.value }}
                 </h3>
                 <p class="text-body-1 font-weight-medium mb-0 text-wrap">
-                  {{ product.title }}
+                  {{ $t(`landing.stats.${product.key}`) }}
                 </p>
               </VCardText>
             </VCard>
