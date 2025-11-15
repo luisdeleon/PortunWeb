@@ -41,14 +41,14 @@ const translateMouse = computed(() => {
         <VContainer>
           <div class="hero-text-box text-center px-6">
             <h1 class="hero-title mb-4">
-              Secure Your Community in Seconds with QR Access Control
+              {{ $t('landing.hero.title') }}
             </h1>
             <h6 class="mb-6 text-h6">
-              Scan QR codes to automatically open gates and doors using your existing infrastructure. Fast access for visitors, simple payment tracking for residents, powerful insights for managers.
+              {{ $t('landing.hero.subtitle') }}
             </h6>
             <div class="position-relative">
               <h6 class="position-absolute hero-btn-item d-md-flex d-none text-h6 text-medium-emphasis">
-                Join 25,000+ Residents
+                {{ $t('landing.hero.activeResidents') }}
                 <VImg
                   :src="joinArrow"
                   class="flip-in-rtl"
@@ -59,10 +59,10 @@ const translateMouse = computed(() => {
 
               <VBtn
                 :size="$vuetify.display.smAndUp ? 'large' : 'default' "
-                :to="{ name: 'front-pages-landing-page', hash: `#pricing-plan` }"
+                :to="{ path: '/', hash: '#pricing' }"
                 :active="false"
               >
-                Start 30-Day Free Trial
+                {{ $t('landing.hero.cta') }}
               </VBtn>
             </div>
           </div>

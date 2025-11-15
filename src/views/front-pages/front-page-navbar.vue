@@ -107,13 +107,13 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
       <div>
         <div class="d-flex flex-column gap-y-4 pa-4">
           <RouterLink
-            v-for="(item, index) in ['Home', 'Features', 'Pricing', 'Reviews', 'FAQ', 'Contact']"
+            v-for="(item, index) in ['home', 'features', 'pricing', 'reviews', 'faq', 'contact']"
             :key="index"
-            :to="{ path: '/', hash: `#${item.toLowerCase().replace(' ', '-')}` }"
+            :to="{ path: '/', hash: `#${item}` }"
             class="nav-link font-weight-medium"
-            :class="[props.activeId?.toLocaleLowerCase().replace('-', ' ') === item.toLocaleLowerCase() ? 'active-link' : '']"
+            :class="[props.activeId === item ? 'active-link' : '']"
           >
-            {{ item }}
+            {{ $t(`landing.nav.${item}`) }}
           </RouterLink>
         </div>
       </div>
@@ -168,13 +168,13 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
           <!-- landing page sections -->
           <div class="text-base align-center d-none d-md-flex">
             <RouterLink
-              v-for="(item, index) in ['Home', 'Features', 'Pricing', 'Reviews', 'FAQ', 'Contact']"
+              v-for="(item, index) in ['home', 'features', 'pricing', 'reviews', 'faq', 'contact']"
               :key="index"
-              :to="{ path: '/', hash: `#${item.toLowerCase().replace(' ', '-')}` }"
+              :to="{ path: '/', hash: `#${item}` }"
               class="nav-link font-weight-medium py-2 px-2 px-lg-4"
-              :class="[props.activeId?.toLocaleLowerCase().replace('-', ' ') === item.toLocaleLowerCase() ? 'active-link' : '']"
+              :class="[props.activeId === item ? 'active-link' : '']"
             >
-              {{ item }}
+              {{ $t(`landing.nav.${item}`) }}
             </RouterLink>
           </div>
         </div>

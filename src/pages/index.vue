@@ -12,6 +12,7 @@ import PricingPlans from '@/views/front-pages/landing-page/pricing-plans.vue'
 import ProductStats from '@/views/front-pages/landing-page/product-stats.vue'
 import { useConfigStore } from '@core/stores/config'
 import { useSEO } from '@/composables/useSEO'
+import { useAutoLanguageDetection } from '@/composables/useAutoLanguageDetection'
 
 const store = useConfigStore()
 
@@ -25,6 +26,9 @@ definePage({
 
 // Initialize SEO with dynamic translations
 useSEO()
+
+// Initialize auto language detection
+useAutoLanguageDetection()
 
 const activeSectionId = ref()
 
