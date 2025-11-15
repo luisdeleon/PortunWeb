@@ -394,6 +394,13 @@
       "title": "Portun - Controle de Acesso QR Inteligente para Condomínios Residenciais",
       "description": "Proteja seu condomínio com controle de acesso por código QR. Abertura automática de portões, acompanhamento de pagamentos e gestão de visitantes para propriedades residenciais nos EUA e América Latina.",
       "keywords": "controle de acesso QR, segurança residencial, automação de portões, gestão de visitantes, administração de condomínios, gestão de propriedades, acesso condominial, América Latina, México, Brasil"
+    },
+    "cookies": {
+      "title": "Valorizamos sua privacidade",
+      "description": "Usamos cookies para melhorar sua experiência de navegação, analisar o tráfego do site e personalizar o conteúdo. Ao clicar em 'Aceitar', você consente com o uso de cookies.",
+      "accept": "Aceitar Todos",
+      "decline": "Recusar",
+      "learnMore": "Saiba mais"
     }
   },
   "$vuetify": {

@@ -399,6 +399,13 @@
       "title": "Portun - Smart QR Access Control for Residential Communities",
       "description": "Secure your community with QR code access control. Automated gate opening, payment tracking, and visitor management for residential properties in US and Latin America.",
       "keywords": "QR access control, residential security, gate automation, visitor management, HOA management, property management, community access, Latin America, Mexico, Brazil"
+    },
+    "cookies": {
+      "title": "We value your privacy",
+      "description": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking 'Accept', you consent to our use of cookies.",
+      "accept": "Accept All",
+      "decline": "Decline",
+      "learnMore": "Learn more"
     }
   },
   "$vuetify": {

@@ -10,6 +10,7 @@ import HeroSection from '@/views/front-pages/landing-page/hero-section.vue'
 import OurTeam from '@/views/front-pages/landing-page/our-team.vue'
 import PricingPlans from '@/views/front-pages/landing-page/pricing-plans.vue'
 import ProductStats from '@/views/front-pages/landing-page/product-stats.vue'
+import CookieConsent from '@/components/CookieConsent.vue'
 import { useConfigStore } from '@core/stores/config'
 import { useSEO } from '@/composables/useSEO'
 import { useAutoLanguageDetection } from '@/composables/useAutoLanguageDetection'
@@ -89,6 +90,9 @@ useIntersectionObserver(
 
     <!-- 👉 Footer -->
     <Footer />
+
+    <!-- 👉 Cookie Consent Banner -->
+    <CookieConsent />
   </div>
 </template>
 
