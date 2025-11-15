@@ -191,7 +191,7 @@
     "stats": {
       "propertiesSecured": "Propiedades Aseguradas",
       "activeResidents": "Residentes Activos",
-      "qrCodesDaily": "Códigos QR Generados Diariamente",
+      "qrCodesDaily": "Códigos QR Usados Diariamente",
       "avgEntryTime": "Tiempo Promedio de Entrada"
     },
     "features": {
@@ -275,7 +275,7 @@
     "stats": {
       "propertiesSecured": "Propiedades Aseguradas",
       "activeResidents": "Residentes Activos",
-      "qrCodesDaily": "Códigos QR Generados Diariamente",
+      "qrCodesDaily": "Códigos QR Usados Diariamente",
       "avgEntryTime": "Tiempo Promedio de Entrada"
     },
     "reviews": {
