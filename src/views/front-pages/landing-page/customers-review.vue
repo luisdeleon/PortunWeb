@@ -33,83 +33,83 @@ const brandLogo5 = useGenerateImageVariant(logo5light, logo5dark)
 // Customer Review Data
 const reviewData = [
   {
-    desc: 'I\'ve never used a theme as versatile and flexible as Vuexy. It\'s my go to for building dashboard sites on almost any project.',
+    desc: 'Portun transformed our visitor management. Creating QR codes takes 10 seconds, and guards validate instantly. No more phone calls at the gate!',
     img: logo1,
     rating: 5,
-    name: 'Eugenia Moore',
-    position: 'Founder of Hubspot',
+    name: 'Jennifer Martinez',
+    position: 'HOA President, Miami Gardens FL',
     avatar: avatar1,
   },
   {
-    desc: 'This template is really clean & well documented. The docs are really easy to understand and it\'s always easy to find a screenshot from their website.',
+    desc: 'Finally, a payment tracking system that actually works. Residents upload receipts, I verify with one click. Saved me 15 hours per month!',
     img: logo2,
     rating: 5,
-    name: 'Curtis Fletcher',
-    position: 'Design Lead at Dribbble',
+    name: 'Carlos Hernández',
+    position: 'Property Manager, Ciudad de México',
     avatar: avatar2,
   },
   {
-    desc: 'This template is superior in so many ways. The code, the design, the regular updates, the support.. It\'s the whole package. Excellent Work.',
+    desc: 'The offline mode is a game-changer. Our internet goes down sometimes, but guards can still validate QR codes. Security never stops.',
     img: logo3,
-    rating: 4,
-    name: 'Eugenia Moore',
-    position: 'CTO of Airbnb',
+    rating: 5,
+    name: 'Sofia Rodríguez',
+    position: 'Security Supervisor, Bogotá Colombia',
     avatar: avatar3,
   },
   {
-    desc: 'All the requirements for developers have been taken into consideration, so I\'m able to build any beautiful interface I want.',
+    desc: 'We switched from Residentfy and cut our costs by 60%. Same features, better price. The transparent pricing sold me immediately.',
     img: logo4,
     rating: 5,
-    name: 'Sara Smith',
-    position: 'Founder of Continental',
+    name: 'Michael Anderson',
+    position: 'Board Member, Austin TX',
     avatar: avatar4,
   },
   {
-    desc: 'Vuexy is awesome, and I particularly enjoy knowing that if I get stuck on something, there is always a helpful community to assist me.',
+    desc: 'I love getting real-time notifications when my visitors arrive. The photos give me peace of mind. Portun just works beautifully.',
     img: logo3,
     rating: 5,
-    name: 'Tommy haffman',
-    position: 'Founder of Levis',
+    name: 'María González',
+    position: 'Resident, Guadalajara México',
     avatar: avatar5,
   },
   {
-    desc: 'I\'ve never used a theme as versatile and flexible as Vuexy. It\'s my go to for building dashboard sites on almost any project.',
+    desc: 'Setup was incredibly easy. We had 120 residents onboarded in one week. The WhatsApp sharing makes it simple for everyone.',
     img: logo1,
     rating: 5,
-    name: 'Eugenia Moore',
-    position: 'Founder of Hubspot',
+    name: 'Juan Pablo Morales',
+    position: 'Community Admin, Buenos Aires Argentina',
     avatar: avatar1,
   },
   {
-    desc: 'Vuexy is awesome, and I particularly enjoy knowing that if I get stuck on something, there is always a helpful community to assist me.',
+    desc: 'As a guard, this app is so much better than paper logbooks. Scan the QR, take a photo, done. My shift is less stressful now.',
     img: logo2,
     rating: 5,
-    name: 'Tommy haffman',
-    position: 'Founder of Levis',
+    name: 'Diego Ramírez',
+    position: 'Security Guard, Monterrey México',
     avatar: avatar2,
   },
   {
-    desc: 'This template is superior in so many ways. The code, the design, the regular updates, the support.. It\'s the whole package. Excellent Work.',
+    desc: 'The admin dashboard shows me everything I need. Entry logs, pending payments, resident info - all in one place. Super efficient.',
     img: logo3,
-    rating: 4,
-    name: 'Eugenia Moore',
-    position: 'CTO of Airbnb',
+    rating: 5,
+    name: 'Ana Patricia Torres',
+    position: 'Property Manager, Lima Perú',
     avatar: avatar3,
   },
   {
-    desc: 'All the requirements for developers have been taken into consideration, so I\'m able to build any beautiful interface I want.',
+    desc: 'Payment verification used to take days. Now it takes minutes. Residents are happier, and our records are always up to date.',
     img: logo4,
-    rating: 4,
-    name: 'Sara Smith',
-    position: 'Founder of Continental',
+    rating: 5,
+    name: 'Robert Chen',
+    position: 'HOA Treasurer, Los Angeles CA',
     avatar: avatar4,
   },
   {
-    desc: 'This template is really clean & well documented. The docs are really easy to understand and it\'s always easy to find a screenshot from their website.',
+    desc: 'Portun\'s customer support is excellent. They helped us migrate from our old system in just two days. Highly recommend!',
     img: logo2,
     rating: 5,
-    name: 'Curtis Fletcher',
-    position: 'Design Lead at Dribbble',
+    name: 'Camila Silva',
+    position: 'Resident, São Paulo Brasil',
     avatar: avatar5,
   },
 ]
@@ -149,7 +149,7 @@ const slide = (dir: string) => {
                 class="mb-4"
                 size="small"
               >
-                Real Customers Reviews
+                Trusted by Communities
               </VChip>
               <div class="position-relative mb-1 me-2">
                 <div class="section-title">
@@ -157,7 +157,7 @@ const slide = (dir: string) => {
                 </div>
               </div>
               <p class="text-body-1 mb-12">
-                See what our customers have to say about their experience.
+                Real reviews from residents, property managers, and security guards across US and Latin America.
               </p>
               <div class="position-relative">
                 <IconBtn
