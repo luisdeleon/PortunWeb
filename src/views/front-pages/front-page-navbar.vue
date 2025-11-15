@@ -337,14 +337,14 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
 
           <VBtn
             v-if="$vuetify.display.lgAndUp"
-            prepend-icon="tabler-shopping-cart"
+            prepend-icon="tabler-login"
             variant="elevated"
             color="primary"
-            href="https://1.envato.market/vuexy_admin"
+            href="https://cmd.portun.app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Purchase Now
+            CMD Portal
           </VBtn>
 
           <VBtn
@@ -353,11 +353,11 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
             icon
             variant="elevated"
             color="primary"
-            href="https://1.envato.market/vuexy_admin"
+            href="https://cmd.portun.app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <VIcon icon="tabler-shopping-cart" />
+            <VIcon icon="tabler-login" />
           </VBtn>
         </div>
       </VAppBar>
