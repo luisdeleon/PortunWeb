@@ -346,11 +346,11 @@
       "planLabel": "Which plan interests you?",
       "messageLabel": "Message",
       "namePlaceholder": "John Doe",
-      "emailPlaceholder": "johndoe@gmail.com",
+      "emailPlaceholder": "johndoe{'@'}gmail.com",
       "messagePlaceholder": "Write a message",
       "submitButton": "Send Inquiry",
       "successTitle": "Message received! We're on it!",
-      "successMessage": "Your inquiry is safely in our inbox. We'll get back to you faster than a resident can scan their QR code - expect to hear from us within 24 hours at hello@portun.app",
+      "successMessage": "Your inquiry is safely in our inbox. We'll get back to you faster than a resident can scan their QR code - expect to hear from us within 24 hours at hello{'@'}portun.app",
       "validation": {
         "nameRequired": "Full name is required",
         "nameMinLength": "Full name must be at least 3 characters",
@@ -369,7 +369,7 @@
     "footer": {
       "slogan": "Protect your community with intelligent QR access control. Grant instant entry to visitors, manage payments effortlessly, and experience total peace of mind knowing your property is secure and your residents are safe.",
       "newsletter": "Subscribe to newsletter",
-      "newsletterPlaceholder": "john@email.com",
+      "newsletterPlaceholder": "john{'@'}email.com",
       "subscribe": "Subscribe",
       "downloadApp": "Download our app",
       "downloadOn": "Download on",

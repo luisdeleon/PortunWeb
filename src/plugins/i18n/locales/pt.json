@@ -341,11 +341,11 @@
       "planLabel": "Qual plano te interessa?",
       "messageLabel": "Mensagem",
       "namePlaceholder": "João Silva",
-      "emailPlaceholder": "joao@gmail.com",
+      "emailPlaceholder": "joao{'@'}gmail.com",
       "messagePlaceholder": "Escreva uma mensagem",
       "submitButton": "Enviar Consulta",
       "successTitle": "Mensagem recebida! Já estamos na missão!",
-      "successMessage": "Sua consulta está segura na nossa caixa de entrada. Responderemos mais rápido do que um morador escaneia um código QR - esperamos ouvi-lo em até 24 horas em hello@portun.app",
+      "successMessage": "Sua consulta está segura na nossa caixa de entrada. Responderemos mais rápido do que um morador escaneia um código QR - esperamos ouvi-lo em até 24 horas em hello{'@'}portun.app",
       "validation": {
         "nameRequired": "O nome completo é obrigatório",
         "nameMinLength": "O nome completo deve ter pelo menos 3 caracteres",
@@ -364,7 +364,7 @@
     "footer": {
       "slogan": "Proteja seu condomínio com controle de acesso inteligente por código QR. Conceda entrada instantânea a visitantes, gerencie pagamentos sem esforço e experimente tranquilidade total sabendo que sua propriedade está segura e seus moradores estão protegidos.",
       "newsletter": "Assine a newsletter",
-      "newsletterPlaceholder": "joao@email.com",
+      "newsletterPlaceholder": "joao{'@'}email.com",
       "subscribe": "Inscrever-se",
       "downloadApp": "Baixe nosso app",
       "downloadOn": "Disponível na",
