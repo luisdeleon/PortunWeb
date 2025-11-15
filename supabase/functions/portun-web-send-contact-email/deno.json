@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.177.0/",
+    "@aws-sdk/client-ses": "https://esm.sh/@aws-sdk/client-ses@3.398.0"
+  }
+}

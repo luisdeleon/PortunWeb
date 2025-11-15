@@ -4,6 +4,134 @@ import ConnectImg from '@images/front-pages/landing-page/contact-customer-servic
 const name = ref('')
 const email = ref('')
 const message = ref('')
+const pricingPlan = ref('')
+const isLoading = ref(false)
+const submitted = ref(false)
+
+// Validation errors
+const errors = ref({
+  name: '',
+  email: '',
+  pricingPlan: '',
+  message: '',
+})
+
+const pricingPlans = [
+  { title: 'Starter', value: 'Starter' },
+  { title: 'Professional', value: 'Professional' },
+  { title: 'Enterprise', value: 'Enterprise' },
+]
+
+// Load selected plan from pricing section
+onMounted(() => {
+  const selectedPlan = sessionStorage.getItem('selectedPricingPlan')
+  if (selectedPlan) {
+    pricingPlan.value = selectedPlan
+    sessionStorage.removeItem('selectedPricingPlan')
+  }
+})
+
+// Validation functions
+const validateName = () => {
+  if (!name.value.trim()) {
+    errors.value.name = 'Full name is required'
+    return false
+  }
+  if (name.value.trim().length < 3) {
+    errors.value.name = 'Full name must be at least 3 characters'
+    return false
+  }
+  errors.value.name = ''
+  return true
+}
+
+const validateEmail = () => {
+  if (!email.value.trim()) {
+    errors.value.email = 'Email address is required'
+    return false
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email.value)) {
+    errors.value.email = 'Please enter a valid email address'
+    return false
+  }
+  errors.value.email = ''
+  return true
+}
+
+const validatePricingPlan = () => {
+  if (!pricingPlan.value) {
+    errors.value.pricingPlan = 'Please select a community size'
+    return false
+  }
+  errors.value.pricingPlan = ''
+  return true
+}
+
+const validateMessage = () => {
+  if (!message.value.trim()) {
+    errors.value.message = 'Message cannot be blank'
+    return false
+  }
+  errors.value.message = ''
+  return true
+}
+
+const validateForm = () => {
+  const isNameValid = validateName()
+  const isEmailValid = validateEmail()
+  const isPlanValid = validatePricingPlan()
+  const isMessageValid = validateMessage()
+
+  return isNameValid && isEmailValid && isPlanValid && isMessageValid
+}
+
+const submitForm = async () => {
+  if (!validateForm()) {
+    return
+  }
+
+  isLoading.value = true
+  try {
+    // Call Supabase Edge Function to send email via AWS SES
+    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+    const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+    const response = await fetch(`${supabaseUrl}/functions/v1/portun-web-send-contact-email`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${supabaseAnonKey}`,
+      },
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        message: message.value,
+        pricingPlan: pricingPlan.value,
+      }),
+    })
+
+    if (response.ok) {
+      submitted.value = true
+      // Reset form
+      name.value = ''
+      email.value = ''
+      message.value = ''
+      pricingPlan.value = ''
+      errors.value = { name: '', email: '', pricingPlan: '', message: '' }
+
+      // Clear success message after 5 seconds
+      setTimeout(() => {
+        submitted.value = false
+      }, 5000)
+    } else {
+      console.error('Failed to send email')
+    }
+  } catch (error) {
+    console.error('Error sending email:', error)
+  } finally {
+    isLoading.value = false
+  }
+}
 </script>
 
 <template>
@@ -101,9 +229,30 @@ const message = ref('')
 
               <VCardText>
                 <p class="mb-6">
-                  If you would like to discuss anything related to payment, account, licensing, partnerships, or have pre-sales questions, you’re at the right place.
+                  If you would like to discuss anything related to payment, account, licensing, partnerships, or have pre-sales questions, you're at the right place.
                 </p>
-                <VForm @submit.prevent="() => {}">
+
+                <VAlert
+                  v-if="submitted"
+                  type="success"
+                  class="mb-6"
+                  closable
+                  variant="tonal"
+                >
+                  <div class="d-flex align-center gap-2">
+                    <VIcon icon="tabler-circle-check" size="24" />
+                    <div>
+                      <div class="text-h6 mb-1">
+                        Message received! We're on it!
+                      </div>
+                      <div class="text-body-2">
+                        Your inquiry is safely in our inbox. We'll get back to you faster than a resident can scan their QR code - expect to hear from us within 24 hours at hello@portun.app
+                      </div>
+                    </div>
+                  </div>
+                </VAlert>
+
+                <VForm @submit.prevent="submitForm">
                   <VRow>
                     <VCol
                       cols="12"
@@ -113,6 +262,9 @@ const message = ref('')
                         v-model="name"
                         placeholder="John Doe"
                         label="Full Name"
+                        :error-messages="errors.name"
+                        @blur="validateName"
+                        @input="errors.name = ''"
                       />
                     </VCol>
 
@@ -124,6 +276,26 @@ const message = ref('')
                         v-model="email"
                         placeholder="johndoe@gmail.com"
                         label="Email address"
+                        type="email"
+                        :error-messages="errors.email"
+                        @blur="validateEmail"
+                        @input="errors.email = ''"
+                      />
+                    </VCol>
+
+                    <VCol
+                      cols="12"
+                      md="6"
+                    >
+                      <AppSelect
+                        v-model="pricingPlan"
+                        label="Which plan interests you?"
+                        :items="pricingPlans"
+                        item-title="title"
+                        item-value="value"
+                        :error-messages="errors.pricingPlan"
+                        @blur="validatePricingPlan"
+                        @update:model-value="errors.pricingPlan = ''"
                       />
                     </VCol>
 
@@ -133,11 +305,18 @@ const message = ref('')
                         placeholder="Write a message"
                         rows="3"
                         label="Message"
+                        :error-messages="errors.message"
+                        @blur="validateMessage"
+                        @input="errors.message = ''"
                       />
                     </VCol>
 
                     <VCol>
-                      <VBtn type="submit">
+                      <VBtn
+                        type="submit"
+                        :loading="isLoading"
+                        :disabled="isLoading"
+                      >
                         Send Inquiry
                       </VBtn>
                     </VCol>
