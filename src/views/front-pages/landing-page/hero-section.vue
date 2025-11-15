@@ -74,28 +74,23 @@ const translateMouse = computed(() => {
       <div class="position-relative">
         <div class="blank-section" />
         <div class="hero-animation-img position-absolute">
-          <RouterLink
-            :to="{ name: 'dashboards-ecommerce' }"
-            target="_blank"
+          <div
+            class="hero-dashboard-img position-relative"
+            :style="translateMouse"
+            data-allow-mismatch
           >
-            <div
-              class="hero-dashboard-img position-relative"
-              :style="translateMouse"
-              data-allow-mismatch
+            <img
+              :src="heroDashboardImg"
+              alt="Hero Dashboard"
+              class="animation-img"
             >
-              <img
-                :src="heroDashboardImg"
-                alt="Hero Dashboard"
-                class="animation-img"
-              >
-              <img
-                :src="heroElementsImg"
-                alt="hero elements"
-                class="hero-elements-img animation-img position-absolute"
-                style="transform: translateZ(1rem);"
-              >
-            </div>
-          </RouterLink>
+            <img
+              :src="heroElementsImg"
+              alt="hero elements"
+              class="hero-elements-img animation-img position-absolute"
+              style="transform: translateZ(1rem);"
+            >
+          </div>
         </div>
       </div>
     </VContainer>
