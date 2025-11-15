@@ -139,7 +139,7 @@ const pricingPlans = [
                   block
                   :variant="plan.current ? 'elevated' : 'tonal'"
                   class="mt-8"
-                  :to="{ name: 'front-pages-payment' }"
+                  :to="{ path: '/', hash: '#contact' }"
                 >
                   {{ $t('landing.pricing.cta') }}
                 </VBtn>
