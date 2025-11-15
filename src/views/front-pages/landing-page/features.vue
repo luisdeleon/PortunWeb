@@ -1,18 +1,11 @@
 <script setup lang="ts">
-import check from '@images/svg/Check.svg'
-import keyboard from '@images/svg/keyboard.svg'
-import laptop from '@images/svg/laptop.svg'
-import paper from '@images/svg/paper-send.svg'
-import rocket from '@images/svg/rocket.svg'
-import user from '@images/svg/user.svg'
-
 const featuresData = [
-  { title: 'Quality Code', desc: 'Code structure that all developers will easily understand and fall in love with.', icon: laptop },
-  { title: 'Continuous Updates', desc: 'Free updates for the next 12 months, including new demos and features.', icon: rocket },
-  { title: 'Starter Kit', desc: 'Start your project quickly without having to remove unnecessary features.', icon: paper },
-  { title: 'API Ready', desc: 'Just change the endpoint and see your own data loaded within seconds.', icon: check },
-  { title: 'Excellent Support', desc: 'An easy-to-follow doc with lots of references and code examples.', icon: user },
-  { title: 'Well Documented', desc: 'An easy-to-follow doc with lots of references and code examples.', icon: keyboard },
+  { title: 'QR Access Control', desc: 'Create visitor QR codes in seconds. Guards validate instantly at the gate.', icon: 'tabler-qrcode' },
+  { title: 'Payment Tracking', desc: 'Upload payment receipts. Admins verify with one click. Full payment history.', icon: 'tabler-receipt' },
+  { title: 'Real-time Notifications', desc: 'Know the moment your guest arrives. Complete audit trail with photos.', icon: 'tabler-bell' },
+  { title: 'Offline Mode', desc: 'Guards can validate QR codes even without internet. Syncs when online.', icon: 'tabler-cloud-off' },
+  { title: 'Admin Dashboard', desc: 'Manage residents, verify payments, and review entry logs from one place.', icon: 'tabler-dashboard' },
+  { title: 'Secure & Compliant', desc: 'Enterprise-grade security with biometric auth and encrypted data.', icon: 'tabler-shield-check' },
 ]
 </script>
 
@@ -26,7 +19,7 @@ const featuresData = [
           class="mb-4"
           size="small"
         >
-          Useful Features
+          Key Features
         </VChip>
         <div class="d-flex text-h4 mb-1 align-center flex-wrap justify-center">
           <div class="position-relative me-2">
@@ -34,10 +27,10 @@ const featuresData = [
               Everything you need
             </div>
           </div>
-          to start your next project
+          for smart community access
         </div>
         <p class="text-body-1 mb-0">
-          Not just a set of tools, the package includes ready-to-deploy conceptual application.
+          Powerful visitor management and payment tracking designed for residential communities.
         </p>
       </div>
       <VRow>

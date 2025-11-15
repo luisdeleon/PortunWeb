@@ -8,59 +8,62 @@ const annualMonthlyPlanPriceToggler = ref(true)
 
 const pricingPlans = [
   {
-    title: 'Basic',
+    title: 'Small',
+    subtitle: '10-50 units',
     image: paperPlane,
-    monthlyPrice: 19,
-    yearlyPrice: 168,
+    monthlyPrice: 3,
+    yearlyPrice: 2.70,
     features: [
-      'Timeline',
-      'Basic search',
-      'Live chat widget',
-      'Email marketing',
-      'Custom Forms',
-      'Traffic analytics',
-      'Basic Support',
+      'QR Access Control',
+      'Payment Tracking',
+      'Real-time Notifications',
+      'Entry Logs with Photos',
+      'Admin Dashboard',
+      'Email Support',
+      '30-Day Free Trial',
     ],
-    supportType: 'Basic',
-    supportMedium: 'Only Email',
-    respondTime: 'AVG. Time: 24h',
+    supportType: 'Email',
+    supportMedium: 'Email Support',
+    respondTime: 'Response: 24h',
     current: false,
   },
   {
-    title: 'Favourite',
+    title: 'Medium',
+    subtitle: '51-200 units',
     image: plane,
-    monthlyPrice: 29,
-    yearlyPrice: 264,
+    monthlyPrice: 2.50,
+    yearlyPrice: 2.25,
     features: [
-      'Everything in basic',
-      'Timeline with database',
-      'Advanced search',
-      'Marketing automation',
-      'Advanced chatbot',
-      'Campaign management',
-      'Collaboration tools',
+      'Everything in Small',
+      'Offline Mode',
+      'WhatsApp Integration',
+      'CSV Bulk Import',
+      'Payment Reports Export',
+      'Priority Email Support',
+      'Dedicated Onboarding',
     ],
-    supportType: 'Standard',
+    supportType: 'Priority',
     supportMedium: 'Email & Chat',
-    respondTime: 'AVG. Time: 6h',
+    respondTime: 'Response: 6h',
     current: true,
   },
   {
-    title: 'Standard',
+    title: 'Large',
+    subtitle: '201+ units',
     image: shuttleRocket,
-    monthlyPrice: 49,
-    yearlyPrice: 444,
+    monthlyPrice: 2,
+    yearlyPrice: 1.80,
     features: [
-      'Campaign management',
-      'Timeline with database',
-      'Fuzzy search',
-      'A/B testing sanbox',
-      'Custom permissions',
-      'Social media automation',
-      'Sales automation tools',
+      'Everything in Medium',
+      'Custom Branding',
+      'API Access',
+      'Advanced Analytics',
+      'Multi-Community Management',
+      'Phone & Video Support',
+      'Custom Integrations',
     ],
-    supportType: 'Exclusive',
-    supportMedium: 'Email, Chat & Google Meet',
+    supportType: 'Premium',
+    supportMedium: 'Email, Chat & Phone',
     respondTime: 'Live Support',
     current: false,
   },
@@ -79,22 +82,22 @@ const pricingPlans = [
             class="mb-4"
             size="small"
           >
-            Pricing Plans
+            Transparent Pricing
           </VChip>
           <h4 class="d-flex align-center text-h4 mb-1 flex-wrap justify-center">
             <div class="position-relative me-2">
               <div class="section-title">
-                Tailored design plans
+                Simple pricing
               </div>
             </div>
-            designed for you
+            for communities of all sizes
           </h4>
           <div class="text-center text-body-1">
             <p class="mb-0">
-              All plans include 40+ advanced tools and features to boost your product.
+              Pay only for what you need. All plans include QR access control and payment tracking.
             </p>
             <p class="mb-0">
-              Choose the best plan to fit your needs.
+              Start with a 30-day free trial. No credit card required.
             </p>
           </div>
         </div>
@@ -104,7 +107,7 @@ const pricingPlans = [
             for="pricing-plan-toggle"
             class="me-3"
           >
-            Pay Monthly
+            Monthly Billing
           </VLabel>
           <div class="position-relative">
             <VSwitch
@@ -113,7 +116,7 @@ const pricingPlans = [
             >
               <template #label>
                 <div class="text-body-1">
-                  Pay Annually
+                  Annual Billing
                 </div>
               </template>
             </VSwitch>
@@ -125,7 +128,7 @@ const pricingPlans = [
                 height="42"
               />
               <div class="text-no-wrap text-body-1 font-weight-medium">
-                Save 25%
+                Save 10%
               </div>
             </div>
           </div>

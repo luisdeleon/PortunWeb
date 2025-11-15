@@ -41,15 +41,15 @@ const translateMouse = computed(() => {
         <VContainer>
           <div class="hero-text-box text-center px-6">
             <h1 class="hero-title mb-4">
-              One dashboard to manage all your business
+              Smart Access Control for Modern Communities
             </h1>
             <h6 class="mb-6 text-h6">
-              Production-ready & easy to use Admin Template
-              for Reliability and Customizability.
+              QR-based visitor management and HOA payment tracking
+              at 1/3 the cost of competitors.
             </h6>
             <div class="position-relative">
               <h6 class="position-absolute hero-btn-item d-md-flex d-none text-h6 text-medium-emphasis">
-                Join Community
+                Trusted by Communities
                 <VImg
                   :src="joinArrow"
                   class="flip-in-rtl"
@@ -63,7 +63,7 @@ const translateMouse = computed(() => {
                 :to="{ name: 'front-pages-landing-page', hash: `#pricing-plan` }"
                 :active="false"
               >
-                Get early Access
+                Start Free Trial
               </VBtn>
             </div>
           </div>
