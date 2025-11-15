@@ -2,17 +2,17 @@
 const pricingPlans = [
   {
     title: 'Starter',
-    subtitle: '10-50 units',
+    subtitle: '10-100 units',
     icon: 'tabler-building',
     iconColor: 'primary',
     features: [
       'QR Access Control',
       'Payment Tracking',
-      'Real-time Notifications',
-      'Entry Logs with Photos',
       'Admin Dashboard',
-      'Email Support',
+      'Entry Logs with Photos',
+      'Real-time Notifications',
       '30-Day Free Trial',
+      'Email Support',
     ],
     supportType: 'Email',
     supportMedium: 'Email Support',
@@ -21,17 +21,17 @@ const pricingPlans = [
   },
   {
     title: 'Professional',
-    subtitle: '51-200 units',
+    subtitle: '101-1000 units',
     icon: 'tabler-building-community',
     iconColor: 'success',
     features: [
       'Everything in Starter',
-      'Offline Mode',
-      'WhatsApp Integration',
+      'Multi-Community Management',
       'CSV Bulk Import',
       'Payment Reports Export',
-      'Priority Email Support',
+      'Phone & Video Support',
       'Dedicated Onboarding',
+      'Priority Email Support',
     ],
     supportType: 'Priority',
     supportMedium: 'Email & Chat',
@@ -40,16 +40,16 @@ const pricingPlans = [
   },
   {
     title: 'Enterprise',
-    subtitle: '201+ units',
+    subtitle: '1001+ units',
     icon: 'tabler-building-skyscraper',
     iconColor: 'warning',
     features: [
       'Everything in Professional',
+      'Offline Mode',
+      'WhatsApp Integration',
+      'Advanced Analytics',
       'Custom Branding',
       'API Access',
-      'Advanced Analytics',
-      'Multi-Community Management',
-      'Phone & Video Support',
       'Custom Integrations',
     ],
     supportType: 'Premium',
@@ -82,7 +82,7 @@ const pricingPlans = [
             </div>
             for communities of all sizes
           </h4>
-          <div class="text-center text-body-1">
+          <div class="text-center text-body-1 mb-8">
             <p class="mb-0">
               Pay only for what you need. All plans include QR access control and payment tracking.
             </p>

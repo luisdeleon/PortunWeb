@@ -197,16 +197,7 @@ const demoList = [
       <VContainer>
         <div class="d-flex justify-space-between flex-wrap gap-y-5 align-center">
           <div class="text-body-1 text-white-variant text-wrap me-4">
-            &copy;
-
-            {{ new Date().getFullYear() }}
-            <a
-              href="https://pixinvent.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="font-weight-bold ms-1 text-white"
-            >Pixinvent</a>,
-            Made With ❤️ for a better web.
+            Copyright &copy; {{ new Date().getFullYear() }} Webzy LLC. All rights reserved.
           </div>
 
           <div class="d-flex gap-x-6">

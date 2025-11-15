@@ -150,13 +150,13 @@ const submitForm = async () => {
         <h4 class="d-flex align-center text-h4 mb-1 flex-wrap justify-center">
           <div class="position-relative me-2">
             <div class="section-title">
-              let's work
+              Ready to secure
             </div>
           </div>
-          together
+          your community?
         </h4>
         <p class="text-body-1 mb-0">
-          Any question or remark? just write us a message
+          Get a personalized demo or start your free trial today
         </p>
       </div>
 
@@ -223,13 +223,13 @@ const submitForm = async () => {
             <VCard>
               <VCardItem class="pb-0">
                 <h4 class="text-h4 mb-1">
-                  Send a message
+                  Get Started Today
                 </h4>
               </VCardItem>
 
               <VCardText>
                 <p class="mb-6">
-                  If you would like to discuss anything related to payment, account, licensing, partnerships, or have pre-sales questions, you're at the right place.
+                  Tell us about your community and we'll help you choose the perfect plan. Whether you need a demo, have questions about pricing, or want to discuss custom requirements, our team is here to help.
                 </p>
 
                 <VAlert

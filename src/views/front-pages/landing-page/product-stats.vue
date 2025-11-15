@@ -1,14 +1,9 @@
 <script setup lang="ts">
-import check from '@images/svg/Check.svg'
-import diamond from '@images/svg/Diamond.svg'
-import laptop from '@images/svg/laptop.svg'
-import user from '@images/svg/user.svg'
-
 const statData = [
-  { title: 'Support Tickets Resolved', value: '7.1k+', icon: laptop, color: 'primary' },
-  { title: 'Join creatives community', value: '50k+', icon: user, color: 'success' },
-  { title: 'Highly Rated Products', value: '4.8/5', icon: diamond, color: 'info' },
-  { title: 'Money Back Guarantee', value: '100%', icon: check, color: 'warning' },
+  { title: 'Properties Secured', value: '500+', icon: 'tabler-building-community', color: 'primary' },
+  { title: 'Active Residents', value: '25k+', icon: 'tabler-users-group', color: 'success' },
+  { title: 'QR Codes Generated Daily', value: '10k+', icon: 'tabler-qrcode', color: 'info' },
+  { title: 'Average Entry Time', value: '<30s', icon: 'tabler-clock-hour-3', color: 'warning' },
 ]
 </script>
 

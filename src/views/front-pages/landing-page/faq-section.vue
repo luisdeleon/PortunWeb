@@ -3,24 +3,28 @@ import boyWithLogo from '@images/front-pages/landing-page/faq-boy-with-logos.png
 
 const faqData = [
   {
-    question: 'Do you charge for each upgrade?',
-    answer: 'Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears marshmallow pastry pie.',
+    question: 'How does the QR code access control system work?',
+    answer: 'Residents create QR codes through the mobile app for their visitors. When the visitor arrives at the gate, the security guard scans the QR code, which is validated in real-time against our secure database. The system verifies the code is active, not expired, and within entry limits. Entry is logged automatically with photos and timestamps, and residents receive instant notifications when their visitors arrive.',
   },
   {
-    question: 'Do I need to purchase a license for each website?',
-    answer: 'Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice cream halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot cake. Fruitcake chocolate chupa chups.',
+    question: 'What do visitors need to enter the community?',
+    answer: 'Visitors simply need to show the QR code they received via WhatsApp, SMS, or email to the security guard. No app installation is required on the visitor side - the QR code works as a simple image. Guards scan it in seconds, and visitors are on their way. This creates a fast, professional entry experience that takes less than 30 seconds from arrival to gate opening.',
   },
   {
-    question: 'What is regular license?',
-    answer: 'Regular license can be used for end products that do not charge users for access or service(access is free and there will be no monthly subscription fee). Single regular license can be used for single end product and end product can be used by you or your client. If you want to sell end product to multiple clients then you will need to purchase separate license for each client. The same rule applies if you want to use the same end product on multiple domains(unique setup). For more info on regular license you can check official description.',
+    question: 'How long does it take to get started?',
+    answer: 'You can be up and running in less than 24 hours. Start with our 30-day free trial - no credit card required. We provide dedicated onboarding support for Professional and Enterprise plans, including CSV bulk import of your existing resident data, guard training materials, and live setup assistance to ensure a smooth transition.',
   },
   {
-    question: 'What is extended license?',
-    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et aliquid quaerat possimus maxime! Mollitia reprehenderit neque repellat deleniti delectus architecto dolorum maxime, blanditiis earum ea, incidunt quam possimus cumque.',
+    question: 'Can residents track their HOA payments through the app?',
+    answer: 'Yes! Residents can upload payment receipts directly through the app with automatic photo compression. Admins receive notifications to verify payments, and residents can view their complete payment history with status indicators (verified, pending, or rejected). This eliminates manual tracking and reduces administrative overhead.',
   },
   {
-    question: 'Which license is applicable for SASS application?',
-    answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi molestias exercitationem ab cum nemo facere voluptates veritatis quia, eveniet veniam at et repudiandae mollitia ipsam quasi labore enim architecto non!',
+    question: 'Is my community data secure?',
+    answer: 'Absolutely. We use bank-level encryption for all data transmission and storage. QR codes are validated server-side to prevent tampering, all entry logs are encrypted, and payment receipts are hashed for integrity verification. Our infrastructure is hosted on enterprise-grade servers with automatic backups and 99.9% uptime guarantee.',
+  },
+  {
+    question: 'Can I manage multiple properties from one account?',
+    answer: 'Yes! Our Professional and Enterprise plans include multi-community management. You can switch between properties from a single dashboard, view consolidated reports across all communities, and manage residents, guards, and payments for each property independently while maintaining centralized oversight.',
   },
 ]
 </script>

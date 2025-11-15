@@ -11,10 +11,10 @@ import ctaDashborad from '@images/front-pages/landing-page/cta-dashboard.png'
       <div class="d-flex justify-center justify-md-space-between flex-wrap gap-6 gap-x-10 position-relative pt-12">
         <div class="align-self-center">
           <div class="banner-title text-primary mb-1">
-            Ready to Get Started?
+            Start Your 30-Day Free Trial
           </div>
           <h5 class="text-h5 text-medium-emphasis mb-8">
-            Start your project with a 14-day free trial
+            No credit card required. Full access to all Starter Features.
           </h5>
           <VBtn
             color="primary"
