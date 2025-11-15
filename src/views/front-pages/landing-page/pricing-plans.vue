@@ -1,18 +1,10 @@
 <script setup lang="ts">
-import paperPlane from '@images/front-pages/icons/paper-airplane.png'
-import plane from '@images/front-pages/icons/plane.png'
-import pricingPlanArrow from '@images/front-pages/icons/pricing-plans-arrow.png'
-import shuttleRocket from '@images/front-pages/icons/shuttle-rocket.png'
-
-const annualMonthlyPlanPriceToggler = ref(true)
-
 const pricingPlans = [
   {
     title: 'Starter',
     subtitle: '10-50 units',
-    image: paperPlane,
-    monthlyPrice: 3,
-    yearlyPrice: 2.70,
+    icon: 'tabler-building',
+    iconColor: 'primary',
     features: [
       'QR Access Control',
       'Payment Tracking',
@@ -30,9 +22,8 @@ const pricingPlans = [
   {
     title: 'Professional',
     subtitle: '51-200 units',
-    image: plane,
-    monthlyPrice: 2.50,
-    yearlyPrice: 2.25,
+    icon: 'tabler-building-community',
+    iconColor: 'success',
     features: [
       'Everything in Starter',
       'Offline Mode',
@@ -50,9 +41,8 @@ const pricingPlans = [
   {
     title: 'Enterprise',
     subtitle: '201+ units',
-    image: shuttleRocket,
-    monthlyPrice: 2,
-    yearlyPrice: 1.80,
+    icon: 'tabler-building-skyscraper',
+    iconColor: 'warning',
     features: [
       'Everything in Professional',
       'Custom Branding',
@@ -101,38 +91,6 @@ const pricingPlans = [
             </p>
           </div>
         </div>
-        <!-- 👉 Annual and monthly price toggler -->
-        <div class="d-flex align-center justify-center mx-auto mt-6 mb-16">
-          <VLabel
-            for="pricing-plan-toggle"
-            class="me-3"
-          >
-            Monthly Billing
-          </VLabel>
-          <div class="position-relative">
-            <VSwitch
-              id="pricing-plan-toggle"
-              v-model="annualMonthlyPlanPriceToggler"
-            >
-              <template #label>
-                <div class="text-body-1">
-                  Annual Billing
-                </div>
-              </template>
-            </VSwitch>
-            <div class="position-absolute pricing-plan-arrow d-md-flex d-none">
-              <VImg
-                :src="pricingPlanArrow"
-                class="flip-in-rtl"
-                width="60"
-                height="42"
-              />
-              <div class="text-no-wrap text-body-1 font-weight-medium">
-                Save 10%
-              </div>
-            </div>
-          </div>
-        </div>
         <VRow>
           <VCol
             v-for="(plan, index) in pricingPlans"
@@ -142,31 +100,24 @@ const pricingPlans = [
           >
             <VCard :style="plan.current ? 'border:2px solid rgb(var(--v-theme-primary))' : ''" class="h-100">
               <VCardText class="pa-8 pt-12">
-                <VImg
-                  :src="plan.image"
-                  width="88"
-                  height="88"
-                  class="mx-auto mb-8"
-                />
-                <h4 class="text-h4 text-center">
+                <div class="d-flex justify-center mb-8">
+                  <VAvatar
+                    :color="plan.iconColor"
+                    size="88"
+                    variant="tonal"
+                  >
+                    <VIcon
+                      :icon="plan.icon"
+                      size="48"
+                    />
+                  </VAvatar>
+                </div>
+                <h4 class="text-h4 text-center mb-2">
                   {{ plan.title }}
                 </h4>
-                <div class="d-flex justify-center mb-8 position-relative">
-                  <div class="d-flex align-end">
-                    <div class="pricing-title text-primary me-1">
-                      ${{ annualMonthlyPlanPriceToggler ? Math.floor(plan.yearlyPrice) / 12 : plan.monthlyPrice }}
-                    </div>
-                    <span class="text-disabled mb-2">/mo</span>
-                  </div>
-
-                  <!-- 👉 Annual Price -->
-                  <span
-                    v-show="annualMonthlyPlanPriceToggler"
-                    class="annual-price-text position-absolute text-sm text-disabled"
-                  >
-                    {{ plan.yearlyPrice === 0 ? 'free' : `USD ${plan.yearlyPrice}/Year` }}
-                  </span>
-                </div>
+                <p class="text-center text-body-1 text-medium-emphasis mb-8">
+                  {{ plan.subtitle }}
+                </p>
                 <VList class="card-list">
                   <VListItem
                     v-for="(item, i) in plan.features"
