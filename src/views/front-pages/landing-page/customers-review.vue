@@ -1,20 +1,5 @@
 <script setup lang="ts">
 import { register } from 'swiper/element/bundle'
-import { useGenerateImageVariant } from '@/@core/composable/useGenerateImageVariant'
-import logo1dark from '@images/front-pages/branding/logo-1-dark.png'
-import logo1light from '@images/front-pages/branding/logo-1-light.png'
-import logo1 from '@images/front-pages/branding/logo-1.png'
-import logo2dark from '@images/front-pages/branding/logo-2-dark.png'
-import logo2light from '@images/front-pages/branding/logo-2-light.png'
-import logo2 from '@images/front-pages/branding/logo-2.png'
-import logo3dark from '@images/front-pages/branding/logo-3-dark.png'
-import logo3light from '@images/front-pages/branding/logo-3-light.png'
-import logo3 from '@images/front-pages/branding/logo-3.png'
-import logo4dark from '@images/front-pages/branding/logo-4-dark.png'
-import logo4light from '@images/front-pages/branding/logo-4-light.png'
-import logo4 from '@images/front-pages/branding/logo-4.png'
-import logo5dark from '@images/front-pages/branding/logo-5-dark.png'
-import logo5light from '@images/front-pages/branding/logo-5-light.png'
 
 import avatar1 from '@images/avatars/avatar-1.png'
 import avatar2 from '@images/avatars/avatar-2.png'
@@ -24,17 +9,20 @@ import avatar5 from '@images/avatars/avatar-5.png'
 
 register()
 
-const brandLogo1 = useGenerateImageVariant(logo1light, logo1dark)
-const brandLogo2 = useGenerateImageVariant(logo2light, logo2dark)
-const brandLogo3 = useGenerateImageVariant(logo3light, logo3dark)
-const brandLogo4 = useGenerateImageVariant(logo4light, logo4dark)
-const brandLogo5 = useGenerateImageVariant(logo5light, logo5dark)
+// Community logos (text-based)
+const communityLogos = [
+  { name: 'Palm Gardens', location: 'Miami, FL' },
+  { name: 'Residencial Las Palmas', location: 'Ciudad de México' },
+  { name: 'Sunset Hills HOA', location: 'Austin, TX' },
+  { name: 'Conjunto El Parque', location: 'Bogotá, Colombia' },
+  { name: 'Los Jardines', location: 'Buenos Aires, Argentina' },
+]
 
 // Customer Review Data
 const reviewData = [
   {
     desc: 'Portun transformed our visitor management. Creating QR codes takes 10 seconds, and guards validate instantly. No more phone calls at the gate!',
-    img: logo1,
+    community: 'Palm Gardens',
     rating: 5,
     name: 'Jennifer Martinez',
     position: 'HOA President, Miami Gardens FL',
@@ -42,7 +30,7 @@ const reviewData = [
   },
   {
     desc: 'Finally, a payment tracking system that actually works. Residents upload receipts, I verify with one click. Saved me 15 hours per month!',
-    img: logo2,
+    community: 'Residencial Las Palmas',
     rating: 5,
     name: 'Carlos Hernández',
     position: 'Property Manager, Ciudad de México',
@@ -50,7 +38,7 @@ const reviewData = [
   },
   {
     desc: 'The offline mode is a game-changer. Our internet goes down sometimes, but guards can still validate QR codes. Security never stops.',
-    img: logo3,
+    community: 'Conjunto El Parque',
     rating: 5,
     name: 'Sofia Rodríguez',
     position: 'Security Supervisor, Bogotá Colombia',
@@ -58,7 +46,7 @@ const reviewData = [
   },
   {
     desc: 'We switched from Residentfy and cut our costs by 60%. Same features, better price. The transparent pricing sold me immediately.',
-    img: logo4,
+    community: 'Sunset Hills HOA',
     rating: 5,
     name: 'Michael Anderson',
     position: 'Board Member, Austin TX',
@@ -66,7 +54,7 @@ const reviewData = [
   },
   {
     desc: 'I love getting real-time notifications when my visitors arrive. The photos give me peace of mind. Portun just works beautifully.',
-    img: logo3,
+    community: 'Residencial Las Palmas',
     rating: 5,
     name: 'María González',
     position: 'Resident, Guadalajara México',
@@ -74,7 +62,7 @@ const reviewData = [
   },
   {
     desc: 'Setup was incredibly easy. We had 120 residents onboarded in one week. The WhatsApp sharing makes it simple for everyone.',
-    img: logo1,
+    community: 'Los Jardines',
     rating: 5,
     name: 'Juan Pablo Morales',
     position: 'Community Admin, Buenos Aires Argentina',
@@ -82,7 +70,7 @@ const reviewData = [
   },
   {
     desc: 'As a guard, this app is so much better than paper logbooks. Scan the QR, take a photo, done. My shift is less stressful now.',
-    img: logo2,
+    community: 'Residencial Las Palmas',
     rating: 5,
     name: 'Diego Ramírez',
     position: 'Security Guard, Monterrey México',
@@ -90,7 +78,7 @@ const reviewData = [
   },
   {
     desc: 'The admin dashboard shows me everything I need. Entry logs, pending payments, resident info - all in one place. Super efficient.',
-    img: logo3,
+    community: 'Conjunto El Parque',
     rating: 5,
     name: 'Ana Patricia Torres',
     position: 'Property Manager, Lima Perú',
@@ -98,7 +86,7 @@ const reviewData = [
   },
   {
     desc: 'Payment verification used to take days. Now it takes minutes. Residents are happier, and our records are always up to date.',
-    img: logo4,
+    community: 'Sunset Hills HOA',
     rating: 5,
     name: 'Robert Chen',
     position: 'HOA Treasurer, Los Angeles CA',
@@ -106,7 +94,7 @@ const reviewData = [
   },
   {
     desc: 'Portun\'s customer support is excellent. They helped us migrate from our old system in just two days. Highly recommend!',
-    img: logo2,
+    community: 'Palm Gardens',
     rating: 5,
     name: 'Camila Silva',
     position: 'Resident, São Paulo Brasil',
@@ -239,11 +227,15 @@ const slide = (dir: string) => {
                 >
                   <VCard class="d-flex h-100 align-stretch">
                     <VCardText class="pa-6 d-flex flex-column justify-space-between align-start">
-                      <img
-                        :src="data.img"
-                        style="block-size: 1.375rem;"
-                        class="mb-3"
-                      >
+                      <div class="community-logo mb-3">
+                        <VIcon
+                          icon="tabler-building-community"
+                          size="20"
+                          color="primary"
+                          class="me-2"
+                        />
+                        <span class="text-primary font-weight-semibold">{{ data.community }}</span>
+                      </div>
                       <p class="text-body-1">
                         {{ data.desc }}
                       </p>
@@ -282,7 +274,7 @@ const slide = (dir: string) => {
       <VDivider class="w-100 swiper-divider" />
 
       <VContainer>
-        <!-- 👉 Brand-logo Swiper  -->
+        <!-- 👉 Community Logos Swiper  -->
         <div class="swiper-brands-carousel">
           <swiper-container
             slides-per-view="2"
@@ -302,13 +294,23 @@ const slide = (dir: string) => {
             }"
           >
             <swiper-slide
-              v-for="(img, index) in [brandLogo1, brandLogo2, brandLogo3, brandLogo4, brandLogo5]"
+              v-for="(community, index) in communityLogos"
               :key="index"
             >
-              <VImg
-                :src="img"
-                height="38"
-              />
+              <div class="text-center py-2">
+                <div class="d-flex align-center justify-center mb-1">
+                  <VIcon
+                    icon="tabler-building-community"
+                    size="24"
+                    color="primary"
+                    class="me-2"
+                  />
+                  <span class="text-h6 font-weight-semibold">{{ community.name }}</span>
+                </div>
+                <div class="text-body-2 text-disabled">
+                  {{ community.location }}
+                </div>
+              </div>
             </swiper-slide>
           </swiper-container>
         </div>
@@ -384,5 +386,11 @@ swiper-container::part(bullet) {
   inline-size: 120%;
   inset-block-end: 0;
   inset-inline-start: -12%;
+}
+
+.community-logo {
+  display: flex;
+  align-items: center;
+  min-block-size: 1.375rem;
 }
 </style>
