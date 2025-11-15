@@ -172,6 +172,137 @@
   "25": "25",
   "50": "50",
   "100": "100",
+  "landing": {
+    "nav": {
+      "home": "Inicio",
+      "features": "Funciones",
+      "pricing": "Precios",
+      "reviews": "Reseñas",
+      "faq": "Preguntas",
+      "contact": "Contacto",
+      "cmdPortal": "Portal CMD"
+    },
+    "hero": {
+      "title": "Asegura tu Comunidad en Segundos con Control de Acceso QR",
+      "subtitle": "Escanea códigos QR para abrir puertas y portones automáticamente usando tu infraestructura existente. Acceso rápido para visitantes, seguimiento sencillo de pagos para residentes, información poderosa para administradores.",
+      "cta": "Inicia Prueba Gratis de 30 Días",
+      "activeResidents": "Únete a 25,000+ Residentes"
+    },
+    "stats": {
+      "propertiesSecured": "Propiedades Aseguradas",
+      "activeResidents": "Residentes Activos",
+      "qrCodesDaily": "Códigos QR Generados Diariamente",
+      "avgEntryTime": "Tiempo Promedio de Entrada"
+    },
+    "pricing": {
+      "chip": "Elige tu Plan",
+      "title": "Planes flexibles",
+      "subtitle": "para comunidades de todos los tamaños",
+      "description1": "Paga solo por lo que necesitas. Todos los planes incluyen control de acceso QR y seguimiento de pagos.",
+      "description2": "Comienza con una prueba gratis de 30 días. No se requiere tarjeta de crédito.",
+      "starter": {
+        "title": "Inicial",
+        "subtitle": "10-100 unidades",
+        "features": {
+          "qrAccess": "Control de Acceso QR",
+          "automatedGate": "Apertura Automática de Portones",
+          "paymentTracking": "Seguimiento de Pagos",
+          "adminDashboard": "Panel de Administración",
+          "entryLogs": "Registro de Entradas con Fotos",
+          "notifications": "Notificaciones en Tiempo Real",
+          "freeTrial": "Prueba Gratis de 30 Días",
+          "emailSupport": "Soporte por Correo"
+        }
+      },
+      "professional": {
+        "title": "Profesional",
+        "subtitle": "101-1000 unidades",
+        "features": {
+          "everythingStarter": "Todo lo del Plan Inicial",
+          "multiCommunity": "Gestión Multi-Comunidad",
+          "csvImport": "Importación Masiva CSV",
+          "paymentReports": "Exportar Reportes de Pagos",
+          "phoneVideo": "Soporte Telefónico y Video",
+          "onboarding": "Capacitación Dedicada",
+          "priorityEmail": "Soporte Prioritario por Correo"
+        }
+      },
+      "enterprise": {
+        "title": "Empresarial",
+        "subtitle": "1001+ unidades",
+        "features": {
+          "everythingPro": "Todo lo del Plan Profesional",
+          "offlineMode": "Modo Sin Conexión",
+          "whatsapp": "Integración con WhatsApp",
+          "analytics": "Analíticas Avanzadas",
+          "customBranding": "Marca Personalizada",
+          "apiAccess": "Acceso a API",
+          "customIntegrations": "Integraciones Personalizadas"
+        }
+      },
+      "cta": "Comenzar"
+    },
+    "reviews": {
+      "chip": "Comunidades Confían en Nosotros",
+      "title": "Lo que dice la gente",
+      "subtitle": "Reseñas reales de residentes, administradores de propiedades y guardias de seguridad en EE.UU. y Latinoamérica.",
+      "integration": {
+        "title": "Comunidades Confían en Nosotros",
+        "subtitle": "Comparte códigos QR fácilmente con invitados de Airbnb, Vrbo y más"
+      }
+    },
+    "faq": {
+      "chip": "Preguntas Frecuentes",
+      "title": "Preguntas",
+      "subtitle": "Frecuentes",
+      "description": "Encuentra respuestas a preguntas comunes sobre nuestro sistema de control de acceso QR"
+    },
+    "banner": {
+      "title": "Inicia tu Prueba Gratis de 30 Días",
+      "subtitle": "Sin tarjeta de crédito. Acceso completo a todas las funciones del Plan Inicial.",
+      "cta": "Comenzar"
+    },
+    "contact": {
+      "chip": "Contáctanos",
+      "title1": "¿Listo para asegurar",
+      "title2": "tu comunidad?",
+      "subtitle": "Solicita una demostración personalizada o inicia tu prueba gratis hoy",
+      "formTitle": "Comienza Hoy",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "message": "Mensaje",
+      "cta": "Enviar Mensaje",
+      "address": "221 Main Street, San Francisco, CA 94105",
+      "emailAddress": "hello{'@'}portun.app"
+    },
+    "footer": {
+      "slogan": "Protege tu comunidad con control de acceso inteligente por código QR. Otorga entrada instantánea a visitantes, gestiona pagos sin esfuerzo y experimenta tranquilidad total sabiendo que tu propiedad está segura y tus residentes están protegidos.",
+      "navigation": "Navegación",
+      "products": "Productos",
+      "qrAccess": "Control de Acceso QR",
+      "paymentTracking": "Seguimiento de Pagos",
+      "analytics": "Panel de Analíticas",
+      "mobileApps": "Aplicaciones Móviles",
+      "resources": "Recursos",
+      "documentation": "Documentación",
+      "helpCenter": "Centro de Ayuda",
+      "community": "Foro de la Comunidad",
+      "apiDocs": "Documentación API",
+      "company": "Empresa",
+      "about": "Acerca de",
+      "careers": "Empleos",
+      "contact": "Contacto",
+      "privacy": "Política de Privacidad",
+      "copyright": "Copyright © {year} Webzy LLC. Todos los derechos reservados."
+    },
+    "seo": {
+      "title": "Portun - Control de Acceso QR Inteligente para Comunidades Residenciales",
+      "description": "Asegura tu comunidad con control de acceso por código QR. Apertura automática de portones, seguimiento de pagos y gestión de visitantes para propiedades residenciales en EE.UU. y Latinoamérica.",
+      "keywords": "control de acceso QR, seguridad residencial, automatización de portones, gestión de visitantes, administración de condominios, administración de propiedades, acceso comunitario, Latinoamérica, México, Brasil"
+    }
+  },
   "$vuetify": {
     "badge": "Badge",
     "noDataText": "No data available",

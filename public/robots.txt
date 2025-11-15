@@ -1,0 +1,29 @@
+# robots.txt for portun.app
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /login
+Disallow: /register
+
+# Sitemaps
+Sitemap: https://portun.app/sitemap.xml
+Sitemap: https://portun.app/sitemap-es.xml
+Sitemap: https://portun.app/sitemap-pt.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Allow major search engines
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
+Allow: /
+
+# Block AI scrapers (optional)
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: CCBot
+User-agent: anthropic-ai
+Disallow: /

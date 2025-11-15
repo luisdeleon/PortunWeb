@@ -11,6 +11,7 @@ import OurTeam from '@/views/front-pages/landing-page/our-team.vue'
 import PricingPlans from '@/views/front-pages/landing-page/pricing-plans.vue'
 import ProductStats from '@/views/front-pages/landing-page/product-stats.vue'
 import { useConfigStore } from '@core/stores/config'
+import { useSEO } from '@/composables/useSEO'
 
 const store = useConfigStore()
 
@@ -22,16 +23,20 @@ definePage({
   },
 })
 
+// Initialize SEO with dynamic translations
+useSEO()
+
 const activeSectionId = ref()
 
 const refHome = ref()
 const refFeatures = ref()
-const refTeam = ref()
-const refContact = ref()
+const refPricing = ref()
+const refReviews = ref()
 const refFaq = ref()
+const refContact = ref()
 
 useIntersectionObserver(
-  [refHome, refFeatures, refTeam, refContact, refFaq],
+  [refHome, refFeatures, refPricing, refReviews, refFaq, refContact],
   ([{ isIntersecting, target }]) => {
     if (isIntersecting)
       activeSectionId.value = target.id
@@ -56,17 +61,12 @@ useIntersectionObserver(
 
     <!-- 👉 Customer Review -->
     <div :style="{ 'background-color': 'rgb(var(--v-theme-surface))' }">
-      <CustomersReview />
-    </div>
-
-    <!-- 👉 Our Team -->
-    <div :style="{ 'background-color': 'rgb(var(--v-theme-surface))' }">
-      <OurTeam ref="refTeam" />
+      <CustomersReview ref="refReviews" />
     </div>
 
     <!-- 👉 Pricing Plans -->
     <div :style="{ 'background-color': 'rgb(var(--v-theme-surface))' }">
-      <PricingPlans />
+      <PricingPlans ref="refPricing" />
     </div>
 
     <!-- 👉 Product stats -->

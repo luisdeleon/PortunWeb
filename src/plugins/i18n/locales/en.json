@@ -172,6 +172,137 @@
   "25": "25",
   "50": "50",
   "100": "100",
+  "landing": {
+    "nav": {
+      "home": "Home",
+      "features": "Features",
+      "pricing": "Pricing",
+      "reviews": "Reviews",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "cmdPortal": "CMD Portal"
+    },
+    "hero": {
+      "title": "Secure Your Community in Seconds with QR Access Control",
+      "subtitle": "Scan QR codes to automatically open gates and doors using your existing infrastructure. Fast access for visitors, simple payment tracking for residents, powerful insights for managers.",
+      "cta": "Start 30-Day Free Trial",
+      "activeResidents": "Join 25,000+ Residents"
+    },
+    "stats": {
+      "propertiesSecured": "Properties Secured",
+      "activeResidents": "Active Residents",
+      "qrCodesDaily": "QR Codes Generated Daily",
+      "avgEntryTime": "Average Entry Time"
+    },
+    "pricing": {
+      "chip": "Choose Your Plan",
+      "title": "Flexible plans",
+      "subtitle": "for communities of all sizes",
+      "description1": "Pay only for what you need. All plans include QR access control and payment tracking.",
+      "description2": "Start with a 30-day free trial. No credit card required.",
+      "starter": {
+        "title": "Starter",
+        "subtitle": "10-100 units",
+        "features": {
+          "qrAccess": "QR Access Control",
+          "automatedGate": "Automated Gate Opening",
+          "paymentTracking": "Payment Tracking",
+          "adminDashboard": "Admin Dashboard",
+          "entryLogs": "Entry Logs with Photos",
+          "notifications": "Real-time Notifications",
+          "freeTrial": "30-Day Free Trial",
+          "emailSupport": "Email Support"
+        }
+      },
+      "professional": {
+        "title": "Professional",
+        "subtitle": "101-1000 units",
+        "features": {
+          "everythingStarter": "Everything in Starter",
+          "multiCommunity": "Multi-Community Management",
+          "csvImport": "CSV Bulk Import",
+          "paymentReports": "Payment Reports Export",
+          "phoneVideo": "Phone & Video Support",
+          "onboarding": "Dedicated Onboarding",
+          "priorityEmail": "Priority Email Support"
+        }
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "subtitle": "1001+ units",
+        "features": {
+          "everythingPro": "Everything in Professional",
+          "offlineMode": "Offline Mode",
+          "whatsapp": "WhatsApp Integration",
+          "analytics": "Advanced Analytics",
+          "customBranding": "Custom Branding",
+          "apiAccess": "API Access",
+          "customIntegrations": "Custom Integrations"
+        }
+      },
+      "cta": "Get Started"
+    },
+    "reviews": {
+      "chip": "Trusted by Communities",
+      "title": "What people say",
+      "subtitle": "Real reviews from residents, property managers, and security guards across US and Latin America.",
+      "integration": {
+        "title": "Trusted by Communities",
+        "subtitle": "Seamlessly share QR codes with guests from Airbnb, Vrbo, and more"
+      }
+    },
+    "faq": {
+      "chip": "FAQ",
+      "title": "Frequently Asked",
+      "subtitle": "Questions",
+      "description": "Find answers to common questions about our QR access control system"
+    },
+    "banner": {
+      "title": "Start Your 30-Day Free Trial",
+      "subtitle": "No credit card required. Full access to all Starter Features.",
+      "cta": "Get Started"
+    },
+    "contact": {
+      "chip": "Contact Us",
+      "title1": "Ready to secure",
+      "title2": "your community?",
+      "subtitle": "Get a personalized demo or start your free trial today",
+      "formTitle": "Get Started Today",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Message",
+      "cta": "Send Message",
+      "address": "221 Main Street, San Francisco, CA 94105",
+      "emailAddress": "hello{'@'}portun.app"
+    },
+    "footer": {
+      "slogan": "Protect your community with intelligent QR access control. Grant instant entry to visitors, manage payments effortlessly, and experience total peace of mind knowing your property is secure and your residents are safe.",
+      "navigation": "Navigation",
+      "products": "Products",
+      "qrAccess": "QR Access Control",
+      "paymentTracking": "Payment Tracking",
+      "analytics": "Analytics Dashboard",
+      "mobileApps": "Mobile Apps",
+      "resources": "Resources",
+      "documentation": "Documentation",
+      "helpCenter": "Help Center",
+      "community": "Community Forum",
+      "apiDocs": "API Documentation",
+      "company": "Company",
+      "about": "About Us",
+      "careers": "Careers",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "copyright": "Copyright © {year} Webzy LLC. All rights reserved."
+    },
+    "seo": {
+      "title": "Portun - Smart QR Access Control for Residential Communities",
+      "description": "Secure your community with QR code access control. Automated gate opening, payment tracking, and visitor management for residential properties in US and Latin America.",
+      "keywords": "QR access control, residential security, gate automation, visitor management, HOA management, property management, community access, Latin America, Mexico, Brazil"
+    }
+  },
   "$vuetify": {
     "badge": "Badge",
     "noDataText": "No data available",

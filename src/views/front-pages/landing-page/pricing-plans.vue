@@ -7,6 +7,7 @@ const pricingPlans = [
     iconColor: 'primary',
     features: [
       'QR Access Control',
+      'Automated Gate Opening',
       'Payment Tracking',
       'Admin Dashboard',
       'Entry Logs with Photos',
@@ -61,7 +62,7 @@ const pricingPlans = [
 </script>
 
 <template>
-  <div id="pricing-plan">
+  <div id="pricing">
     <VContainer>
       <div class="pricing-plans">
         <!-- 👉 Headers  -->

@@ -26,6 +26,10 @@ const faqData = [
     question: 'Can I manage multiple properties from one account?',
     answer: 'Yes! Our Professional and Enterprise plans include multi-community management. You can switch between properties from a single dashboard, view consolidated reports across all communities, and manage residents, guards, and payments for each property independently while maintaining centralized oversight.',
   },
+  {
+    question: 'Does this work with my existing gates and access control hardware?',
+    answer: 'Absolutely! Our system integrates seamlessly with your current infrastructure - no expensive gate replacements needed. We support most major gate manufacturers including LiftMaster, DoorKing, BFT, Nice, Came, FAAC, Linear, and Viking, plus any gate controller with network connectivity. When a QR code is validated, our system can automatically trigger your existing gates and doors to open. Our technical team will help configure the integration during onboarding at no extra cost.',
+  },
 ]
 </script>
 

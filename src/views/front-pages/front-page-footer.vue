@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import appleImg from '@images/front-pages/landing-page/apple-icon.png'
 import googlePlayImg from '@images/front-pages/landing-page/google-play-icon.png'
 
@@ -8,28 +9,23 @@ import footerLightBg from '@images/front-pages/backgrounds/footer-bg-light.png'
 import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
 import { themeConfig } from '@themeConfig'
 
+const { t } = useI18n()
+
 interface Menu {
   name: string
   to: any
-  isNew?: boolean
 }
 
 const footerBg = useGenerateImageVariant(footerLightBg, footerDarkBg)
 
-const pagesList: Menu[] = [
-  { name: 'Pricing', to: { name: 'front-pages-pricing' } },
-  { name: 'Payment', to: { name: 'front-pages-payment' }, isNew: true },
-  { name: 'Checkout', to: { name: 'front-pages-checkout' } },
-  { name: 'Help Center', to: { name: 'front-pages-help-center' } },
-  { name: 'Login/Register', to: { name: 'pages-authentication-login-v2' } },
-]
-
-const demoList = [
-  { title: 'Vertical Layout', to: 'https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-1/dashboards/analytics' },
-  { title: 'Horizontal Layout', to: 'https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-5/dashboards/analytics' },
-  { title: 'Bordered Layout', to: 'https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-2/dashboards/analytics' },
-  { title: 'Semi Dark Layout', to: 'https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-3/dashboards/analytics' },
-  { title: 'Dark Layout', to: 'https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-4/dashboards/analytics' },
+// Navigation items from header
+const navigationList: Menu[] = [
+  { name: 'Home', to: { path: '/', hash: '#home' } },
+  { name: 'Features', to: { path: '/', hash: '#features' } },
+  { name: 'Pricing', to: { path: '/', hash: '#pricing' } },
+  { name: 'Reviews', to: { path: '/', hash: '#reviews' } },
+  { name: 'FAQ', to: { path: '/', hash: '#faq' } },
+  { name: 'Contact', to: { path: '/', hash: '#contact' } },
 ]
 </script>
 
@@ -61,7 +57,7 @@ const demoList = [
                 class="mb-6"
                 :class="$vuetify.theme.current.dark ? 'text-body-1' : 'text-white-variant'"
               >
-                Most Powerful & Comprehensive 🤩 Vuejs Admin Template with Elegant Material Design & Unique Layouts.
+                {{ $t('landing.footer.slogan') }}
               </div>
               <VForm class="subscribe-form d-flex align-center">
                 <AppTextField
@@ -75,68 +71,28 @@ const demoList = [
             </div>
           </VCol>
 
-          <!-- 👉 Demos -->
+          <!-- 👉 Navigation  -->
           <VCol
-            md="2"
+            md="3"
             sm="4"
             xs="6"
           >
             <div class="footer-links">
               <h6 class="footer-title text-h6 mb-6">
-                Demos
+                {{ $t('landing.footer.navigation') }}
               </h6>
               <ul style="list-style: none;">
                 <li
-                  v-for="(item, index) in demoList"
-                  :key="index"
-                  class="mb-4"
-                >
-                  <a
-                    :href="item.to"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    :class="$vuetify.theme.current.dark ? 'text-body-1' : 'text-white-variant'"
-                  >
-                    {{ item.title }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </VCol>
-
-          <!-- 👉 Pages  -->
-          <VCol
-            md="2"
-            sm="4"
-            xs="6"
-          >
-            <div class="footer-links">
-              <h6 class="footer-title text-h6 mb-6">
-                Pages
-              </h6>
-              <ul style="list-style: none;">
-                <li
-                  v-for="(item, index) in pagesList"
+                  v-for="(item, index) in navigationList"
                   :key="index"
                   class="mb-4"
                 >
                   <RouterLink
                     :class="$vuetify.theme.current.dark ? 'text-body-1' : 'text-white-variant'"
-                    class="me-2"
                     :to="item.to"
                   >
-                    {{ item.name }}
+                    {{ $t(`landing.nav.${item.name.toLowerCase()}`) }}
                   </RouterLink>
-                  <template v-if="item.isNew">
-                    <VChip
-                      color="primary"
-                      variant="elevated"
-                      label
-                      size="small"
-                    >
-                      New
-                    </VChip>
-                  </template>
                 </li>
               </ul>
             </div>
@@ -145,7 +101,7 @@ const demoList = [
           <!-- 👉 Download App -->
           <VCol
             cols="12"
-            md="3"
+            md="4"
             sm="4"
           >
             <div>
@@ -173,7 +129,7 @@ const demoList = [
                       />
                       <div class="d-flex flex-column justify-content-start">
                         <div :class="$vuetify.theme.current.dark ? 'text-body-2' : 'text-white-variant text-body-2'">
-                          Download on the
+                          Download on
                         </div>
                         <h6
                           class="text-h6 text-start"

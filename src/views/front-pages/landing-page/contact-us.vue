@@ -178,24 +178,17 @@ const submitForm = async () => {
                   :style="{ borderRadius: '3.75rem 0.375rem 0.375rem 0.375rem' }"
                 />
                 <VCardText class="pa-4 pb-1">
-                  <div class="d-flex justify-space-between flex-wrap gap-y-4">
-                    <div
-                      v-for="(item, index) in [
-                        { title: 'Email', icon: 'tabler-mail', color: 'primary', value: 'example@gmail.com' },
-                        { title: 'Phone', icon: 'tabler-phone-call', color: 'success', value: '+1234 568 963' },
-                      ]"
-                      :key="index"
-                      class="d-flex gap-x-3 align-center"
-                    >
+                  <div class="d-flex justify-center">
+                    <div class="d-flex gap-x-3 align-center">
                       <div>
                         <VAvatar
                           size="36"
-                          :color="item.color"
+                          color="primary"
                           variant="tonal"
                           class="rounded-sm"
                         >
                           <VIcon
-                            :icon="item.icon"
+                            icon="tabler-mail"
                             size="24"
                           />
                         </VAvatar>
@@ -203,10 +196,10 @@ const submitForm = async () => {
 
                       <div>
                         <div class="text-body-1">
-                          {{ item .title }}
+                          Email
                         </div>
                         <h6 class="text-h6">
-                          {{ item.value }}
+                          hello@portun.app
                         </h6>
                       </div>
                     </div>

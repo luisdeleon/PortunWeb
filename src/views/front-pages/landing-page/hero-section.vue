@@ -41,15 +41,14 @@ const translateMouse = computed(() => {
         <VContainer>
           <div class="hero-text-box text-center px-6">
             <h1 class="hero-title mb-4">
-              Smart Access Control for Modern Communities
+              Secure Your Community in Seconds with QR Access Control
             </h1>
             <h6 class="mb-6 text-h6">
-              QR-based visitor management and HOA payment tracking
-              at 1/3 the cost of competitors.
+              Scan QR codes to automatically open gates and doors using your existing infrastructure. Fast access for visitors, simple payment tracking for residents, powerful insights for managers.
             </h6>
             <div class="position-relative">
               <h6 class="position-absolute hero-btn-item d-md-flex d-none text-h6 text-medium-emphasis">
-                Trusted by Communities
+                Join 25,000+ Residents
                 <VImg
                   :src="joinArrow"
                   class="flip-in-rtl"
@@ -63,7 +62,7 @@ const translateMouse = computed(() => {
                 :to="{ name: 'front-pages-landing-page', hash: `#pricing-plan` }"
                 :active="false"
               >
-                Start Free Trial
+                Start 30-Day Free Trial
               </VBtn>
             </div>
           </div>
@@ -298,7 +297,8 @@ section {
 }
 
 .hero-btn-item {
-  inset-block-start: 80%;
-  inset-inline-start: 5%;
+  inset-block-start: 100%;
+  inset-inline-start: -15%;
+  margin-block-start: 1rem;
 }
 </style>

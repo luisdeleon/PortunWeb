@@ -120,7 +120,7 @@ const slide = (dir: string) => {
 
 <template>
   <div
-    id="customer-review"
+    id="reviews"
     class="position-relative"
   >
     <div class="customer-reviews">
