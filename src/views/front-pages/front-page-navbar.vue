@@ -5,6 +5,7 @@ import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
 import { useDisplay } from 'vuetify'
 import navImg from '@images/front-pages/misc/nav-item-col-img.png'
 
+import LanguageSwitcher from '@/layouts/components/LanguageSwitcher.vue'
 import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
 import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
 import { themeConfig } from '@themeConfig'
@@ -333,11 +334,12 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
         <VSpacer />
 
         <div class="d-flex gap-x-4">
+          <LanguageSwitcher />
           <NavbarThemeSwitcher />
 
           <VBtn
             v-if="$vuetify.display.lgAndUp"
-            prepend-icon="tabler-login"
+            prepend-icon="tabler-login-2"
             variant="elevated"
             color="primary"
             href="https://cmd.portun.app"
@@ -357,7 +359,7 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
             target="_blank"
             rel="noopener noreferrer"
           >
-            <VIcon icon="tabler-login" />
+            <VIcon icon="tabler-login-2" />
           </VBtn>
         </div>
       </VAppBar>
