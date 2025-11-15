@@ -112,7 +112,7 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
       <div>
         <div class="d-flex flex-column gap-y-4 pa-4">
           <RouterLink
-            v-for="(item, index) in ['home', 'features', 'pricing', 'reviews', 'faq', 'contact']"
+            v-for="(item, index) in ['home', 'features', 'reviews', 'pricing', 'faq', 'contact']"
             :key="index"
             :to="{ path: '/', hash: `#${item}` }"
             class="nav-link font-weight-medium"
@@ -173,7 +173,7 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
           <!-- landing page sections -->
           <div class="text-base align-center d-none d-md-flex">
             <RouterLink
-              v-for="(item, index) in ['home', 'features', 'pricing', 'reviews', 'faq', 'contact']"
+              v-for="(item, index) in ['home', 'features', 'reviews', 'pricing', 'faq', 'contact']"
               :key="index"
               :to="{ path: '/', hash: `#${item}` }"
               class="nav-link font-weight-medium py-2 px-2 px-lg-4"

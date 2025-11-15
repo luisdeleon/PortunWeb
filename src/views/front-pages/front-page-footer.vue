@@ -18,12 +18,12 @@ interface Menu {
 
 const footerBg = useGenerateImageVariant(footerLightBg, footerDarkBg)
 
-// Navigation items from header
+// Navigation items from header (matches landing page order)
 const navigationList: Menu[] = [
   { name: 'Home', to: { path: '/', hash: '#home' } },
   { name: 'Features', to: { path: '/', hash: '#features' } },
-  { name: 'Pricing', to: { path: '/', hash: '#pricing' } },
   { name: 'Reviews', to: { path: '/', hash: '#reviews' } },
+  { name: 'Pricing', to: { path: '/', hash: '#pricing' } },
   { name: 'FAQ', to: { path: '/', hash: '#faq' } },
   { name: 'Contact', to: { path: '/', hash: '#contact' } },
 ]
