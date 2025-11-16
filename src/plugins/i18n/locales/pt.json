@@ -403,6 +403,374 @@
       "learnMore": "Saiba mais"
     }
   },
+  "legal": {
+    "lastUpdated": "Última Atualização",
+    "termsConditions": {
+      "chip": "Documentos Legais",
+      "title": "Termos e Condições",
+      "subtitle": "Seu acordo para usar os serviços do PortunApp",
+      "hero": {
+        "title": "Bem-vindo ao PortunApp",
+        "description": "Por favor, leia estes termos cuidadosamente antes de usar nosso serviço"
+      }
+    },
+    "termsOfService": {
+      "chip": "Acordo de Serviço",
+      "title": "Termos de Serviço",
+      "subtitle": "Seu acordo para usar os serviços do PortunApp",
+      "acceptance": {
+        "title": "Aceitação dos Termos",
+        "subtitle": "Seu acordo com nossos termos de serviço",
+        "message": "Ao criar uma conta, acessar ou usar o PortunApp, você reconhece que leu, entendeu e concorda em estar sujeito a estes Termos de Serviço."
+      },
+      "userRoles": {
+        "chip": "FUNÇÕES DE USUÁRIO",
+        "title": "Quem Pode Usar o PortunApp?",
+        "subtitle": "Diferentes funções têm diferentes responsabilidades e níveis de acesso",
+        "residents": {
+          "title": "Residentes",
+          "features": {
+            "qr": "Gerar códigos QR para visitantes",
+            "payments": "Enviar recibos de pagamento",
+            "logs": "Ver registros de entrada",
+            "notifications": "Receber notificações em tempo real"
+          }
+        },
+        "guards": {
+          "title": "Guardas de Segurança",
+          "features": {
+            "scan": "Escanear e validar códigos QR",
+            "log": "Registrar horários de entrada e saída",
+            "photo": "Capturar fotos de visitantes",
+            "offline": "Acessar validação offline"
+          }
+        },
+        "admins": {
+          "title": "Administradores",
+          "features": {
+            "manage": "Gerenciar configurações da comunidade",
+            "verify": "Verificar recibos de pagamento",
+            "analytics": "Ver análises e relatórios",
+            "users": "Adicionar ou remover usuários"
+          }
+        }
+      },
+      "qrSection": {
+        "title": "Geração e Uso de Códigos QR",
+        "subtitle": "Como criar e usar códigos QR para visitantes",
+        "validity": {
+          "title": "Validade do Código QR",
+          "items": {
+            "dates": "Códigos QR são válidos apenas para datas e horários especificados",
+            "limits": "Limites de entrada aplicados no nível do banco de dados",
+            "expired": "Códigos expirados ou inválidos serão rejeitados"
+          }
+        },
+        "prohibited": {
+          "title": "Usos Proibidos",
+          "message": "Você não pode gerar códigos QR para pessoas não autorizadas, compartilhar códigos para fins ilegais, tentar duplicar ou falsificar códigos QR, ou contornar medidas de validação/segurança."
+        },
+        "offline": {
+          "title": "Modo Offline",
+          "description": "O Serviço fornece validação QR offline para guardas. Os dados armazenados são sincronizados quando a conectividade é restaurada.",
+          "warning": "Limites de entrada podem não ser aplicados com precisão durante períodos offline."
+        }
+      },
+      "payment": {
+        "title": "Rastreamento de Pagamentos",
+        "subtitle": "Gerenciamento de recibos de pagamento de condomínio",
+        "upload": {
+          "title": "Envio de Recibos",
+          "items": {
+            "clear": "Imagens devem ser claras e legíveis",
+            "period": "Um recibo por período de cobrança",
+            "fraud": "Recibos fraudulentos = encerramento de conta"
+          }
+        },
+        "disclaimer": {
+          "title": "Aviso Importante",
+          "message": "PortunApp é apenas uma ferramenta de rastreamento e gerenciamento. Não somos responsáveis pela cobrança real de pagamentos, taxas atrasadas ou disputas financeiras. Obrigações de pagamento são entre residentes e suas comunidades."
+        }
+      },
+      "contact": {
+        "title": "Precisa de Ajuda?",
+        "subtitle": "Nossa equipe está aqui para responder suas perguntas",
+        "legal": "Questões Legais",
+        "support": "Suporte"
+      }
+    },
+    "privacyPolicy": {
+      "chip": "Privacidade e Proteção de Dados",
+      "title": "Política de Privacidade",
+      "subtitle": "Como coletamos, usamos e protegemos suas informações pessoais",
+      "intro": {
+        "title": "Sua Privacidade Importa",
+        "description": "No PortunApp, estamos comprometidos em proteger sua privacidade e cumprir as leis aplicáveis de proteção de dados, incluindo GDPR (Europa) e CCPA (Califórnia)."
+      },
+      "dataCollection": {
+        "chip": "COLETA DE DADOS",
+        "title": "Informações que Coletamos",
+        "subtitle": "Coletamos apenas o necessário para fornecer nosso serviço",
+        "account": {
+          "title": "Informações da Conta",
+          "items": {
+            "name": "Nome",
+            "email": "Endereço de e-mail",
+            "phone": "Número de telefone",
+            "unit": "Número da unidade"
+          }
+        },
+        "visitor": {
+          "title": "Informações de Visitantes",
+          "items": {
+            "names": "Nomes de visitantes",
+            "phones": "Números de telefone",
+            "vehicles": "Detalhes de veículos",
+            "dates": "Datas/horários de visita"
+          }
+        },
+        "payment": {
+          "title": "Registros de Pagamento",
+          "items": {
+            "receipts": "Imagens de recibos",
+            "amounts": "Valores de pagamento",
+            "periods": "Períodos de cobrança",
+            "status": "Status de verificação"
+          }
+        },
+        "device": {
+          "title": "Dados do Dispositivo",
+          "items": {
+            "type": "Tipo de dispositivo",
+            "os": "Sistema operacional",
+            "ip": "Endereço IP",
+            "analytics": "Análise de uso"
+          }
+        }
+      },
+      "dataUsage": {
+        "title": "Como Usamos Suas Informações",
+        "subtitle": "Seus dados nos ajudam a fornecer um melhor serviço",
+        "service": {
+          "title": "Prestação de Serviço",
+          "items": {
+            "qr": "Gerar e validar códigos QR para acesso de visitantes",
+            "payment": "Processar e rastrear recibos de pagamento",
+            "notifications": "Enviar notificações sobre chegadas de visitantes",
+            "support": "Fornecer suporte ao cliente"
+          }
+        },
+        "improvement": {
+          "title": "Melhoria do Serviço",
+          "description": "Analisar padrões de uso para melhorar recursos, identificar e corrigir problemas técnicos, desenvolver novos recursos com base nas necessidades dos usuários e realizar pesquisa e análise."
+        },
+        "security": {
+          "title": "Segurança e Prevenção de Fraude",
+          "description": "Monitoramos códigos QR fraudulentos, detectamos acessos não autorizados, investigamos incidentes de segurança e aplicamos nossos Termos de Serviço."
+        }
+      },
+      "userRights": {
+        "chip": "SEUS DIREITOS",
+        "title": "Você Tem o Controle",
+        "subtitle": "Gerencie seus dados pessoais com estes direitos de privacidade",
+        "access": {
+          "title": "Acesso",
+          "description": "Solicitar uma cópia de seus dados pessoais"
+        },
+        "correction": {
+          "title": "Correção",
+          "description": "Atualizar informações incorretas ou incompletas"
+        },
+        "deletion": {
+          "title": "Exclusão",
+          "description": "Solicitar exclusão de sua conta e dados"
+        },
+        "portability": {
+          "title": "Portabilidade",
+          "description": "Receber seus dados em formato legível por máquina"
+        },
+        "object": {
+          "title": "Objeção",
+          "description": "Objetar ao processamento baseado em interesses legítimos (GDPR)"
+        },
+        "optOut": {
+          "title": "Cancelamento",
+          "description": "Cancelar inscrição de comunicações de marketing"
+        },
+        "exercise": {
+          "title": "Exercer Seus Direitos",
+          "description": "Envie-nos um e-mail para privacy{'@'}portun.app para solicitar acesso, correção ou exclusão de seus dados. Responderemos em 30 dias.",
+          "button": "Contatar Equipe de Privacidade"
+        }
+      },
+      "security": {
+        "title": "Como Protegemos Seus Dados",
+        "subtitle": "Medidas de segurança padrão do setor mantêm suas informações seguras",
+        "encryption": {
+          "title": "Criptografia",
+          "description": "Dados criptografados em trânsito (HTTPS/TLS) e em repouso (AES-256)"
+        },
+        "access": {
+          "title": "Controles de Acesso",
+          "description": "Restrições de acesso baseadas em funções e segurança no nível do banco de dados"
+        },
+        "auth": {
+          "title": "Autenticação",
+          "description": "Hash seguro de senhas com verificação biométrica opcional"
+        },
+        "backups": {
+          "title": "Backups",
+          "description": "Backups automatizados regulares com recuperação pontual"
+        },
+        "breach": {
+          "title": "Notificação de Violação de Dados:",
+          "description": "No improvável caso de uma violação de dados, notificaremos você dentro de 72 horas por e-mail e notificação no aplicativo."
+        }
+      },
+      "contact": {
+        "title": "Perguntas Sobre Privacidade?",
+        "subtitle": "Nosso Oficial de Proteção de Dados está aqui para ajudar",
+        "button": "Equipe de Privacidade",
+        "company": "Webzy LLC (dba PortunApp)",
+        "compliance": "Conforme com GDPR, CCPA e outras regulamentações de privacidade"
+      }
+    },
+    "cookiePolicy": {
+      "chip": "Gerenciamento de Cookies",
+      "title": "Política de Cookies",
+      "subtitle": "Como usamos cookies e tecnologias de rastreamento semelhantes",
+      "intro": {
+        "title": "O que São Cookies?",
+        "description": "Cookies são pequenos arquivos de texto armazenados em seu dispositivo quando você visita um site. Eles ajudam os sites a lembrar suas preferências e melhorar sua experiência de navegação. Pense neles como marcadores digitais que tornam sua próxima visita mais suave!"
+      },
+      "types": {
+        "chip": "TIPOS DE COOKIES",
+        "title": "Tipos de Cookies que Usamos",
+        "subtitle": "Usamos diferentes cookies para diferentes propósitos",
+        "necessary": {
+          "title": "Estritamente Necessários",
+          "description": "Essenciais para o funcionamento do serviço. Não podem ser desativados.",
+          "cookies": {
+            "accessToken": {
+              "name": "sb-access-token",
+              "purpose": "Sessão de autenticação",
+              "duration": "1 hora"
+            },
+            "refreshToken": {
+              "name": "sb-refresh-token",
+              "purpose": "Renovação de sessão",
+              "duration": "30 dias"
+            },
+            "consent": {
+              "name": "cookie-consent",
+              "purpose": "Lembrar suas preferências de cookies",
+              "duration": "1 ano"
+            }
+          }
+        },
+        "performance": {
+          "title": "Desempenho e Análise",
+          "description": "Nos ajudam a entender como os visitantes interagem com nosso serviço.",
+          "cookies": {
+            "analytics": {
+              "name": "_ga",
+              "purpose": "Rastrear visitantes únicos (Google Analytics)",
+              "duration": "2 anos"
+            },
+            "session": {
+              "name": "_ga_*",
+              "purpose": "Rastreamento de sessão",
+              "duration": "2 anos"
+            }
+          }
+        },
+        "functional": {
+          "title": "Funcionais",
+          "description": "Lembrar suas preferências e personalizar sua experiência.",
+          "cookies": {
+            "theme": {
+              "name": "theme-preference",
+              "purpose": "Seleção de modo claro/escuro",
+              "duration": "1 ano"
+            },
+            "language": {
+              "name": "language",
+              "purpose": "Idioma preferido (EN/ES/PT)",
+              "duration": "1 ano"
+            }
+          }
+        }
+      },
+      "thirdParty": {
+        "chip": "TERCEIROS",
+        "title": "Cookies de Terceiros",
+        "subtitle": "Alguns recursos usam cookies de nossos parceiros confiáveis",
+        "supabase": {
+          "title": "Supabase",
+          "description": "Nosso provedor de autenticação e banco de dados usa cookies para gerenciar sua sessão com segurança.",
+          "link": "Ver Política de Privacidade do Supabase"
+        },
+        "onesignal": {
+          "title": "OneSignal",
+          "description": "Alimenta nossas notificações push para mantê-lo informado sobre chegadas de visitantes.",
+          "link": "Ver Política de Privacidade do OneSignal"
+        },
+        "google": {
+          "title": "Google Analytics",
+          "description": "Nos ajuda a entender como você usa o PortunApp para que possamos melhorá-lo.",
+          "link": "Ver Política de Privacidade do Google"
+        },
+        "vercel": {
+          "title": "Vercel",
+          "description": "Nosso provedor de hospedagem pode usar cookies para otimização de desempenho.",
+          "link": "Ver Política de Privacidade do Vercel"
+        }
+      },
+      "management": {
+        "chip": "GERENCIAMENTO DE COOKIES",
+        "title": "Gerencie Suas Preferências de Cookies",
+        "subtitle": "Você tem controle total sobre quais cookies usamos",
+        "banner": {
+          "title": "Banner de Consentimento de Cookies",
+          "description": "Quando você visita o PortunApp pela primeira vez, verá um banner pedindo seu consentimento de cookies. Você pode aceitar todos os cookies, recusar os opcionais ou saber mais antes de decidir."
+        },
+        "browser": {
+          "title": "Configurações do Navegador",
+          "description": "A maioria dos navegadores web permite controlar cookies através de suas configurações. Aqui estão guias para navegadores populares:",
+          "chrome": "Configurações de Cookies do Chrome",
+          "firefox": "Configurações de Cookies do Firefox",
+          "safari": "Configurações de Cookies do Safari",
+          "edge": "Configurações de Cookies do Edge"
+        },
+        "optOut": {
+          "title": "Ferramentas de Exclusão",
+          "description": "Você também pode usar estas ferramentas para gerenciar cookies em vários sites:",
+          "aboutCookies": "Tudo Sobre Cookies",
+          "yourChoices": "Suas Escolhas Online",
+          "networkAdvertising": "Iniciativa de Publicidade em Rede"
+        },
+        "warning": {
+          "title": "Importante:",
+          "description": "Desativar cookies necessários impedirá você de usar o PortunApp. Cookies de desempenho e funcionais são opcionais, mas melhoram sua experiência."
+        }
+      },
+      "updates": {
+        "title": "Atualizações desta Política",
+        "description": "Podemos atualizar esta Política de Cookies de tempos em tempos para refletir mudanças em nossas práticas ou por razões legais. Notificaremos você de mudanças significativas por e-mail ou notificação no aplicativo."
+      },
+      "contact": {
+        "title": "Perguntas Sobre Cookies?",
+        "subtitle": "Estamos felizes em ajudar a explicar nosso uso de cookies",
+        "button": "Contate-nos",
+        "resources": {
+          "title": "Recursos Adicionais",
+          "aboutCookies": "Tudo Sobre Cookies",
+          "yourChoices": "Suas Escolhas Online",
+          "cookiepedia": "Cookiepedia"
+        }
+      }
+    }
+  },
   "$vuetify": {
     "badge": "Badge",
     "noDataText": "No data available",

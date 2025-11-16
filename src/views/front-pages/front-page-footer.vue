@@ -27,6 +27,14 @@ const navigationList: Menu[] = [
   { name: 'FAQ', to: { path: '/', hash: '#faq' } },
   { name: 'Contact', to: { path: '/', hash: '#contact' } },
 ]
+
+// Legal pages
+const legalList: Menu[] = [
+  { name: 'Terms & Conditions', to: '/legal/terms-and-conditions' },
+  { name: 'Terms of Service', to: '/legal/terms-of-service' },
+  { name: 'Privacy Policy', to: '/legal/privacy-policy' },
+  { name: 'Cookie Policy', to: '/legal/cookie-policy' },
+]
 </script>
 
 <template>
@@ -73,7 +81,7 @@ const navigationList: Menu[] = [
 
           <!-- 👉 Navigation  -->
           <VCol
-            md="3"
+            md="2"
             sm="4"
             xs="6"
           >
@@ -98,10 +106,37 @@ const navigationList: Menu[] = [
             </div>
           </VCol>
 
+          <!-- 👉 Legal  -->
+          <VCol
+            md="2"
+            sm="4"
+            xs="6"
+          >
+            <div class="footer-links">
+              <h6 class="footer-title text-h6 mb-6">
+                Legal
+              </h6>
+              <ul style="list-style: none;">
+                <li
+                  v-for="(item, index) in legalList"
+                  :key="index"
+                  class="mb-4"
+                >
+                  <RouterLink
+                    :class="$vuetify.theme.current.dark ? 'text-body-1' : 'text-white-variant'"
+                    :to="item.to"
+                  >
+                    {{ item.name }}
+                  </RouterLink>
+                </li>
+              </ul>
+            </div>
+          </VCol>
+
           <!-- 👉 Download App -->
           <VCol
             cols="12"
-            md="4"
+            md="3"
             sm="4"
           >
             <div>

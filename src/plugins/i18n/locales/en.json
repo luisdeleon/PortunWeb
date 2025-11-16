@@ -408,6 +408,374 @@
       "learnMore": "Learn more"
     }
   },
+  "legal": {
+    "lastUpdated": "Last Updated",
+    "termsConditions": {
+      "chip": "Legal Documents",
+      "title": "Terms and Conditions",
+      "subtitle": "Your agreement for using PortunApp services",
+      "hero": {
+        "title": "Welcome to PortunApp",
+        "description": "Please read these terms carefully before using our service"
+      }
+    },
+    "termsOfService": {
+      "chip": "Service Agreement",
+      "title": "Terms of Service",
+      "subtitle": "Your agreement for using PortunApp services",
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "subtitle": "Your agreement to our service terms",
+        "message": "By creating an account, accessing, or using PortunApp, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service."
+      },
+      "userRoles": {
+        "chip": "USER ROLES",
+        "title": "Who Can Use PortunApp?",
+        "subtitle": "Different roles have different responsibilities and access levels",
+        "residents": {
+          "title": "Residents",
+          "features": {
+            "qr": "Generate QR codes for visitors",
+            "payments": "Upload payment receipts",
+            "logs": "View entry logs",
+            "notifications": "Receive real-time notifications"
+          }
+        },
+        "guards": {
+          "title": "Security Guards",
+          "features": {
+            "scan": "Scan and validate QR codes",
+            "log": "Log entry and exit times",
+            "photo": "Capture visitor photos",
+            "offline": "Access offline validation"
+          }
+        },
+        "admins": {
+          "title": "Administrators",
+          "features": {
+            "manage": "Manage community settings",
+            "verify": "Verify payment receipts",
+            "analytics": "View analytics and reports",
+            "users": "Add or remove users"
+          }
+        }
+      },
+      "qrSection": {
+        "title": "QR Code Generation & Usage",
+        "subtitle": "How to create and use visitor QR codes",
+        "validity": {
+          "title": "QR Code Validity",
+          "items": {
+            "dates": "QR codes are valid only for specified dates and times",
+            "limits": "Entry limits enforced at database level",
+            "expired": "Expired or invalid codes will be rejected"
+          }
+        },
+        "prohibited": {
+          "title": "Prohibited Uses",
+          "message": "You may not generate QR codes for unauthorized individuals, share codes for illegal purposes, attempt to duplicate or forge QR codes, or bypass validation/security measures."
+        },
+        "offline": {
+          "title": "Offline Mode",
+          "description": "The Service provides offline QR validation for guards. Cached data is synchronized when connectivity is restored.",
+          "warning": "Entry limits may not be enforced accurately during offline periods."
+        }
+      },
+      "payment": {
+        "title": "Payment Tracking",
+        "subtitle": "HOA payment receipt management",
+        "upload": {
+          "title": "Receipt Upload",
+          "items": {
+            "clear": "Images must be clear and legible",
+            "period": "One receipt per billing period",
+            "fraud": "Fraudulent receipts = account termination"
+          }
+        },
+        "disclaimer": {
+          "title": "Important Disclaimer",
+          "message": "PortunApp is a tracking and management tool only. We are not responsible for actual payment collection, late fees, or financial disputes. Payment obligations are between residents and their communities."
+        }
+      },
+      "contact": {
+        "title": "Need Help?",
+        "subtitle": "Our team is here to answer your questions",
+        "legal": "Legal Questions",
+        "support": "Support"
+      }
+    },
+    "privacyPolicy": {
+      "chip": "Privacy & Data Protection",
+      "title": "Privacy Policy",
+      "subtitle": "How we collect, use, and protect your personal information",
+      "intro": {
+        "title": "Your Privacy Matters",
+        "description": "At PortunApp, we're committed to protecting your privacy and complying with applicable data protection laws, including GDPR (Europe) and CCPA (California)."
+      },
+      "dataCollection": {
+        "chip": "DATA COLLECTION",
+        "title": "Information We Collect",
+        "subtitle": "We collect only what's necessary to provide our service",
+        "account": {
+          "title": "Account Information",
+          "items": {
+            "name": "Name",
+            "email": "Email address",
+            "phone": "Phone number",
+            "unit": "Unit number"
+          }
+        },
+        "visitor": {
+          "title": "Visitor Information",
+          "items": {
+            "names": "Visitor names",
+            "phones": "Phone numbers",
+            "vehicles": "Vehicle details",
+            "dates": "Visit dates/times"
+          }
+        },
+        "payment": {
+          "title": "Payment Records",
+          "items": {
+            "receipts": "Receipt images",
+            "amounts": "Payment amounts",
+            "periods": "Billing periods",
+            "status": "Verification status"
+          }
+        },
+        "device": {
+          "title": "Device Data",
+          "items": {
+            "type": "Device type",
+            "os": "Operating system",
+            "ip": "IP address",
+            "analytics": "Usage analytics"
+          }
+        }
+      },
+      "dataUsage": {
+        "title": "How We Use Your Information",
+        "subtitle": "Your data helps us provide better service",
+        "service": {
+          "title": "Service Delivery",
+          "items": {
+            "qr": "Generate and validate QR codes for visitor access",
+            "payment": "Process and track payment receipts",
+            "notifications": "Send notifications about visitor arrivals",
+            "support": "Provide customer support"
+          }
+        },
+        "improvement": {
+          "title": "Service Improvement",
+          "description": "Analyze usage patterns to improve features, identify and fix technical issues, develop new features based on user needs, and conduct research and analytics."
+        },
+        "security": {
+          "title": "Security & Fraud Prevention",
+          "description": "We monitor for fraudulent QR codes, detect unauthorized access, investigate security incidents, and enforce our Terms of Service."
+        }
+      },
+      "userRights": {
+        "chip": "YOUR RIGHTS",
+        "title": "You're in Control",
+        "subtitle": "Manage your personal data with these privacy rights",
+        "access": {
+          "title": "Access",
+          "description": "Request a copy of your personal data"
+        },
+        "correction": {
+          "title": "Correction",
+          "description": "Update inaccurate or incomplete information"
+        },
+        "deletion": {
+          "title": "Deletion",
+          "description": "Request deletion of your account and data"
+        },
+        "portability": {
+          "title": "Portability",
+          "description": "Receive your data in a machine-readable format"
+        },
+        "object": {
+          "title": "Object",
+          "description": "Object to processing based on legitimate interests (GDPR)"
+        },
+        "optOut": {
+          "title": "Opt-Out",
+          "description": "Unsubscribe from marketing communications"
+        },
+        "exercise": {
+          "title": "Exercise Your Rights",
+          "description": "Email us at privacy{'@'}portun.app to request access, correction, or deletion of your data. We'll respond within 30 days.",
+          "button": "Contact Privacy Team"
+        }
+      },
+      "security": {
+        "title": "How We Protect Your Data",
+        "subtitle": "Industry-standard security measures keep your information safe",
+        "encryption": {
+          "title": "Encryption",
+          "description": "Data encrypted in transit (HTTPS/TLS) and at rest (AES-256)"
+        },
+        "access": {
+          "title": "Access Controls",
+          "description": "Role-based access restrictions and database-level security"
+        },
+        "auth": {
+          "title": "Authentication",
+          "description": "Secure password hashing with optional biometric verification"
+        },
+        "backups": {
+          "title": "Backups",
+          "description": "Regular automated backups with point-in-time recovery"
+        },
+        "breach": {
+          "title": "Data Breach Notification:",
+          "description": "In the unlikely event of a data breach, we'll notify you within 72 hours via email and in-app notification."
+        }
+      },
+      "contact": {
+        "title": "Questions About Privacy?",
+        "subtitle": "Our Data Protection Officer is here to help",
+        "button": "Privacy Team",
+        "company": "Webzy LLC (dba PortunApp)",
+        "compliance": "Compliant with GDPR, CCPA, and other privacy regulations"
+      }
+    },
+    "cookiePolicy": {
+      "chip": "Cookie Management",
+      "title": "Cookie Policy",
+      "subtitle": "How we use cookies and similar tracking technologies",
+      "intro": {
+        "title": "What Are Cookies?",
+        "description": "Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences and improve your browsing experience. Think of them as digital bookmarks that make your next visit smoother!"
+      },
+      "types": {
+        "chip": "COOKIE TYPES",
+        "title": "Types of Cookies We Use",
+        "subtitle": "We use different cookies for different purposes",
+        "necessary": {
+          "title": "Strictly Necessary",
+          "description": "Essential for the service to function. Cannot be disabled.",
+          "cookies": {
+            "accessToken": {
+              "name": "sb-access-token",
+              "purpose": "Authentication session",
+              "duration": "1 hour"
+            },
+            "refreshToken": {
+              "name": "sb-refresh-token",
+              "purpose": "Session renewal",
+              "duration": "30 days"
+            },
+            "consent": {
+              "name": "cookie-consent",
+              "purpose": "Remember your cookie preferences",
+              "duration": "1 year"
+            }
+          }
+        },
+        "performance": {
+          "title": "Performance & Analytics",
+          "description": "Help us understand how visitors interact with our service.",
+          "cookies": {
+            "analytics": {
+              "name": "_ga",
+              "purpose": "Track unique visitors (Google Analytics)",
+              "duration": "2 years"
+            },
+            "session": {
+              "name": "_ga_*",
+              "purpose": "Session tracking",
+              "duration": "2 years"
+            }
+          }
+        },
+        "functional": {
+          "title": "Functional",
+          "description": "Remember your preferences and personalize your experience.",
+          "cookies": {
+            "theme": {
+              "name": "theme-preference",
+              "purpose": "Light/dark mode selection",
+              "duration": "1 year"
+            },
+            "language": {
+              "name": "language",
+              "purpose": "Preferred language (EN/ES/PT)",
+              "duration": "1 year"
+            }
+          }
+        }
+      },
+      "thirdParty": {
+        "chip": "THIRD PARTIES",
+        "title": "Third-Party Cookies",
+        "subtitle": "Some features use cookies from our trusted partners",
+        "supabase": {
+          "title": "Supabase",
+          "description": "Our authentication and database provider uses cookies to manage your session securely.",
+          "link": "View Supabase Privacy Policy"
+        },
+        "onesignal": {
+          "title": "OneSignal",
+          "description": "Powers our push notifications to keep you informed about visitor arrivals.",
+          "link": "View OneSignal Privacy Policy"
+        },
+        "google": {
+          "title": "Google Analytics",
+          "description": "Helps us understand how you use PortunApp so we can make it better.",
+          "link": "View Google Privacy Policy"
+        },
+        "vercel": {
+          "title": "Vercel",
+          "description": "Our hosting provider may use cookies for performance optimization.",
+          "link": "View Vercel Privacy Policy"
+        }
+      },
+      "management": {
+        "chip": "COOKIE MANAGEMENT",
+        "title": "Manage Your Cookie Preferences",
+        "subtitle": "You have full control over which cookies we use",
+        "banner": {
+          "title": "Cookie Consent Banner",
+          "description": "When you first visit PortunApp, you'll see a banner asking for your cookie consent. You can accept all cookies, decline optional cookies, or learn more before deciding."
+        },
+        "browser": {
+          "title": "Browser Settings",
+          "description": "Most web browsers allow you to control cookies through their settings. Here are guides for popular browsers:",
+          "chrome": "Chrome Cookie Settings",
+          "firefox": "Firefox Cookie Settings",
+          "safari": "Safari Cookie Settings",
+          "edge": "Edge Cookie Settings"
+        },
+        "optOut": {
+          "title": "Opt-Out Tools",
+          "description": "You can also use these tools to manage cookies across multiple websites:",
+          "aboutCookies": "All About Cookies",
+          "yourChoices": "Your Online Choices",
+          "networkAdvertising": "Network Advertising Initiative"
+        },
+        "warning": {
+          "title": "Important:",
+          "description": "Disabling necessary cookies will prevent you from using PortunApp. Performance and functional cookies are optional but enhance your experience."
+        }
+      },
+      "updates": {
+        "title": "Updates to This Policy",
+        "description": "We may update this Cookie Policy from time to time to reflect changes in our practices or for legal reasons. We'll notify you of significant changes via email or in-app notification."
+      },
+      "contact": {
+        "title": "Questions About Cookies?",
+        "subtitle": "We're happy to help explain our cookie usage",
+        "button": "Contact Us",
+        "resources": {
+          "title": "Additional Resources",
+          "aboutCookies": "All About Cookies",
+          "yourChoices": "Your Online Choices",
+          "cookiepedia": "Cookiepedia"
+        }
+      }
+    }
+  },
   "$vuetify": {
     "badge": "Badge",
     "noDataText": "No data available",
