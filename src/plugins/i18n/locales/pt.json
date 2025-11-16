@@ -439,6 +439,12 @@
         "law": "Lei Aplicável",
         "changes": "Alterações nos Termos",
         "contact": "Fale Conosco"
+      },
+      "contactSection": {
+        "title": "Dúvidas? Fale Conosco",
+        "description": "Se você tiver dúvidas sobre estes Termos, entre em contato conosco:",
+        "legal": "Jurídico",
+        "support": "Suporte"
       }
     },
     "termsOfService": {

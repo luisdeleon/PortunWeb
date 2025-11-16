@@ -439,6 +439,12 @@
         "law": "Ley Aplicable",
         "changes": "Cambios a los Términos",
         "contact": "Contáctanos"
+      },
+      "contactSection": {
+        "title": "¿Preguntas? Contáctanos",
+        "description": "Si tienes preguntas sobre estos Términos, por favor contáctanos:",
+        "legal": "Legal",
+        "support": "Soporte"
       }
     },
     "termsOfService": {

@@ -138,7 +138,7 @@ const sections = [
                     />
                   </VAvatar>
                   <h2 class="text-h4">
-                    1. Introduction
+                    1. {{ $t('legal.termsAndConditions.sections.introduction') }}
                   </h2>
                 </div>
                 <p class="text-body-1 mb-4">
@@ -183,7 +183,7 @@ const sections = [
                     />
                   </VAvatar>
                   <h2 class="text-h4">
-                    2. Definitions
+                    2. {{ $t('legal.termsAndConditions.sections.definitions') }}
                   </h2>
                 </div>
                 <VList>
@@ -296,7 +296,7 @@ const sections = [
                     />
                   </VAvatar>
                   <h2 class="text-h4">
-                    3. Eligibility
+                    3. {{ $t('legal.termsAndConditions.sections.eligibility') }}
                   </h2>
                 </div>
                 <p class="text-body-1 mb-4">
@@ -350,7 +350,7 @@ const sections = [
                     />
                   </VAvatar>
                   <h2 class="text-h4">
-                    4. Account Registration and Security
+                    4. {{ $t('legal.termsAndConditions.sections.account') }}
                   </h2>
                 </div>
                 <p class="text-body-1 mb-4">
@@ -428,13 +428,13 @@ const sections = [
                   />
                 </VAvatar>
                 <h2 class="text-h4">
-                  {{ idx + 5 }}. {{ section.title }}
+                  {{ idx + 5 }}. {{ $t(section.title) }}
                 </h2>
               </div>
               <div class="text-body-1">
                 <!-- Content continues here based on section... -->
                 <p class="mb-4">
-                  For detailed information about {{ section.title.toLowerCase() }}, please refer to the complete documentation.
+                  For detailed information about {{ $t(section.title).toLowerCase() }}, please refer to the complete documentation.
                 </p>
                 <VAlert
                   color="info"
@@ -473,10 +473,10 @@ const sections = [
                     color="white"
                   />
                   <h2 class="text-h4 mb-4 text-white">
-                    Questions? Contact Us
+                    {{ $t('legal.termsAndConditions.contactSection.title') }}
                   </h2>
                   <p class="text-body-1 mb-6 text-white" style="opacity: 0.9;">
-                    If you have questions about these Terms, please contact us:
+                    {{ $t('legal.termsAndConditions.contactSection.description') }}
                   </p>
                   <VRow justify="center">
                     <VCol
@@ -490,7 +490,7 @@ const sections = [
                         prepend-icon="tabler-mail"
                         block
                       >
-                        Legal
+                        {{ $t('legal.termsAndConditions.contactSection.legal') }}
                       </VBtn>
                     </VCol>
                     <VCol
@@ -504,7 +504,7 @@ const sections = [
                         prepend-icon="tabler-help"
                         block
                       >
-                        Support
+                        {{ $t('legal.termsAndConditions.contactSection.support') }}
                       </VBtn>
                     </VCol>
                   </VRow>

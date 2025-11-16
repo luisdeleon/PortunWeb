@@ -444,6 +444,12 @@
         "law": "Governing Law",
         "changes": "Changes to Terms",
         "contact": "Contact Us"
+      },
+      "contactSection": {
+        "title": "Questions? Contact Us",
+        "description": "If you have questions about these Terms, please contact us:",
+        "legal": "Legal",
+        "support": "Support"
       }
     },
     "termsOfService": {
