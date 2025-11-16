@@ -414,6 +414,33 @@
         "description": "Por favor lee estos términos cuidadosamente antes de usar nuestro servicio"
       }
     },
+    "termsAndConditions": {
+      "chip": "Documentos Legales",
+      "title": "Términos y Condiciones",
+      "subtitle": "Por favor lee estos términos cuidadosamente antes de usar PortunApp",
+      "navigation": "NAVEGACIÓN RÁPIDA",
+      "sections": {
+        "introduction": "Introducción",
+        "definitions": "Definiciones",
+        "eligibility": "Elegibilidad",
+        "account": "Cuenta y Seguridad",
+        "service": "Descripción del Servicio",
+        "responsibilities": "Responsabilidades del Usuario",
+        "payment": "Términos de Pago",
+        "ip": "Propiedad Intelectual",
+        "content": "Contenido del Usuario",
+        "privacy": "Privacidad y Datos",
+        "thirdParty": "Servicios de Terceros",
+        "disclaimers": "Exenciones de Responsabilidad",
+        "liability": "Limitación de Responsabilidad",
+        "indemnification": "Indemnización",
+        "termination": "Terminación",
+        "dispute": "Resolución de Disputas",
+        "law": "Ley Aplicable",
+        "changes": "Cambios a los Términos",
+        "contact": "Contáctanos"
+      }
+    },
     "termsOfService": {
       "chip": "Acuerdo de Servicio",
       "title": "Términos de Servicio",

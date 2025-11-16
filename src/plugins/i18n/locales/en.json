@@ -419,6 +419,33 @@
         "description": "Please read these terms carefully before using our service"
       }
     },
+    "termsAndConditions": {
+      "chip": "Legal Documents",
+      "title": "Terms and Conditions",
+      "subtitle": "Please read these terms carefully before using PortunApp",
+      "navigation": "QUICK NAVIGATION",
+      "sections": {
+        "introduction": "Introduction",
+        "definitions": "Definitions",
+        "eligibility": "Eligibility",
+        "account": "Account & Security",
+        "service": "Service Description",
+        "responsibilities": "User Responsibilities",
+        "payment": "Payment Terms",
+        "ip": "Intellectual Property",
+        "content": "User Content",
+        "privacy": "Privacy & Data",
+        "thirdParty": "Third-Party Services",
+        "disclaimers": "Disclaimers",
+        "liability": "Liability Limitation",
+        "indemnification": "Indemnification",
+        "termination": "Termination",
+        "dispute": "Dispute Resolution",
+        "law": "Governing Law",
+        "changes": "Changes to Terms",
+        "contact": "Contact Us"
+      }
+    },
     "termsOfService": {
       "chip": "Service Agreement",
       "title": "Terms of Service",
