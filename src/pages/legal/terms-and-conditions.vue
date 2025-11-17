@@ -36,6 +36,13 @@ const sections = [
   { title: 'legal.termsAndConditions.sections.changes', icon: 'tabler-refresh', id: 'changes' },
   { title: 'legal.termsAndConditions.sections.contact', icon: 'tabler-mail', id: 'contact' },
 ]
+
+const eligibilityRequirements = [
+  { icon: 'tabler-calendar-check', text: 'legal.termsAndConditions.content.eligibility.requirements.age' },
+  { icon: 'tabler-check', text: 'legal.termsAndConditions.content.eligibility.requirements.capacity' },
+  { icon: 'tabler-alert-circle', text: 'legal.termsAndConditions.content.eligibility.requirements.lawful' },
+  { icon: 'tabler-file-check', text: 'legal.termsAndConditions.content.eligibility.requirements.accuracy' },
+]
 </script>
 
 <template>
@@ -142,7 +149,7 @@ const sections = [
                   </h2>
                 </div>
                 <p class="text-body-1 mb-4">
-                  Welcome to PortunApp, operated by Webzy LLC ("we," "us," "our"). These Terms and Conditions ("Terms") govern your access to and use of the PortunApp platform, including our website, mobile applications, and related services (collectively, the "Service").
+                  {{ $t('legal.termsAndConditions.content.introduction.text') }}
                 </p>
                 <VAlert
                   color="info"
@@ -155,7 +162,7 @@ const sections = [
                       class="me-3"
                     />
                     <div>
-                      By accessing or using our Service, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Service.
+                      {{ $t('legal.termsAndConditions.content.introduction.agreement') }}
                     </div>
                   </div>
                 </VAlert>
@@ -195,10 +202,10 @@ const sections = [
                       />
                     </template>
                     <VListItemTitle class="font-weight-bold">
-                      "Service"
+                      {{ $t('legal.termsAndConditions.content.definitions.service.title') }}
                     </VListItemTitle>
                     <VListItemSubtitle class="mt-1">
-                      Refers to the PortunApp platform, including QR-based access control, payment tracking, and related features.
+                      {{ $t('legal.termsAndConditions.content.definitions.service.description') }}
                     </VListItemSubtitle>
                   </VListItem>
                   <VListItem>
@@ -209,10 +216,10 @@ const sections = [
                       />
                     </template>
                     <VListItemTitle class="font-weight-bold">
-                      "User"
+                      {{ $t('legal.termsAndConditions.content.definitions.user.title') }}
                     </VListItemTitle>
                     <VListItemSubtitle class="mt-1">
-                      Refers to any individual or entity that accesses or uses our Service.
+                      {{ $t('legal.termsAndConditions.content.definitions.user.description') }}
                     </VListItemSubtitle>
                   </VListItem>
                   <VListItem>
@@ -223,10 +230,10 @@ const sections = [
                       />
                     </template>
                     <VListItemTitle class="font-weight-bold">
-                      "Community"
+                      {{ $t('legal.termsAndConditions.content.definitions.community.title') }}
                     </VListItemTitle>
                     <VListItemSubtitle class="mt-1">
-                      Refers to a residential community, homeowners association, or similar organization using our Service.
+                      {{ $t('legal.termsAndConditions.content.definitions.community.description') }}
                     </VListItemSubtitle>
                   </VListItem>
                   <VListItem>
@@ -237,10 +244,10 @@ const sections = [
                       />
                     </template>
                     <VListItemTitle class="font-weight-bold">
-                      "Resident"
+                      {{ $t('legal.termsAndConditions.content.definitions.resident.title') }}
                     </VListItemTitle>
                     <VListItemSubtitle class="mt-1">
-                      Refers to a homeowner, tenant, or authorized resident within a Community.
+                      {{ $t('legal.termsAndConditions.content.definitions.resident.description') }}
                     </VListItemSubtitle>
                   </VListItem>
                   <VListItem>
@@ -251,10 +258,10 @@ const sections = [
                       />
                     </template>
                     <VListItemTitle class="font-weight-bold">
-                      "Administrator"
+                      {{ $t('legal.termsAndConditions.content.definitions.administrator.title') }}
                     </VListItemTitle>
                     <VListItemSubtitle class="mt-1">
-                      Refers to authorized personnel managing a Community's account.
+                      {{ $t('legal.termsAndConditions.content.definitions.administrator.description') }}
                     </VListItemSubtitle>
                   </VListItem>
                   <VListItem>
@@ -265,10 +272,10 @@ const sections = [
                       />
                     </template>
                     <VListItemTitle class="font-weight-bold">
-                      "Guard"
+                      {{ $t('legal.termsAndConditions.content.definitions.guard.title') }}
                     </VListItemTitle>
                     <VListItemSubtitle class="mt-1">
-                      Refers to security personnel using our Service to manage access control.
+                      {{ $t('legal.termsAndConditions.content.definitions.guard.description') }}
                     </VListItemSubtitle>
                   </VListItem>
                 </VList>
@@ -300,16 +307,11 @@ const sections = [
                   </h2>
                 </div>
                 <p class="text-body-1 mb-4">
-                  You must be at least 18 years old to use our Service. By using our Service, you represent and warrant that:
+                  {{ $t('legal.termsAndConditions.content.eligibility.intro') }}
                 </p>
                 <VRow>
                   <VCol
-                    v-for="(item, index) in [
-                      { icon: 'tabler-calendar-check', text: 'You are at least 18 years of age' },
-                      { icon: 'tabler-check', text: 'You have the legal capacity to enter into these Terms' },
-                      { icon: 'tabler-alert-circle', text: 'You are not prohibited from using our Service under applicable laws' },
-                      { icon: 'tabler-file-check', text: 'All information you provide is accurate and complete' }
-                    ]"
+                    v-for="(item, index) in eligibilityRequirements"
                     :key="index"
                     cols="12"
                     sm="6"
@@ -321,7 +323,7 @@ const sections = [
                         class="mt-1 me-3"
                       />
                       <div class="text-body-1">
-                        {{ item.text }}
+                        {{ $t(item.text) }}
                       </div>
                     </div>
                   </VCol>
@@ -354,7 +356,7 @@ const sections = [
                   </h2>
                 </div>
                 <p class="text-body-1 mb-4">
-                  To use certain features of our Service, you must register for an account. You agree to:
+                  {{ $t('legal.termsAndConditions.content.account.intro') }}
                 </p>
                 <VExpansionPanels>
                   <VExpansionPanel>
@@ -363,23 +365,23 @@ const sections = [
                         icon="tabler-user-plus"
                         class="me-3"
                       />
-                      Account Registration Requirements
+                      {{ $t('legal.termsAndConditions.content.account.registration.title') }}
                     </VExpansionPanelTitle>
                     <VExpansionPanelText>
                       <ul class="mt-4">
                         <li class="mb-2">
-                          Provide accurate, current, and complete information during registration
+                          {{ $t('legal.termsAndConditions.content.account.registration.items.accurate') }}
                         </li>
                         <li class="mb-2">
-                          Maintain and promptly update your account information
+                          {{ $t('legal.termsAndConditions.content.account.registration.items.maintain') }}
                         </li>
                         <li class="mb-2">
-                          Maintain the security of your password and account
+                          {{ $t('legal.termsAndConditions.content.account.registration.items.security') }}
                         </li>
                         <li class="mb-2">
-                          Accept responsibility for all activities under your account
+                          {{ $t('legal.termsAndConditions.content.account.registration.items.responsibility') }}
                         </li>
-                        <li>Notify us immediately of any unauthorized use of your account</li>
+                        <li>{{ $t('legal.termsAndConditions.content.account.registration.items.notify') }}</li>
                       </ul>
                     </VExpansionPanelText>
                   </VExpansionPanel>
@@ -389,7 +391,7 @@ const sections = [
                         icon="tabler-lock"
                         class="me-3"
                       />
-                      Account Suspension Policy
+                      {{ $t('legal.termsAndConditions.content.account.suspension.title') }}
                     </VExpansionPanelTitle>
                     <VExpansionPanelText>
                       <VAlert
@@ -397,7 +399,7 @@ const sections = [
                         variant="tonal"
                         class="mt-4"
                       >
-                        We reserve the right to suspend or terminate accounts that violate these Terms or are inactive for extended periods.
+                        {{ $t('legal.termsAndConditions.content.account.suspension.warning') }}
                       </VAlert>
                     </VExpansionPanelText>
                   </VExpansionPanel>
@@ -434,7 +436,7 @@ const sections = [
               <div class="text-body-1">
                 <!-- Content continues here based on section... -->
                 <p class="mb-4">
-                  For detailed information about {{ $t(section.title).toLowerCase() }}, please refer to the complete documentation.
+                  {{ $t('legal.termsAndConditions.content.generic.description', { section: $t(section.title).toLowerCase() }) }}
                 </p>
                 <VAlert
                   color="info"
@@ -447,7 +449,7 @@ const sections = [
                       size="20"
                       class="me-2"
                     />
-                    <span class="text-body-2">This section contains important legal information about {{ section.title.toLowerCase() }}.</span>
+                    <span class="text-body-2">{{ $t('legal.termsAndConditions.content.generic.alert', { section: $t(section.title).toLowerCase() }) }}</span>
                   </div>
                 </VAlert>
               </div>
@@ -509,7 +511,7 @@ const sections = [
                     </VCol>
                   </VRow>
                   <p class="text-body-2 mt-6 text-white" style="opacity: 0.75;">
-                    Webzy LLC (dba PortunApp) • www.portun.app
+                    {{ $t('legal.termsAndConditions.content.footer') }}
                   </p>
                 </div>
               </VCardText>

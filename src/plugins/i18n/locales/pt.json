@@ -440,6 +440,69 @@
         "changes": "Alterações nos Termos",
         "contact": "Fale Conosco"
       },
+      "content": {
+        "introduction": {
+          "text": "Bem-vindo ao PortunApp, operado pela Webzy LLC (\"nós\", \"nosso\"). Estes Termos e Condições (\"Termos\") regem seu acesso e uso da plataforma PortunApp, incluindo nosso site, aplicativos móveis e serviços relacionados (coletivamente, o \"Serviço\").",
+          "agreement": "Ao acessar ou usar nosso Serviço, você concorda em estar vinculado a estes Termos. Se você não concorda com estes Termos, por favor não use nosso Serviço."
+        },
+        "definitions": {
+          "service": {
+            "title": "\"Serviço\"",
+            "description": "Refere-se à plataforma PortunApp, incluindo controle de acesso baseado em QR, rastreamento de pagamentos e recursos relacionados."
+          },
+          "user": {
+            "title": "\"Usuário\"",
+            "description": "Refere-se a qualquer indivíduo ou entidade que acesse ou use nosso Serviço."
+          },
+          "community": {
+            "title": "\"Comunidade\"",
+            "description": "Refere-se a uma comunidade residencial, associação de proprietários ou organização similar que use nosso Serviço."
+          },
+          "resident": {
+            "title": "\"Residente\"",
+            "description": "Refere-se a um proprietário, inquilino ou residente autorizado dentro de uma Comunidade."
+          },
+          "administrator": {
+            "title": "\"Administrador\"",
+            "description": "Refere-se ao pessoal autorizado que gerencia a conta de uma Comunidade."
+          },
+          "guard": {
+            "title": "\"Guarda\"",
+            "description": "Refere-se ao pessoal de segurança que usa nosso Serviço para gerenciar o controle de acesso."
+          }
+        },
+        "eligibility": {
+          "intro": "Você deve ter pelo menos 18 anos de idade para usar nosso Serviço. Ao usar nosso Serviço, você declara e garante que:",
+          "requirements": {
+            "age": "Você tem pelo menos 18 anos de idade",
+            "capacity": "Você tem capacidade legal para aceitar estes Termos",
+            "lawful": "Você não está proibido de usar nosso Serviço sob as leis aplicáveis",
+            "accuracy": "Todas as informações que você fornece são precisas e completas"
+          }
+        },
+        "account": {
+          "intro": "Para usar certos recursos do nosso Serviço, você deve se registrar para uma conta. Você concorda em:",
+          "registration": {
+            "title": "Requisitos de Registro de Conta",
+            "items": {
+              "accurate": "Fornecer informações precisas, atuais e completas durante o registro",
+              "maintain": "Manter e atualizar prontamente as informações da sua conta",
+              "security": "Manter a segurança da sua senha e conta",
+              "responsibility": "Aceitar a responsabilidade por todas as atividades sob sua conta",
+              "notify": "Notificar-nos imediatamente de qualquer uso não autorizado da sua conta"
+            }
+          },
+          "suspension": {
+            "title": "Política de Suspensão de Conta",
+            "warning": "Reservamo-nos o direito de suspender ou encerrar contas que violem estes Termos ou estejam inativas por períodos prolongados."
+          }
+        },
+        "generic": {
+          "description": "Para informações detalhadas sobre {section}, consulte a documentação completa.",
+          "alert": "Esta seção contém informações legais importantes sobre {section}."
+        },
+        "footer": "Webzy LLC (dba PortunApp) • www.portun.app"
+      },
       "contactSection": {
         "title": "Dúvidas? Fale Conosco",
         "description": "Se você tiver dúvidas sobre estes Termos, entre em contato conosco:",
