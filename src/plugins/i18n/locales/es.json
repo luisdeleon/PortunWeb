@@ -743,83 +743,62 @@
         "chip": "TIPOS DE COOKIES",
         "title": "Tipos de Cookies que Usamos",
         "subtitle": "Usamos diferentes cookies para diferentes propósitos",
-        "necessary": {
+        "strictlyNecessary": {
           "title": "Estrictamente Necesarias",
           "description": "Esenciales para que el servicio funcione. No se pueden desactivar.",
           "cookies": {
-            "accessToken": {
-              "name": "sb-access-token",
-              "purpose": "Sesión de autenticación",
-              "duration": "1 hora"
-            },
-            "refreshToken": {
-              "name": "sb-refresh-token",
-              "purpose": "Renovación de sesión",
-              "duration": "30 días"
-            },
-            "consent": {
-              "name": "cookie-consent",
-              "purpose": "Recordar tus preferencias de cookies",
-              "duration": "1 año"
-            }
+            "accessToken": "Sesión de autenticación",
+            "refreshToken": "Renovación de sesión",
+            "xsrf": "Protección de seguridad contra falsificación de solicitudes entre sitios",
+            "consent": "Recordar tus preferencias de cookies"
           }
         },
         "performance": {
           "title": "Rendimiento y Análisis",
           "description": "Nos ayudan a entender cómo los visitantes interactúan con nuestro servicio.",
           "cookies": {
-            "analytics": {
-              "name": "_ga",
-              "purpose": "Rastrear visitantes únicos (Google Analytics)",
-              "duration": "2 años"
-            },
-            "session": {
-              "name": "_ga_*",
-              "purpose": "Seguimiento de sesión",
-              "duration": "2 años"
-            }
+            "ga": "Rastrear visitantes únicos (Google Analytics)",
+            "gaSession": "Seguimiento de sesión",
+            "gid": "Distinguir usuarios (Google Analytics)"
           }
         },
         "functional": {
           "title": "Funcionales",
           "description": "Recordar tus preferencias y personalizar tu experiencia.",
           "cookies": {
-            "theme": {
-              "name": "theme-preference",
-              "purpose": "Selección de modo claro/oscuro",
-              "duration": "1 año"
-            },
-            "language": {
-              "name": "language",
-              "purpose": "Idioma preferido (EN/ES/PT)",
-              "duration": "1 año"
-            }
+            "locale": "Idioma preferido (EN/ES/PT)",
+            "theme": "Selección de modo claro/oscuro",
+            "community": "Recordar tu comunidad actual"
           }
         }
+      },
+      "durations": {
+        "session": "Sesión",
+        "oneHour": "1 hora",
+        "twentyFourHours": "24 horas",
+        "thirtyDays": "30 días",
+        "oneYear": "1 año",
+        "twoYears": "2 años"
       },
       "thirdParty": {
         "chip": "TERCEROS",
         "title": "Cookies de Terceros",
         "subtitle": "Algunas funciones usan cookies de nuestros socios de confianza",
+        "googleAnalytics": {
+          "name": "Google Analytics",
+          "purpose": "Nos ayuda a entender cómo usas PortunApp para que podamos mejorarlo."
+        },
         "supabase": {
-          "title": "Supabase",
-          "description": "Nuestro proveedor de autenticación y base de datos usa cookies para gestionar tu sesión de forma segura.",
-          "link": "Ver Política de Privacidad de Supabase"
+          "name": "Supabase",
+          "purpose": "Nuestro proveedor de autenticación y base de datos usa cookies para gestionar tu sesión de forma segura."
         },
-        "onesignal": {
-          "title": "OneSignal",
-          "description": "Potencia nuestras notificaciones push para mantenerte informado sobre llegadas de visitantes.",
-          "link": "Ver Política de Privacidad de OneSignal"
+        "oneSignal": {
+          "name": "OneSignal",
+          "purpose": "Potencia nuestras notificaciones push para mantenerte informado sobre llegadas de visitantes."
         },
-        "google": {
-          "title": "Google Analytics",
-          "description": "Nos ayuda a entender cómo usas PortunApp para que podamos mejorarlo.",
-          "link": "Ver Política de Privacidad de Google"
-        },
-        "vercel": {
-          "title": "Vercel",
-          "description": "Nuestro proveedor de alojamiento puede usar cookies para optimización de rendimiento.",
-          "link": "Ver Política de Privacidad de Vercel"
+        "sentry": {
+          "name": "Sentry",
+          "purpose": "Monitorea errores y problemas de rendimiento para mejorar la calidad del servicio."
         }
       },
       "management": {
