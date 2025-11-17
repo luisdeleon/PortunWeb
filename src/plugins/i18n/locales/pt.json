@@ -809,6 +809,14 @@
         "sentry": {
           "name": "Sentry",
           "purpose": "Monitora erros e problemas de desempenho para melhorar a qualidade do serviço."
+        },
+        "vercel": {
+          "name": "Vercel",
+          "purpose": "Nosso provedor de hospedagem pode usar cookies para otimização de desempenho e análise."
+        },
+        "cloudflare": {
+          "name": "Cloudflare",
+          "purpose": "Nosso provedor de CDN e segurança usa cookies para otimizar a entrega de conteúdo e proteger contra ameaças."
         }
       },
       "management": {

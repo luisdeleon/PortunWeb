@@ -81,6 +81,20 @@ const thirdPartyServices = [
     purpose: 'legal.cookiePolicy.thirdParty.sentry.purpose',
     link: 'https://sentry.io/privacy/',
   },
+  {
+    name: 'legal.cookiePolicy.thirdParty.vercel.name',
+    icon: 'tabler-brand-vercel',
+    color: 'primary',
+    purpose: 'legal.cookiePolicy.thirdParty.vercel.purpose',
+    link: 'https://vercel.com/legal/privacy-policy',
+  },
+  {
+    name: 'legal.cookiePolicy.thirdParty.cloudflare.name',
+    icon: 'tabler-cloud',
+    color: 'warning',
+    purpose: 'legal.cookiePolicy.thirdParty.cloudflare.purpose',
+    link: 'https://www.cloudflare.com/privacypolicy/',
+  },
 ]
 </script>
 

@@ -814,6 +814,14 @@
         "sentry": {
           "name": "Sentry",
           "purpose": "Monitors errors and performance issues to improve service quality."
+        },
+        "vercel": {
+          "name": "Vercel",
+          "purpose": "Our hosting provider may use cookies for performance optimization and analytics."
+        },
+        "cloudflare": {
+          "name": "Cloudflare",
+          "purpose": "Our CDN and security provider uses cookies to optimize content delivery and protect against threats."
         }
       },
       "management": {
