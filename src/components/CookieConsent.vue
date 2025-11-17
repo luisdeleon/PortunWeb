@@ -61,13 +61,12 @@ onMounted(() => {
               </h6>
               <p class="text-body-2 mb-0">
                 {{ $t('landing.cookies.description') }}
-                <a
-                  href="#"
+                <RouterLink
+                  to="/legal/cookie-policy"
                   class="text-primary text-decoration-none"
-                  @click.prevent
                 >
                   {{ $t('landing.cookies.learnMore') }}
-                </a>
+                </RouterLink>
               </p>
             </div>
 
