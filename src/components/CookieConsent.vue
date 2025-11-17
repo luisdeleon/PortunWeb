@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { useI18n } from 'vue-i18n'
-
-const { t } = useI18n()
 
 const showBanner = ref(false)
 
@@ -11,6 +8,10 @@ const checkCookieConsent = () => {
   if (!consent) {
     showBanner.value = true
   }
+}
+
+const showPreferences = () => {
+  showBanner.value = true
 }
 
 const acceptCookies = () => {
@@ -30,6 +31,18 @@ onMounted(() => {
   setTimeout(() => {
     checkCookieConsent()
   }, 1000)
+
+  // Listen for custom event to show preferences
+  const handleShowPreferences = () => {
+    showPreferences()
+  }
+
+  window.addEventListener('show-cookie-preferences', handleShowPreferences)
+
+  // Cleanup
+  return () => {
+    window.removeEventListener('show-cookie-preferences', handleShowPreferences)
+  }
 })
 </script>
 

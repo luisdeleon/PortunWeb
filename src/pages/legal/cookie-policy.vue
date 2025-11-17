@@ -96,6 +96,11 @@ const thirdPartyServices = [
     link: 'https://www.cloudflare.com/privacypolicy/',
   },
 ]
+
+const openCookiePreferences = () => {
+  // Dispatch custom event to show cookie preferences
+  window.dispatchEvent(new CustomEvent('show-cookie-preferences'))
+}
 </script>
 
 <template>
@@ -380,6 +385,7 @@ const thirdPartyServices = [
                         variant="elevated"
                         prepend-icon="tabler-settings"
                         block
+                        @click="openCookiePreferences"
                       >
                         {{ $t('legal.cookiePolicy.management.banner.button') }}
                       </VBtn>

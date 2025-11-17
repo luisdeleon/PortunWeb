@@ -188,7 +188,7 @@ const legalList: Menu[] = [
       <VContainer>
         <div class="d-flex justify-space-between flex-wrap gap-y-5 align-center">
           <div class="text-body-1 text-white-variant text-wrap me-4">
-            Copyright &copy; {{ new Date().getFullYear() }} Webzy LLC. All rights reserved.
+            Copyright &copy; {{ new Date().getFullYear() }} <a href="https://webzy.io" target="_blank" rel="noopener noreferrer" class="webzy-link">Webzy LLC</a>. All rights reserved.
           </div>
 
           <div class="d-flex gap-x-6">
@@ -242,6 +242,16 @@ const legalList: Menu[] = [
 
 .footer-line {
   background: #282c3e;
+
+  .webzy-link {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 </style>
 
