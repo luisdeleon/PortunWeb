@@ -143,7 +143,30 @@ export function useSEO(options: SEOOptions = {}) {
           '@type': 'ContactPoint',
           'email': 'hello@portun.app',
           'contactType': 'Customer Service',
-          'areaServed': ['US', 'MX', 'BR'],
+          'areaServed': [
+            'US', // United States
+            'MX', // Mexico
+            'GT', // Guatemala
+            'BZ', // Belize
+            'SV', // El Salvador
+            'HN', // Honduras
+            'NI', // Nicaragua
+            'CR', // Costa Rica
+            'PA', // Panama
+            'CU', // Cuba
+            'DO', // Dominican Republic
+            'PR', // Puerto Rico
+            'CO', // Colombia
+            'VE', // Venezuela
+            'EC', // Ecuador
+            'PE', // Peru
+            'BR', // Brazil
+            'BO', // Bolivia
+            'PY', // Paraguay
+            'UY', // Uruguay
+            'AR', // Argentina
+            'CL', // Chile
+          ],
           'availableLanguage': ['English', 'Spanish', 'Portuguese']
         }
       }
