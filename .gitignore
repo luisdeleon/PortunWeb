@@ -41,6 +41,3 @@ public/mockServiceWorker.js
 # Env files
 .env*
 !.env.example
-
-# Documentation (may contain sensitive setup info)
-docs/
