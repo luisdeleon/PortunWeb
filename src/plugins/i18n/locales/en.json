@@ -805,7 +805,7 @@
         },
         "supabase": {
           "name": "Supabase",
-          "purpose": "Our authentication and database provider uses cookies to manage your session securely."
+          "purpose": "Our authentication and database provider (powered by AWS) uses cookies to manage your session securely."
         },
         "oneSignal": {
           "name": "OneSignal",

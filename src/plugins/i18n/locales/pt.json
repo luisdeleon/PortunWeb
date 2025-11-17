@@ -800,7 +800,7 @@
         },
         "supabase": {
           "name": "Supabase",
-          "purpose": "Nosso provedor de autenticação e banco de dados usa cookies para gerenciar sua sessão com segurança."
+          "purpose": "Nosso provedor de autenticação e banco de dados (powered by AWS) usa cookies para gerenciar sua sessão com segurança."
         },
         "oneSignal": {
           "name": "OneSignal",
