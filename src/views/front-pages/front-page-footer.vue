@@ -30,10 +30,10 @@ const navigationList: Menu[] = [
 
 // Legal pages
 const legalList: Menu[] = [
-  { name: 'Terms & Conditions', to: '/legal/terms-and-conditions' },
-  { name: 'Terms of Service', to: '/legal/terms-of-service' },
-  { name: 'Privacy Policy', to: '/legal/privacy-policy' },
-  { name: 'Cookie Policy', to: '/legal/cookie-policy' },
+  { name: 'termsAndConditions', to: '/legal/terms-and-conditions' },
+  { name: 'termsOfService', to: '/legal/terms-of-service' },
+  { name: 'privacyPolicy', to: '/legal/privacy-policy' },
+  { name: 'cookiePolicy', to: '/legal/cookie-policy' },
 ]
 </script>
 
@@ -114,7 +114,7 @@ const legalList: Menu[] = [
           >
             <div class="footer-links">
               <h6 class="footer-title text-h6 mb-6">
-                Legal
+                {{ $t('landing.footer.legal') }}
               </h6>
               <ul style="list-style: none;">
                 <li
@@ -126,7 +126,7 @@ const legalList: Menu[] = [
                     :class="$vuetify.theme.current.dark ? 'text-body-1' : 'text-white-variant'"
                     :to="item.to"
                   >
-                    {{ item.name }}
+                    {{ $t(`landing.footer.${item.name}`) }}
                   </RouterLink>
                 </li>
               </ul>
