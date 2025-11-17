@@ -30,7 +30,7 @@ const sections = [
   { title: 'legal.termsAndConditions.sections.disclaimers', icon: 'tabler-alert-triangle', id: 'disclaimers' },
   { title: 'legal.termsAndConditions.sections.liability', icon: 'tabler-scale', id: 'liability' },
   { title: 'legal.termsAndConditions.sections.indemnification', icon: 'tabler-gavel', id: 'indemnification' },
-  { title: 'legal.termsAndConditions.sections.termination', icon: 'tabler-x-circle', id: 'termination' },
+  { title: 'legal.termsAndConditions.sections.termination', icon: 'tabler-circle-x', id: 'termination' },
   { title: 'legal.termsAndConditions.sections.dispute', icon: 'tabler-message-circle-2', id: 'dispute' },
   { title: 'legal.termsAndConditions.sections.law', icon: 'tabler-building-bank', id: 'law' },
   { title: 'legal.termsAndConditions.sections.changes', icon: 'tabler-refresh', id: 'changes' },
