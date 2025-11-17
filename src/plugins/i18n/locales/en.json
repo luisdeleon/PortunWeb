@@ -808,9 +808,9 @@
           "name": "Google Analytics",
           "purpose": "Helps us understand how you use PortunApp so we can make it better."
         },
-        "supabase": {
-          "name": "Supabase",
-          "purpose": "Our authentication and database provider (powered by AWS) uses cookies to manage your session securely."
+        "aws": {
+          "name": "AWS",
+          "purpose": "Our authentication and database provider uses cookies to manage your session securely."
         },
         "oneSignal": {
           "name": "OneSignal",

@@ -61,11 +61,11 @@ const thirdPartyServices = [
     link: 'https://policies.google.com/technologies/cookies',
   },
   {
-    name: 'legal.cookiePolicy.thirdParty.supabase.name',
+    name: 'legal.cookiePolicy.thirdParty.aws.name',
     icon: 'tabler-database',
     color: 'success',
-    purpose: 'legal.cookiePolicy.thirdParty.supabase.purpose',
-    link: 'https://supabase.com/privacy',
+    purpose: 'legal.cookiePolicy.thirdParty.aws.purpose',
+    link: 'https://aws.amazon.com/privacy/',
   },
   {
     name: 'legal.cookiePolicy.thirdParty.oneSignal.name',
