@@ -744,6 +744,15 @@
         "title": "What Are Cookies?",
         "description": "Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences and improve your browsing experience. Think of them as digital bookmarks that make your next visit smoother!"
       },
+      "labels": {
+        "required": "Required",
+        "optional": "Optional"
+      },
+      "table": {
+        "name": "Cookie Name",
+        "purpose": "Purpose",
+        "duration": "Duration"
+      },
       "types": {
         "chip": "COOKIE TYPES",
         "title": "Types of Cookies We Use",
@@ -789,6 +798,7 @@
         "chip": "THIRD PARTIES",
         "title": "Third-Party Cookies",
         "subtitle": "Some features use cookies from our trusted partners",
+        "privacyPolicy": "Privacy Policy",
         "googleAnalytics": {
           "name": "Google Analytics",
           "purpose": "Helps us understand how you use PortunApp so we can make it better."
@@ -812,11 +822,13 @@
         "subtitle": "You have full control over which cookies we use",
         "banner": {
           "title": "Cookie Consent Banner",
-          "description": "When you first visit PortunApp, you'll see a banner asking for your cookie consent. You can accept all cookies, decline optional cookies, or learn more before deciding."
+          "description": "When you first visit PortunApp, you'll see a banner asking for your cookie consent. You can accept all cookies, decline optional cookies, or learn more before deciding.",
+          "button": "Manage Preferences"
         },
         "browser": {
           "title": "Browser Settings",
           "description": "Most web browsers allow you to control cookies through their settings. Here are guides for popular browsers:",
+          "settings": "Settings",
           "chrome": "Chrome Cookie Settings",
           "firefox": "Firefox Cookie Settings",
           "safari": "Safari Cookie Settings",
@@ -829,10 +841,11 @@
           "yourChoices": "Your Online Choices",
           "networkAdvertising": "Network Advertising Initiative"
         },
-        "warning": {
-          "title": "Important:",
-          "description": "Disabling necessary cookies will prevent you from using PortunApp. Performance and functional cookies are optional but enhance your experience."
-        }
+        "warning": "Important: Disabling necessary cookies will prevent you from using PortunApp. Performance and functional cookies are optional but enhance your experience."
+      },
+      "mobileApp": {
+        "title": "Mobile App Cookie Usage",
+        "subtitle": "Our mobile apps (PortunMobile and PortunAccess) use similar storage mechanisms"
       },
       "updates": {
         "title": "Updates to This Policy",
@@ -842,12 +855,9 @@
         "title": "Questions About Cookies?",
         "subtitle": "We're happy to help explain our cookie usage",
         "button": "Contact Us",
-        "resources": {
-          "title": "Additional Resources",
-          "aboutCookies": "All About Cookies",
-          "yourChoices": "Your Online Choices",
-          "cookiepedia": "Cookiepedia"
-        }
+        "resources": "Additional Resources",
+        "allAboutCookies": "All About Cookies",
+        "yourOnlineChoices": "Your Online Choices"
       }
     }
   },

@@ -739,6 +739,15 @@
         "title": "O que São Cookies?",
         "description": "Cookies são pequenos arquivos de texto armazenados em seu dispositivo quando você visita um site. Eles ajudam os sites a lembrar suas preferências e melhorar sua experiência de navegação. Pense neles como marcadores digitais que tornam sua próxima visita mais suave!"
       },
+      "labels": {
+        "required": "Obrigatório",
+        "optional": "Opcional"
+      },
+      "table": {
+        "name": "Nome do Cookie",
+        "purpose": "Propósito",
+        "duration": "Duração"
+      },
       "types": {
         "chip": "TIPOS DE COOKIES",
         "title": "Tipos de Cookies que Usamos",
@@ -784,6 +793,7 @@
         "chip": "TERCEIROS",
         "title": "Cookies de Terceiros",
         "subtitle": "Alguns recursos usam cookies de nossos parceiros confiáveis",
+        "privacyPolicy": "Política de Privacidade",
         "googleAnalytics": {
           "name": "Google Analytics",
           "purpose": "Nos ajuda a entender como você usa o PortunApp para que possamos melhorá-lo."
@@ -807,11 +817,13 @@
         "subtitle": "Você tem controle total sobre quais cookies usamos",
         "banner": {
           "title": "Banner de Consentimento de Cookies",
-          "description": "Quando você visita o PortunApp pela primeira vez, verá um banner pedindo seu consentimento de cookies. Você pode aceitar todos os cookies, recusar os opcionais ou saber mais antes de decidir."
+          "description": "Quando você visita o PortunApp pela primeira vez, verá um banner pedindo seu consentimento de cookies. Você pode aceitar todos os cookies, recusar os opcionais ou saber mais antes de decidir.",
+          "button": "Gerenciar Preferências"
         },
         "browser": {
           "title": "Configurações do Navegador",
           "description": "A maioria dos navegadores web permite controlar cookies através de suas configurações. Aqui estão guias para navegadores populares:",
+          "settings": "Configurações",
           "chrome": "Configurações de Cookies do Chrome",
           "firefox": "Configurações de Cookies do Firefox",
           "safari": "Configurações de Cookies do Safari",
@@ -824,10 +836,11 @@
           "yourChoices": "Suas Escolhas Online",
           "networkAdvertising": "Iniciativa de Publicidade em Rede"
         },
-        "warning": {
-          "title": "Importante:",
-          "description": "Desativar cookies necessários impedirá você de usar o PortunApp. Cookies de desempenho e funcionais são opcionais, mas melhoram sua experiência."
-        }
+        "warning": "Importante: Desativar cookies necessários impedirá você de usar o PortunApp. Cookies de desempenho e funcionais são opcionais, mas melhoram sua experiência."
+      },
+      "mobileApp": {
+        "title": "Uso de Cookies no Aplicativo Móvel",
+        "subtitle": "Nossos aplicativos móveis (PortunMobile e PortunAccess) usam mecanismos de armazenamento semelhantes"
       },
       "updates": {
         "title": "Atualizações desta Política",
@@ -837,12 +850,9 @@
         "title": "Perguntas Sobre Cookies?",
         "subtitle": "Estamos felizes em ajudar a explicar nosso uso de cookies",
         "button": "Contate-nos",
-        "resources": {
-          "title": "Recursos Adicionais",
-          "aboutCookies": "Tudo Sobre Cookies",
-          "yourChoices": "Suas Escolhas Online",
-          "cookiepedia": "Cookiepedia"
-        }
+        "resources": "Recursos Adicionais",
+        "allAboutCookies": "Tudo Sobre Cookies",
+        "yourOnlineChoices": "Suas Escolhas Online"
       }
     }
   },
