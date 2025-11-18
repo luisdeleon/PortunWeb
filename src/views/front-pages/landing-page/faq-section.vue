@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import boyWithLogo from '@images/front-pages/landing-page/faq-boy-with-logos.png'
+import sittingGirlWithLaptop from '@images/illustrations/sitting-girl-with-laptop.png'
 
 const { t } = useI18n()
 
@@ -40,7 +40,7 @@ const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7']
           >
             <div class="pt-10 d-flex align-center justify-center h-100">
               <VImg
-                :src="boyWithLogo"
+                :src="sittingGirlWithLaptop"
                 height="330"
                 width="330"
               />
