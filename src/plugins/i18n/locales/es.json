@@ -406,6 +406,13 @@
       "accept": "Me parece bien",
       "decline": "No, gracias",
       "learnMore": "Más información"
+    },
+    "notFound": {
+      "title": "Página No Encontrada",
+      "description": "Lo sentimos, no pudimos encontrar la página que buscas. Es posible que haya sido movida o eliminada.",
+      "goHome": "Ir al Inicio",
+      "contactUs": "Contáctanos",
+      "helpfulLinks": "Enlaces Útiles:"
     }
   },
   "legal": {
