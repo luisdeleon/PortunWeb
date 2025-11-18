@@ -3,10 +3,27 @@ import type { User } from '@supabase/supabase-js'
 
 export function useSupabase() {
   const user = ref<User | null>(null)
-  const loading = ref(true)
+  const loading = ref(false)
+
+  // Check if Supabase is initialized
+  if (!supabase) {
+    console.warn('Supabase client not initialized. Please check your environment variables.')
+
+    return {
+      supabase: null,
+      user,
+      loading,
+      getCurrentUser: async () => null,
+      signIn: async () => ({ data: null, error: new Error('Supabase not initialized') }),
+      signUp: async () => ({ data: null, error: new Error('Supabase not initialized') }),
+      signOut: async () => ({ error: new Error('Supabase not initialized') }),
+      onAuthStateChange: () => ({ unsubscribe: () => {} }),
+    }
+  }
 
   // Get current user
   const getCurrentUser = async () => {
+    loading.value = true
     try {
       const { data: { user: currentUser }, error } = await supabase.auth.getUser()
       if (error) throw error
