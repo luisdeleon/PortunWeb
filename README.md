@@ -18,65 +18,31 @@ Portun.app is an accessible, secure QR-based access control platform for US and 
 
 ## 📚 Documentation Index
 
-All comprehensive documentation is located in `/docs/`:
+All project documentation is located in `/docs/`:
 
-### Planning & Strategy
-1. **[01-competitive-analysis.md](./docs/01-competitive-analysis.md)**
-   Deep dive on 5 competitors (Residentfy, Neivor, CondoVive, ComunidadFeliz, Residentia)
-   _Read this first to understand the market landscape_
-
-2. **[02-product-requirements.md](./docs/02-product-requirements.md)**
-   Complete PRD with 50+ user stories, acceptance criteria, and success metrics
-   _Core reference for what we're building_
-
-3. **[11-brand-guidelines.md](./docs/11-brand-guidelines.md)**
-   Brand identity, visual guidelines, voice & tone, marketing materials
-   _Use this for all design and marketing decisions_
-
-### Technical Architecture
-4. **[03-technical-architecture.md](./docs/03-technical-architecture.md)**
-   System design, tech stack, data flows, architecture diagrams
-   _Start here for understanding the technical stack_
-
-5. **[06-database-schema.md](./docs/06-database-schema.md)**
-   Complete PostgreSQL schema with ERD, tables, indexes, RLS policies
-   _Database reference for all backend work_
-
-6. **[07-api-specification.md](./docs/07-api-specification.md)**
-   REST API, Edge Functions, WebSocket specifications
-   _API reference for frontend and mobile integration_
-
-### Current System & Fixes
-7. **[04-current-system-audit.md](./docs/04-current-system-audit.md)**
-   46 issues identified across security, functionality, performance, technical debt
-   _⚠️ Critical: Review before any code changes_
-
-8. **[05-security-fixes-priority.md](./docs/05-security-fixes-priority.md)**
-   Prioritized security vulnerabilities with implementation guides
-   _🔒 Must fix before public launch_
-
-### Feature Specifications
-9. **[08-qr-access-spec.md](./docs/08-qr-access-spec.md)**
-   Detailed QR code implementation, validation rules, offline mode
-   _Core feature specification_
-
-10. **[09-payment-tracking-spec.md](./docs/09-payment-tracking-spec.md)**
-    Manual payment receipt tracking MVP specification
-    _Phase 2 feature specification_
-
-### UX & Deployment
-11. **[10-user-flows.md](./docs/10-user-flows.md)**
-    Complete user journeys for residents, guards, and admins
-    _Reference for UX design and testing_
-
-12. **[12-deployment-plan.md](./docs/12-deployment-plan.md)**
-    Infrastructure, CI/CD, monitoring, disaster recovery, launch checklist
-    _DevOps and deployment reference_
-
-### Multilingual & SEO
-13. **[MULTILINGUAL_SEO_IMPLEMENTATION.md](./docs/MULTILINGUAL_SEO_IMPLEMENTATION.md)**
-    Complete multilingual implementation guide (EN/ES/PT) with SEO optimization
-    _🌍 Full documentation on i18n, hreflang tags, structured data, and Google indexing_
+| # | Document | Description |
+|---|----------|-------------|
+| | **Planning & Strategy** | |
+| 0 | [PLANNING_SESSION.md](./docs/PLANNING_SESSION.md) | Complete AI planning session log with strategic decisions, research findings, and implementation roadmap |
+| 1 | [01-competitive-analysis.md](./docs/01-competitive-analysis.md) | Deep dive on 5 competitors (Residentfy, Neivor, CondoVive, ComunidadFeliz, Residentia) with pricing and SWOT analysis |
+| 2 | [02-product-requirements.md](./docs/02-product-requirements.md) | Complete PRD with 4 user personas, 50+ user stories, acceptance criteria, and success metrics |
+| 3 | [11-brand-guidelines.md](./docs/11-brand-guidelines.md) | Brand identity, color palette (#2563EB), typography (Inter), voice & tone guidelines |
+| | **Technical Architecture** | |
+| 4 | [03-technical-architecture.md](./docs/03-technical-architecture.md) | System design diagrams, tech stack decisions, data flows, security architecture |
+| 5 | [06-database-schema.md](./docs/06-database-schema.md) | PostgreSQL schema with ERD, 12 tables, indexes, RLS policies, database functions |
+| 6 | [07-api-specification.md](./docs/07-api-specification.md) | REST API endpoints, Edge Functions (validate-qr, log-entry), external integrations |
+| | **System Audit & Security** | |
+| 7 | [04-current-system-audit.md](./docs/04-current-system-audit.md) | 46 issues identified: 10 security vulnerabilities, 15 functional gaps, 8 performance issues, 12 tech debt items |
+| 8 | [05-security-fixes-priority.md](./docs/05-security-fixes-priority.md) | Prioritized P0/P1 security fixes with code examples and implementation guides (~32 hours effort) |
+| | **Feature Specifications** | |
+| 9 | [08-qr-access-spec.md](./docs/08-qr-access-spec.md) | QR code format, generation flow, server-side validation, offline mode implementation |
+| 10 | [09-payment-tracking-spec.md](./docs/09-payment-tracking-spec.md) | Manual receipt upload MVP, admin verification workflow, storage configuration |
+| | **UX & Deployment** | |
+| 11 | [10-user-flows.md](./docs/10-user-flows.md) | Complete user journeys with emotional arcs for residents, guards, and admins |
+| 12 | [12-deployment-plan.md](./docs/12-deployment-plan.md) | Infrastructure stack, CI/CD pipelines, monitoring, disaster recovery, cost estimates |
+| | **Configuration Guides** | |
+| 13 | [MULTILINGUAL_SEO_IMPLEMENTATION.md](./docs/MULTILINGUAL_SEO_IMPLEMENTATION.md) | i18n setup (EN/ES/PT), hreflang tags, structured data, Google Search Console |
+| 14 | [CLOUDFLARE_SETUP.md](./docs/CLOUDFLARE_SETUP.md) | Cloudflare configuration for CDN, SSL, caching, and security rules |
 
 ---
 
@@ -130,7 +96,8 @@ pnpm preview
 
 ```
 /PortunWeb
-├── docs/                      # 📚 Complete project documentation
+├── docs/                      # 📚 Complete project documentation (15 files)
+│   ├── PLANNING_SESSION.md    # AI planning session log
 │   ├── 01-competitive-analysis.md
 │   ├── 02-product-requirements.md
 │   ├── 03-technical-architecture.md
@@ -143,6 +110,7 @@ pnpm preview
 │   ├── 10-user-flows.md
 │   ├── 11-brand-guidelines.md
 │   ├── 12-deployment-plan.md
+│   ├── CLOUDFLARE_SETUP.md
 │   └── MULTILINGUAL_SEO_IMPLEMENTATION.md
 ├── src/
 │   ├── pages/                 # 📄 Vue pages (file-based routing)
@@ -159,8 +127,7 @@ pnpm preview
 │       └── supabase/          # 🗃️ Supabase table types
 ├── public/                    # Static files
 ├── .claude/                   # 🤖 Claude AI configuration
-│   ├── rules.md               # Development rules
-│   └── claude.md              # AI conversation log
+│   └── CLAUDE.md              # Development rules & quick reference
 ├── .github/                   # GitHub Actions CI/CD
 ├── themeConfig.ts             # 🎨 Vuexy theme configuration
 ├── vite.config.ts             # ⚡ Vite configuration
@@ -424,7 +391,7 @@ From [02-product-requirements.md](./docs/02-product-requirements.md):
 **Next Milestone**: Security fixes complete (Week 2)
 **Launch Target**: Q1 2026
 
-See [.claude/claude.md](./.claude/claude.md) for complete planning conversation and context.
+See [docs/PLANNING_SESSION.md](./docs/PLANNING_SESSION.md) for complete planning conversation and context.
 
 ---
 
