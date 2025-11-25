@@ -1,17 +1,19 @@
 # Competitive Analysis - Portun.app
 
-**Date**: 2025-11-14
-**Version**: 1.0
+**Date**: 2025-11-25
+**Version**: 2.0
 
 ---
 
 ## Executive Summary
 
-Portun.app enters the residential community management market with a focused QR-based access control system targeting US and Latin American communities. This analysis examines 5 key competitors to identify market opportunities and inform our positioning strategy.
+Portun.app enters the residential community management market with a focused QR-based access control system targeting US and Latin American communities. This analysis examines **40+ competitors** across multiple market segments to identify opportunities and inform our positioning strategy.
 
-**Key Finding**: No competitor offers premium QR features at value pricing. This represents our primary market opportunity.
+**Key Finding**: No competitor offers premium QR features at value pricing with true bilingual (US + LATAM) focus. This represents our primary market opportunity.
 
 **Recommended Positioning**: "Residentia killer" - better features at the same price point ($2-3/unit/month).
+
+**Market Size**: The access control market is projected to grow from $10.4B (2024) to $15.2B (2029).
 
 ---
 
@@ -297,4 +299,261 @@ The residential community management market has a clear gap: **premium features 
 
 ---
 
+## Expanded Competitor Database
+
+### US-Focused / Enterprise Players
+
+| Company | Focus | Key Features | Website |
+|---------|-------|--------------|---------|
+| **Swiftlane** | Multifamily + Gated | Face recognition, video intercom, QR codes, cloud-based | swiftlane.com |
+| **ButterflyMX** | Multifamily | Smart video intercom, QR codes with video verification | butterflymx.com |
+| **Brivo** | Enterprise | Access control, video, visitor management, intrusion | brivo.com |
+| **Kisi** | Commercial + Residential | Cloud-based, mobile unlock, QR codes, key cards | getkisi.com |
+| **FRONTSTEPS** | HOA/Condo | Security, payments, accounting, resident engagement | frontsteps.com |
+| **dormakaba** | Enterprise | Community access management, hardware integration | dormakaba.com |
+| **LiftMaster myQ** | Gated Communities | Gate control, smartphone access, cloud management | liftmaster.com |
+| **ProDataKey** | Residential | Cloud access control, mobile credentials | prodatakey.com |
+
+### Visitor Management Specialists
+
+| Company | Focus | Key Features | Website |
+|---------|-------|--------------|---------|
+| **Gate Sentry** | Gated Communities | Tablet-based, 10+ years, no hardware needed | gatesentry.com |
+| **GoAccess** | HOA/Gated | Pre-authorized guests, visitor passes, multi-property | goaccess.com |
+| **GateHouse Solutions** | Gated Communities | Offline operation, LPR, guard management | gatehousesolutions.com |
+| **EntranceIQ** | Gated Communities | Visitor management, community management | entranceiq.net |
+| **VisitForm** | Gated/Front Desk | LPR, barcodes, RFID, transponders | visitform.com |
+| **Proptia** | Gated/Multifamily | QR ePasses, cloud-based, guest management | proptia.com |
+| **Home and Guests** | Gated Communities | Cloud-based visitor access | homeandguests.com |
+| **Teamgo** | Gated/Corporate | Visitor management, contractor check-in | teamgo.co |
+| **Spintly** | Multifamily | QR codes, face recognition, mobile credentials | spintly.com |
+| **Gatewise** | Gated/Multifamily | Integrates with Yardi, RealPage, Entrata | gatewise.com |
+
+### LATAM Market (Direct Competitors)
+
+| Company | Country Focus | Key Features | Website |
+|---------|---------------|--------------|---------|
+| **ComunidadFeliz** | Mexico, LATAM | Full admin, payments, mobile app, QR access | comunidadfeliz.mx |
+| **Residentia** | Mexico, LATAM | QR access control, basic admin, affordable | residentia.net |
+| **Neivor** | US + LATAM | Full admin, security, GDPR/LFPDPPP compliant | neivor.com |
+| **CondoVive** | LATAM | Condo management, payments | condovive.com |
+| **Vivook** | Mexico, 13 countries | 2,600+ condos, electronic invoicing, LATAM leader | vivook.com |
+| **Edifito** | Chile, LATAM | 6,000+ condos, 620K users, payroll focus | edifito.com |
+| **CondomiSOFT** | Mexico | Online condo admin, accounting | condomisoft.com |
+| **MisCondominios** | Colombia, LATAM | Financial reports, budgets, incident management | miscondominios.com |
+| **OdooCondominio** | LATAM | Odoo-based, reservations, virtual assemblies | odoocondominio.com |
+
+### HOA/Property Management Platforms
+
+| Company | Focus | Pricing | Website |
+|---------|-------|---------|---------|
+| **AppFolio** | Property Mgmt | $250-500+/mo (50 unit min) | appfolio.com |
+| **Buildium** | Property Mgmt | ~$58/mo | buildium.com |
+| **Yardi** | Enterprise | Custom | yardi.com |
+| **DoorLoop** | Property Mgmt | Per-unit | doorloop.com |
+| **HOA Start** | HOA | $39/mo | hoastart.com |
+| **PayHOA** | HOA | ~$49/mo | payhoa.com |
+| **Condo Control** | Condo/HOA | Custom | condocontrolcentral.com |
+| **MRI Software** | Enterprise | Custom | mrisoftware.com |
+| **ONR App** | Community Mgmt | Custom | onrapp.com |
+
+### Emerging/Specialty Players
+
+| Company | Focus | Notes |
+|---------|-------|-------|
+| **Amazon Key / Ring** | Multifamily | Amazon-backed, Ring integration |
+| **Mygate** | India/Asia | 100s of communities in India |
+| **GuardMetrics** | Guard-focused | Incident reporting, visitor tracking |
+| **SafePassageSolutions** | Gated | Works with/without staffed gates |
+| **Aregnum** | LATAM | Levee monitoring, cameras, utilities |
+| **HID SAFE** | Enterprise | Temporary digital credentials, hardware |
+
+---
+
+## Deep Dive: Vivook (Mexico Leader)
+
+### Company Profile
+| Metric | Value |
+|--------|-------|
+| **Founded** | ~2014 (10+ years) |
+| **Headquarters** | Mexico City |
+| **Countries** | 13 across Latin America |
+| **Customers** | 2,600+ condominiums |
+| **Users** | 300,000+ residents |
+| **Position** | "#1 in Mexico and LATAM" |
+
+### Pricing (MXN/month)
+
+| Plan | Units | Price (Auto-pay) | USD Estimate |
+|------|-------|------------------|--------------|
+| **Básico** | 1-15 | $460 MXN | ~$27/mo |
+| **Estándar** | 16-50 | $709 MXN | ~$42/mo |
+| **Pro** | 51-100 | $989 MXN | ~$58/mo |
+| **Class** | 101-250 | $2,199 MXN | ~$130/mo |
+| **Elite** | 251+ | Custom | Contact sales |
+
+**Per-unit cost**: ~$0.50-1.80 USD/unit/month
+
+### Key Features
+- **Administrative**: Fee management, fund tracking, Excel export, Contpaq integration
+- **Communication**: Private website, surveys, voting (weighted by ownership %)
+- **Security**: QR access control, package tracking, activity logs
+- **Payments**: Stripe, STP (Mexican network), automatic direct debit
+- **Compliance**: Electronic invoicing (SAT Mexico)
+
+### Strengths
+- Market leader in Mexico with 10+ years experience
+- AWS infrastructure
+- Electronic invoicing (critical for Mexican tax compliance)
+- No mandatory contracts, 15-day free trial
+
+### Weaknesses
+- Mexico-centric (limited US presence)
+- No English version
+- Feature-heavy (overwhelming for small communities)
+- Support limited to Mon-Fri 8am-5pm
+
+### Portun Opportunity
+Vivook is **feature bloated** for small communities. Their lowest tier ($27/mo for 15 units = $1.80/unit) is expensive for basic needs. No US market focus or English support.
+
+---
+
+## Deep Dive: Edifito (Chile Leader)
+
+### Company Profile
+| Metric | Value |
+|--------|-------|
+| **Founded** | 2003 (20+ years) |
+| **Headquarters** | Santiago, Chile |
+| **Primary Market** | Chile, expanding LATAM |
+| **Customers** | 6,000+ condominiums |
+| **Administrators** | 2,200+ |
+| **Property Owners** | 620,000+ |
+
+### Lifetime Metrics
+- 38+ million common expense receipts generated
+- 2.5+ million salary calculations processed
+- $3.9+ billion USD in common expenses collected
+- $2.2+ billion USD in payroll managed
+
+### Key Features
+- **Core Focus**: Common expenses (gastos comunes) management
+- **Payroll**: PREVIRED-certified calculations (Chilean compliance)
+- **Access**: QR code visitor registration, visit history
+- **Payments**: Khipu, MercadoPago integration
+- **AI**: Automatic bank reconciliation with AI payment matching
+- **Compliance**: Chilean Law 21.442 (Copropiedad) compliant
+
+### Pricing
+Not publicly disclosed. Estimated ~$0.50-0.80 USD/unit based on Chilean market research.
+
+### Strengths
+- Longest track record (20+ years)
+- Dominant in Chile
+- Deep Chilean regulatory compliance
+- AI-powered bank reconciliation
+- Free administrator training courses
+
+### Weaknesses
+- **Chile-specific** (payroll/regulatory focus less relevant elsewhere)
+- Not competitive in Mexico or US markets
+- QR access is secondary feature, not core differentiator
+- Pricing not transparent
+
+### Portun Opportunity
+Edifito's payroll module is overkill for communities that outsource HR. Their Chile-specific compliance features don't translate to other markets. QR access is a bolt-on, not a strength.
+
+---
+
+## Competitive Comparison: Vivook vs Edifito vs Portun
+
+| Feature | Vivook | Edifito | **Portun** |
+|---------|--------|---------|------------|
+| **Primary Market** | Mexico | Chile | US + LATAM |
+| **Years in Market** | 10 | 20 | New |
+| **QR Access** | ✅ Module | ✅ Basic | ✅ **Core** |
+| **Payments** | ✅ Stripe, STP | ✅ Khipu, MP | ⏳ Manual MVP |
+| **Payroll** | ❌ | ✅ Full | ❌ |
+| **Electronic Invoicing** | ✅ Mexico SAT | ✅ Chile SII | ❌ |
+| **Pricing Model** | Per-condo tiers | Custom quotes | **Per-unit** |
+| **Est. Price/Unit** | $0.50-1.80 | $0.50-0.80 | **$2-3** |
+| **English Support** | ❌ | ❌ | ✅ |
+| **US Market** | ❌ | ❌ | ✅ |
+| **WhatsApp Native** | ❌ | ❌ | ✅ |
+| **Offline Mode** | ❌ | ❌ | ✅ |
+| **Free Trial** | 15 days | Unknown | 14 days |
+| **Contract Required** | No | Unknown | No |
+
+---
+
+## Strategic Analysis: Market Segments
+
+### Where Established Players Are Strong
+1. **Trust & Track Record** - 10-20 years in market
+2. **Feature Completeness** - Full admin suites
+3. **Local Compliance** - Tax invoicing, payroll
+4. **Scale** - 2,600-6,000 condos each
+
+### Where They Leave Gaps (Portun's Opportunity)
+
+| Gap | Impact | Portun Solution |
+|-----|--------|-----------------|
+| **US Market** | No competitor targets US Hispanic communities | Bilingual from day one |
+| **English UI** | No full English interfaces | Equal English/Spanish priority |
+| **QR Focus** | QR is a module, not core | QR access is our differentiator |
+| **WhatsApp Native** | None emphasize WhatsApp | Built-in sharing |
+| **Transparent Pricing** | Most hide pricing | Public calculator |
+| **Simplicity** | Feature bloat overwhelms small communities | Focused on access + payments |
+| **Guard Experience** | None highlight dedicated guard app | PortunAccess purpose-built |
+| **Offline Mode** | Not mentioned by competitors | Critical for guards |
+
+### Summary by Market Segment
+
+| Segment | Top Players | Portun Opportunity |
+|---------|-------------|-------------------|
+| **US Premium** | Swiftlane, ButterflyMX, Brivo | Too expensive for small communities |
+| **US Mid-Market** | Gate Sentry, GoAccess, FRONTSTEPS | Complex, long contracts |
+| **LATAM Premium** | Neivor, Vivook, Edifito | Higher prices, feature bloat |
+| **LATAM Value** | Residentia, ComunidadFeliz | **Direct competitors** - basic features |
+| **HOA Software** | AppFolio, Buildium, PayHOA | Weak visitor management |
+
+---
+
+## Updated Recommendations
+
+### Positioning vs New Competitors
+> "While Vivook and Edifito offer comprehensive property management suites built for large administrators, Portun focuses on what matters most: **simple, secure visitor access**. No payroll modules you don't need. No complex pricing tiers. Just QR access control that works—online or offline—at a transparent price."
+
+### New Competitive Threats to Monitor
+1. **Amazon Key** - Entering multifamily with Ring integration
+2. **Vivook** - If they add English and target US Hispanic communities
+3. **Swiftlane** - If they introduce value tier for small communities
+
+### Key Differentiators to Emphasize
+1. **Bilingual excellence** (vs Mexico/Chile-only competitors)
+2. **QR-first** (vs QR as afterthought)
+3. **Transparent pricing** (vs custom quotes)
+4. **Offline mode** (unique in value segment)
+5. **WhatsApp sharing** (critical for LATAM adoption)
+
+---
+
+## Sources
+
+- [Swiftlane](https://swiftlane.com/)
+- [ButterflyMX](https://butterflymx.com/)
+- [Gate Sentry](https://gatesentry.com/)
+- [GoAccess](https://www.goaccess.com/)
+- [Vivook](https://www.vivook.com/)
+- [Vivook Pricing](https://www.vivook.com/precios-y-planes/)
+- [Edifito](https://www.edifito.com/)
+- [ComparaSoftware Mexico](https://www.comparasoftware.com/administracion-de-condominios)
+- [ComparaSoftware Chile](https://www.comparasoftware.cl/administracion-de-condominios)
+- [Capterra HOA Software](https://www.capterra.com/hoa-software/)
+- [Security Industry Association](https://www.securityindustry.org/2024/03/19/new-solutions-for-multifamily-access-control/)
+- [Multifamily Dive - Apartmentalize 2024](https://www.multifamilydive.com/news/5-apartment-tech-innovations-from-apartmentalize/750955/)
+
+---
+
 *Document maintained by Portun.app Product Team*
+*Last updated: 2025-11-25*
