@@ -26,6 +26,8 @@ Portun.app enters the residential community management market with a focused QR-
 | CondoVive | $3-4.50/unit | ✅ Basic | ✅ Automated | LATAM Mid | Pricing unclear |
 | ComunidadFeliz | $2-4/unit | ✅ Good | ✅ Automated | LATAM All | Mexican focus |
 | Residentia | $2-3/unit | ✅ Basic | ❌ Manual only | LATAM Value | Feature gaps |
+| **Vivook** | $0.50-1.80/unit | ✅ Good | ✅ Automated | Mexico/LATAM | No English, feature bloat |
+| **Edifito** | $0.50-0.80/unit | ✅ Basic | ✅ Automated | Chile/LATAM | Chile-focused, payroll heavy |
 
 ---
 
@@ -152,34 +154,95 @@ Portun.app enters the residential community management market with a focused QR-
 
 ---
 
+### 6. Vivook (vivook.com)
+
+**Overview**: Mexico's leading condo management platform with 10+ years experience, serving 2,000+ condominiums across 13 LATAM countries.
+
+**Strengths**:
+- Market leader in Mexico (#1 position)
+- Comprehensive feature set (admin, payments, QR, communication)
+- AWS-hosted infrastructure
+- Electronic invoicing (SAT Mexico compliance)
+- Stripe and STP payment integrations
+- 15-day free trial, no contracts
+
+**Weaknesses**:
+- No English support (Spanish only)
+- Feature bloat for small communities
+- Mexico-centric regulatory features
+- Higher per-unit cost for small condos ($1.80/unit for 15-unit tier)
+- Limited support hours (Mon-Fri 8am-5pm)
+
+**Pricing**:
+- Básico (1-15 units): ~$27/mo ($1.80/unit)
+- Estándar (16-50): ~$42/mo ($0.84-1.31/unit)
+- Pro (51-100): ~$58/mo ($0.58-1.14/unit)
+- Class (101-250): ~$130/mo ($0.52-1.29/unit)
+
+**Target Customer**: Mexican property administrators managing multiple condos
+
+**Opportunity**: Overkill for small communities; no US/English market presence
+
+---
+
+### 7. Edifito (edifito.com)
+
+**Overview**: Chile's dominant platform with 20+ years in market, serving 6,000+ condominiums and 620,000+ property owners. Strong focus on common expenses and payroll.
+
+**Strengths**:
+- Longest track record (since 2003)
+- Market leader in Chile
+- PREVIRED-certified payroll module
+- AI-powered bank reconciliation
+- Processed $3.9B+ in common expenses
+- Free administrator training (Edifito Academy)
+
+**Weaknesses**:
+- Chile-specific focus (payroll/regulatory features don't translate)
+- No English support
+- QR access is secondary feature, not core strength
+- Pricing not transparent (custom quotes)
+- Limited presence outside Chile
+
+**Pricing**: Not public. Estimated $0.50-0.80/unit based on market research.
+
+**Target Customer**: Chilean property administrators needing full accounting + payroll
+
+**Opportunity**: Payroll module irrelevant for most communities; Chile-specific compliance doesn't help in other markets
+
+---
+
 ## Feature Comparison Matrix
 
-| Feature | Residentfy | Neivor | CondoVive | ComunidadFeliz | Residentia | **Portun** |
-|---------|------------|--------|-----------|----------------|------------|------------|
+| Feature | Residentfy | Neivor | CondoVive | ComunidadFeliz | Residentia | Vivook | Edifito | **Portun** |
+|---------|------------|--------|-----------|----------------|------------|--------|---------|------------|
 | **QR Access** |
-| Basic QR codes | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Time-limited QR | ✅ | ✅ | ⚠️ | ✅ | ❌ | ✅ |
-| Entry limits | ✅ | ✅ | ❌ | ⚠️ | ❌ | ✅ |
-| Offline validation | ✅ | ⚠️ | ❌ | ❌ | ❌ | ✅ |
-| WhatsApp sharing | ❌ | ⚠️ | ⚠️ | ✅ | ❌ | ✅ |
-| Entry photos | ✅ | ✅ | ❌ | ⚠️ | ❌ | ✅ |
-| Real-time notifications | ✅ | ✅ | ⚠️ | ✅ | ❌ | ✅ |
+| Basic QR codes | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Time-limited QR | ✅ | ✅ | ⚠️ | ✅ | ❌ | ✅ | ⚠️ | ✅ |
+| Entry limits | ✅ | ✅ | ❌ | ⚠️ | ❌ | ⚠️ | ❌ | ✅ |
+| Offline validation | ✅ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| WhatsApp sharing | ❌ | ⚠️ | ⚠️ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| Entry photos | ✅ | ✅ | ❌ | ⚠️ | ❌ | ✅ | ⚠️ | ✅ |
+| Real-time notifications | ✅ | ✅ | ⚠️ | ✅ | ❌ | ✅ | ⚠️ | ✅ |
 | **Payments** |
-| Manual receipts | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Automated payments | ❌ | ✅ | ✅ | ✅ | ❌ | ⏳ Phase 2 |
-| Payment reports | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ |
+| Manual receipts | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Automated payments | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ⏳ Phase 2 |
+| Payment reports | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ | ✅ |
+| Electronic invoicing | ❌ | ❌ | ❌ | ⚠️ | ❌ | ✅ | ✅ | ❌ |
+| Payroll module | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | **Platform** |
-| Web admin portal | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ |
-| iOS app | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Android app | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Guard app | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | ✅ |
+| Web admin portal | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ✅ | ✅ |
+| iOS app | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Android app | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Guard app | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | ⚠️ | ⚠️ | ✅ |
 | **Localization** |
-| English | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ | ✅ |
-| Spanish | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| English | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ | ❌ | ❌ | ✅ |
+| Spanish | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Portuguese | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | **Pricing** |
-| Transparent pricing | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| Free trial | ⚠️ | ⚠️ | ❌ | ✅ | ✅ | ✅ |
-| No contracts | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| Transparent pricing | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| Free trial | ⚠️ | ⚠️ | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| No contracts | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ |
 
 ✅ = Full support | ⚠️ = Partial/Limited | ❌ = Not available | ⏳ = Planned
 
