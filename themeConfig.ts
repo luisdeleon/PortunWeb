@@ -3,15 +3,19 @@ import { VIcon } from 'vuetify/components/VIcon'
 import { defineThemeConfig } from '@core'
 import { Skins } from '@core/enums'
 
-// ❗ Logo image import
-import logo from '@images/logo.png'
+// ❗ Logo URLs from CDN
+const logoIcon = 'https://media.portun.app/i/Portun-Icon-400.png'
+const logoFull = 'https://media.portun.app/i/Portun-500-6979F8.png'
 
 import { AppContentLayoutNav, ContentWidth, FooterType, NavbarType } from '@layouts/enums'
 
 export const { themeConfig, layoutConfig } = defineThemeConfig({
   app: {
-    title: 'Portun',
-    logo: h('img', { src: logo, alt: 'Portun Logo', style: 'height: 32px; width: auto;' }),
+    title: '',
+    logo: h('div', { style: 'display: flex; align-items: center; gap: 8px;' }, [
+      h('img', { src: logoIcon, alt: 'Portun Shield', style: 'height: 38px; width: auto;' }),
+      h('img', { src: logoFull, alt: 'Portun', style: 'height: 42px; width: auto;' }),
+    ]),
     contentWidth: ContentWidth.Boxed,
     contentLayoutNav: AppContentLayoutNav.Vertical,
     overlayNavFromBreakpoint: breakpointsVuetifyV3.lg - 1, // 1 for matching with vuetify breakpoint. Docs: https://next.vuetifyjs.com/en/features/display-and-platform/
