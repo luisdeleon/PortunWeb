@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const colors = {
-  series1: '#7367F0',
-  series2: '#8F85F3',
-  series3: '#ABA4F6',
+  series1: '#6979F8',
+  series2: '#8B92FA',
+  series3: '#ABAEFB',
 }
 
 const bodyColor = 'rgba(var(--v-theme-on-background), var(--v-medium-emphasis-opacity))'
