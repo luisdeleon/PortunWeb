@@ -211,9 +211,9 @@
         "title": "Notificaciones en Tiempo Real",
         "desc": "Sabe el momento en que tu invitado llega. Registro completo con fotos."
       },
-      "offlineMode": {
-        "title": "Modo Sin Conexión",
-        "desc": "Los guardias pueden validar códigos QR sin internet. Se sincroniza cuando está en línea."
+      "carPlay": {
+        "title": "Android Auto y CarPlay",
+        "desc": "Abre tu portón directamente desde la pantalla de tu auto. Compatible con Android Auto y Apple CarPlay."
       },
       "adminDashboard": {
         "title": "Panel de Administración",
@@ -262,7 +262,7 @@
         "subtitle": "1001+ unidades",
         "features": {
           "everythingPro": "Todo lo del Plan Profesional",
-          "offlineMode": "Modo Sin Conexión",
+          "carPlay": "Android Auto y CarPlay",
           "whatsapp": "Integración con WhatsApp",
           "analytics": "Analíticas Avanzadas",
           "customBranding": "Marca Personalizada",

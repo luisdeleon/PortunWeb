@@ -211,9 +211,9 @@
         "title": "Notificações em Tempo Real",
         "desc": "Saiba o momento em que seu convidado chega. Registro completo com fotos."
       },
-      "offlineMode": {
-        "title": "Modo Offline",
-        "desc": "Guardas podem validar códigos QR sem internet. Sincroniza quando online."
+      "carPlay": {
+        "title": "Android Auto e CarPlay",
+        "desc": "Abra seu portão diretamente da tela do seu carro. Compatível com Android Auto e Apple CarPlay."
       },
       "adminDashboard": {
         "title": "Painel de Administração",
@@ -262,7 +262,7 @@
         "subtitle": "1001+ unidades",
         "features": {
           "everythingPro": "Tudo do Plano Profissional",
-          "offlineMode": "Modo Offline",
+          "carPlay": "Android Auto e CarPlay",
           "whatsapp": "Integração com WhatsApp",
           "analytics": "Análises Avançadas",
           "customBranding": "Marca Personalizada",

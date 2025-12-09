@@ -33,12 +33,12 @@ const reviewData = [
     color: 'success',
   },
   {
-    desc: 'The offline mode is a game-changer. Our internet goes down sometimes, but guards can still validate QR codes. Security never stops.',
+    desc: 'CarPlay integration is a game-changer. I just tap to open the gate from my car screen without picking up my phone. So convenient and safe while driving.',
     community: 'Conjunto El Parque',
     rating: 5,
     name: 'Sofia Rodríguez',
     initials: 'SR',
-    position: 'Security Supervisor, Bogotá Colombia',
+    position: 'Resident, Bogotá Colombia',
     color: 'warning',
   },
   {

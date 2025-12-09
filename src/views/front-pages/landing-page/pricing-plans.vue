@@ -41,7 +41,7 @@ const pricingPlans = [
     iconColor: 'warning',
     featureKeys: [
       'everythingPro',
-      'offlineMode',
+      'carPlay',
       'whatsapp',
       'analytics',
       'customBranding',
