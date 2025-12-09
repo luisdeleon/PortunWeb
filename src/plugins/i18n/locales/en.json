@@ -211,9 +211,9 @@
         "title": "Real-time Notifications",
         "desc": "Know the moment your guest arrives. Complete audit trail with photos."
       },
-      "carPlay": {
-        "title": "Android Auto & CarPlay",
-        "desc": "Open your gate directly from your car's screen. Compatible with Android Auto and Apple CarPlay."
+      "offlineMode": {
+        "title": "Offline Mode",
+        "desc": "Guards can validate QR codes even without internet. Syncs when online."
       },
       "adminDashboard": {
         "title": "Admin Dashboard",
@@ -262,7 +262,7 @@
         "subtitle": "1001+ units",
         "features": {
           "everythingPro": "Everything in Professional",
-          "carPlay": "Android Auto & CarPlay",
+          "offlineMode": "Offline Mode",
           "whatsapp": "WhatsApp Integration",
           "analytics": "Advanced Analytics",
           "customBranding": "Custom Branding",

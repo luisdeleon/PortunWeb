@@ -7,7 +7,7 @@ const featuresData = [
   { key: 'qrAccess', icon: 'tabler-qrcode' },
   { key: 'paymentTracking', icon: 'tabler-receipt' },
   { key: 'notifications', icon: 'tabler-bell' },
-  { key: 'carPlay', icon: 'tabler-car' },
+  { key: 'offlineMode', icon: 'tabler-cloud-off' },
   { key: 'adminDashboard', icon: 'tabler-dashboard' },
   { key: 'security', icon: 'tabler-shield-check' },
 ]
