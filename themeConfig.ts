@@ -4,7 +4,7 @@ import { defineThemeConfig } from '@core'
 import { Skins } from '@core/enums'
 
 // ❗ Logo URLs from CDN
-const logoIcon = 'https://media.portun.app/i/Portun-Icon-400.png'
+const logoIcon = 'https://media.portun.app/i/portun-shield.png'
 const logoFull = 'https://media.portun.app/i/Portun-500-6979F8.png'
 
 import { AppContentLayoutNav, ContentWidth, FooterType, NavbarType } from '@layouts/enums'

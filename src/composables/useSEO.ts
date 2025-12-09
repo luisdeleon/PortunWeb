@@ -30,7 +30,7 @@ export function useSEO(options: SEOOptions = {}) {
   const seoTitle = computed(() => options.title || defaultTitle.value)
   const seoDescription = computed(() => options.description || defaultDescription.value)
   const seoKeywords = computed(() => options.keywords || defaultKeywords.value)
-  const seoImage = computed(() => options.image || 'https://media.portun.app/i/AppIcon.png')
+  const seoImage = computed(() => options.image || 'https://media.portun.app/i/portun-shield.png')
   const seoUrl = computed(() => options.url || 'https://portun.app')
   const seoType = computed(() => options.type || 'website')
 
@@ -138,7 +138,7 @@ export function useSEO(options: SEOOptions = {}) {
         '@type': 'Organization',
         'name': 'Portun',
         'url': 'https://portun.app',
-        'logo': 'https://media.portun.app/i/AppIcon.png',
+        'logo': 'https://media.portun.app/i/portun-shield.png',
         'contactPoint': {
           '@type': 'ContactPoint',
           'email': 'hello@portun.app',

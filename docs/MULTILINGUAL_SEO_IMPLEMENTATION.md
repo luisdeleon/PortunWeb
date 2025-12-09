@@ -141,7 +141,7 @@ Your Portun.app landing page now has full multilingual support (English, Spanish
   "@type": "Organization",
   "name": "Portun",
   "url": "https://portun.app",
-  "logo": "https://media.portun.app/i/AppIcon.png",
+  "logo": "https://media.portun.app/i/portun-shield.png",
   "contactPoint": {
     "email": "hello@portun.app",
     "contactType": "Customer Service",
