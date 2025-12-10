@@ -147,10 +147,13 @@ const legalList: Menu[] = [
               <div>
                 <VBtn
                   v-for="(item, index) in [
-                    { image: appleImg, storeKey: 'appStore' },
-                    { image: googlePlayImg, storeKey: 'googlePlay' },
+                    { image: appleImg, storeKey: 'appStore', href: 'https://apps.apple.com/us/app/portun/id6738507781' },
+                    { image: googlePlayImg, storeKey: 'googlePlay', href: 'https://play.google.com/store/apps/details?id=app.portun.mobile' },
                   ]"
                   :key="index"
+                  :href="item.href"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   color="#282c3e"
                   height="56"
                   class="mb-4 d-block"
