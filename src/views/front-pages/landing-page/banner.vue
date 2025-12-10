@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ctaDashborad from '@images/front-pages/landing-page/cta-dashboard.png'
+const ctaDashboard = 'https://media.portun.app/i/portun-dashboard-home.png'
 </script>
 
 <template>
@@ -27,7 +27,7 @@ import ctaDashborad from '@images/front-pages/landing-page/cta-dashboard.png'
 
         <div class="banner-img">
           <img
-            :src="ctaDashborad"
+            :src="ctaDashboard"
             class="w-100"
           >
         </div>
@@ -44,6 +44,15 @@ import ctaDashborad from '@images/front-pages/landing-page/cta-dashboard.png'
 
 .banner-img {
   margin-block-end: -22px;
+  margin-inline-end: 80px;
+  max-inline-size: 250px;
+
+  img {
+    border-radius: 12px;
+    block-size: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 15%);
+    inline-size: 70%;
+  }
 }
 
 .banner-title {
